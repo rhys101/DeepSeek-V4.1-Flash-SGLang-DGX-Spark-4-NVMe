@@ -1,0 +1,8 @@
+configs/*.local.json
+.build/
+.local/
+results/raw/
+**/__pycache__/
+**/node_modules/
+*.pyc
+*.so

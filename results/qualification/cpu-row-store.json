@@ -1,0 +1,620 @@
+{
+  "status": "PASS",
+  "image_id": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
+  "row_store_library_sha256": "2b6fbdf605eefbf641c67bf94641e1077903e20da768733034066cf59efd3f4d",
+  "source_sha256": {
+    "adapter/row_store.cpp": "9a9ed278c48bedd65a0e143535aa52391bd666bb67ca01a6bdb47aa4f8ecdb73",
+    "tests/test_row_store.py": "7b9fb6f61f16697b1262275b2aa31730265f63fa1a0648a4b6b1e36d4f3eecfc",
+    "tests/test_packed_store.py": "07022e2d64a45818b8a82734d592e6da15ebed492aa60a22fd3584859d81ec98"
+  },
+  "ranks": [
+    {
+      "rank": 0,
+      "status": "PASS",
+      "stdout": "{\"budget\": 0, \"owned\": null, \"checked\": 12084, \"hits\": 0, \"misses\": 12084, \"reads\": 24168, \"slots\": 0, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 4624, \"owned\": null, \"checked\": 12084, \"hits\": 38, \"misses\": 12046, \"reads\": 24092, \"slots\": 16, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 1114928, \"owned\": null, \"checked\": 12084, \"hits\": 7900, \"misses\": 4184, \"reads\": 8368, \"slots\": 4092, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 1114928, \"owned\": [0, 4099], \"checked\": 12084, \"hits\": 7862, \"misses\": 4222, \"reads\": 8444, \"slots\": 4092, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 69632, \"owned\": [1000, 3000], \"checked\": 5751, \"hits\": 691, \"misses\": 5060, \"reads\": 10120, \"slots\": 252, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"status\": \"PASS\", \"cases\": [{\"rank\": 0, \"owned_range\": [0, 1024], \"owned_reads\": 1658, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 1, \"owned_range\": [1024, 2049], \"owned_reads\": 1554, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 2, \"owned_range\": [2049, 3074], \"owned_reads\": 1568, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 3, \"owned_range\": [3074, 4099], \"owned_reads\": 1592, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}], \"faults\": [{\"fault\": \"truncate\", \"signal\": \"SIGABRT\", \"stopped_before_return\": true}, {\"fault\": \"bounds\", \"signal\": \"SIGABRT\", \"stopped_before_return\": true}]}\n",
+      "stderr": "",
+      "records": [
+        {
+          "budget": 0,
+          "owned": null,
+          "checked": 12084,
+          "hits": 0,
+          "misses": 12084,
+          "reads": 24168,
+          "slots": 0,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 4624,
+          "owned": null,
+          "checked": 12084,
+          "hits": 38,
+          "misses": 12046,
+          "reads": 24092,
+          "slots": 16,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 1114928,
+          "owned": null,
+          "checked": 12084,
+          "hits": 7900,
+          "misses": 4184,
+          "reads": 8368,
+          "slots": 4092,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 1114928,
+          "owned": [
+            0,
+            4099
+          ],
+          "checked": 12084,
+          "hits": 7862,
+          "misses": 4222,
+          "reads": 8444,
+          "slots": 4092,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 69632,
+          "owned": [
+            1000,
+            3000
+          ],
+          "checked": 5751,
+          "hits": 691,
+          "misses": 5060,
+          "reads": 10120,
+          "slots": 252,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "status": "PASS",
+          "cases": [
+            {
+              "rank": 0,
+              "owned_range": [
+                0,
+                1024
+              ],
+              "owned_reads": 1658,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 1,
+              "owned_range": [
+                1024,
+                2049
+              ],
+              "owned_reads": 1554,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 2,
+              "owned_range": [
+                2049,
+                3074
+              ],
+              "owned_reads": 1568,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 3,
+              "owned_range": [
+                3074,
+                4099
+              ],
+              "owned_reads": 1592,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            }
+          ],
+          "faults": [
+            {
+              "fault": "truncate",
+              "signal": "SIGABRT",
+              "stopped_before_return": true
+            },
+            {
+              "fault": "bounds",
+              "signal": "SIGABRT",
+              "stopped_before_return": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 1,
+      "status": "PASS",
+      "stdout": "{\"budget\": 0, \"owned\": null, \"checked\": 12084, \"hits\": 0, \"misses\": 12084, \"reads\": 24168, \"slots\": 0, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 4624, \"owned\": null, \"checked\": 12084, \"hits\": 46, \"misses\": 12038, \"reads\": 24076, \"slots\": 16, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 1114928, \"owned\": null, \"checked\": 12084, \"hits\": 7897, \"misses\": 4187, \"reads\": 8374, \"slots\": 4092, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 1114928, \"owned\": [0, 4099], \"checked\": 12084, \"hits\": 7876, \"misses\": 4208, \"reads\": 8416, \"slots\": 4092, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 69632, \"owned\": [1000, 3000], \"checked\": 5751, \"hits\": 679, \"misses\": 5072, \"reads\": 10144, \"slots\": 252, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"status\": \"PASS\", \"cases\": [{\"rank\": 0, \"owned_range\": [0, 1024], \"owned_reads\": 1658, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 1, \"owned_range\": [1024, 2049], \"owned_reads\": 1554, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 2, \"owned_range\": [2049, 3074], \"owned_reads\": 1568, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 3, \"owned_range\": [3074, 4099], \"owned_reads\": 1592, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}], \"faults\": [{\"fault\": \"truncate\", \"signal\": \"SIGABRT\", \"stopped_before_return\": true}, {\"fault\": \"bounds\", \"signal\": \"SIGABRT\", \"stopped_before_return\": true}]}\n",
+      "stderr": "",
+      "records": [
+        {
+          "budget": 0,
+          "owned": null,
+          "checked": 12084,
+          "hits": 0,
+          "misses": 12084,
+          "reads": 24168,
+          "slots": 0,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 4624,
+          "owned": null,
+          "checked": 12084,
+          "hits": 46,
+          "misses": 12038,
+          "reads": 24076,
+          "slots": 16,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 1114928,
+          "owned": null,
+          "checked": 12084,
+          "hits": 7897,
+          "misses": 4187,
+          "reads": 8374,
+          "slots": 4092,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 1114928,
+          "owned": [
+            0,
+            4099
+          ],
+          "checked": 12084,
+          "hits": 7876,
+          "misses": 4208,
+          "reads": 8416,
+          "slots": 4092,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 69632,
+          "owned": [
+            1000,
+            3000
+          ],
+          "checked": 5751,
+          "hits": 679,
+          "misses": 5072,
+          "reads": 10144,
+          "slots": 252,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "status": "PASS",
+          "cases": [
+            {
+              "rank": 0,
+              "owned_range": [
+                0,
+                1024
+              ],
+              "owned_reads": 1658,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 1,
+              "owned_range": [
+                1024,
+                2049
+              ],
+              "owned_reads": 1554,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 2,
+              "owned_range": [
+                2049,
+                3074
+              ],
+              "owned_reads": 1568,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 3,
+              "owned_range": [
+                3074,
+                4099
+              ],
+              "owned_reads": 1592,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            }
+          ],
+          "faults": [
+            {
+              "fault": "truncate",
+              "signal": "SIGABRT",
+              "stopped_before_return": true
+            },
+            {
+              "fault": "bounds",
+              "signal": "SIGABRT",
+              "stopped_before_return": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "status": "PASS",
+      "stdout": "{\"budget\": 0, \"owned\": null, \"checked\": 12084, \"hits\": 0, \"misses\": 12084, \"reads\": 24168, \"slots\": 0, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 4624, \"owned\": null, \"checked\": 12084, \"hits\": 47, \"misses\": 12037, \"reads\": 24074, \"slots\": 16, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 1114928, \"owned\": null, \"checked\": 12084, \"hits\": 7884, \"misses\": 4200, \"reads\": 8400, \"slots\": 4092, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 1114928, \"owned\": [0, 4099], \"checked\": 12084, \"hits\": 7892, \"misses\": 4192, \"reads\": 8384, \"slots\": 4092, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 69632, \"owned\": [1000, 3000], \"checked\": 5751, \"hits\": 705, \"misses\": 5046, \"reads\": 10092, \"slots\": 252, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"status\": \"PASS\", \"cases\": [{\"rank\": 0, \"owned_range\": [0, 1024], \"owned_reads\": 1658, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 1, \"owned_range\": [1024, 2049], \"owned_reads\": 1554, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 2, \"owned_range\": [2049, 3074], \"owned_reads\": 1568, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 3, \"owned_range\": [3074, 4099], \"owned_reads\": 1592, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}], \"faults\": [{\"fault\": \"truncate\", \"signal\": \"SIGABRT\", \"stopped_before_return\": true}, {\"fault\": \"bounds\", \"signal\": \"SIGABRT\", \"stopped_before_return\": true}]}\n",
+      "stderr": "",
+      "records": [
+        {
+          "budget": 0,
+          "owned": null,
+          "checked": 12084,
+          "hits": 0,
+          "misses": 12084,
+          "reads": 24168,
+          "slots": 0,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 4624,
+          "owned": null,
+          "checked": 12084,
+          "hits": 47,
+          "misses": 12037,
+          "reads": 24074,
+          "slots": 16,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 1114928,
+          "owned": null,
+          "checked": 12084,
+          "hits": 7884,
+          "misses": 4200,
+          "reads": 8400,
+          "slots": 4092,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 1114928,
+          "owned": [
+            0,
+            4099
+          ],
+          "checked": 12084,
+          "hits": 7892,
+          "misses": 4192,
+          "reads": 8384,
+          "slots": 4092,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 69632,
+          "owned": [
+            1000,
+            3000
+          ],
+          "checked": 5751,
+          "hits": 705,
+          "misses": 5046,
+          "reads": 10092,
+          "slots": 252,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "status": "PASS",
+          "cases": [
+            {
+              "rank": 0,
+              "owned_range": [
+                0,
+                1024
+              ],
+              "owned_reads": 1658,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 1,
+              "owned_range": [
+                1024,
+                2049
+              ],
+              "owned_reads": 1554,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 2,
+              "owned_range": [
+                2049,
+                3074
+              ],
+              "owned_reads": 1568,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 3,
+              "owned_range": [
+                3074,
+                4099
+              ],
+              "owned_reads": 1592,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            }
+          ],
+          "faults": [
+            {
+              "fault": "truncate",
+              "signal": "SIGABRT",
+              "stopped_before_return": true
+            },
+            {
+              "fault": "bounds",
+              "signal": "SIGABRT",
+              "stopped_before_return": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "status": "PASS",
+      "stdout": "{\"budget\": 0, \"owned\": null, \"checked\": 12084, \"hits\": 0, \"misses\": 12084, \"reads\": 24168, \"slots\": 0, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 4624, \"owned\": null, \"checked\": 12084, \"hits\": 47, \"misses\": 12037, \"reads\": 24074, \"slots\": 16, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 1114928, \"owned\": null, \"checked\": 12084, \"hits\": 7885, \"misses\": 4199, \"reads\": 8398, \"slots\": 4092, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 1114928, \"owned\": [0, 4099], \"checked\": 12084, \"hits\": 7893, \"misses\": 4191, \"reads\": 8382, \"slots\": 4092, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"budget\": 69632, \"owned\": [1000, 3000], \"checked\": 5751, \"hits\": 690, \"misses\": 5061, \"reads\": 10122, \"slots\": 252, \"scale_bytes\": 0, \"ways\": 4, \"threads\": 96, \"passed\": true}\n{\"status\": \"PASS\", \"cases\": [{\"rank\": 0, \"owned_range\": [0, 1024], \"owned_reads\": 1658, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 1, \"owned_range\": [1024, 2049], \"owned_reads\": 1554, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 2, \"owned_range\": [2049, 3074], \"owned_reads\": 1568, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}, {\"rank\": 3, \"owned_range\": [3074, 4099], \"owned_reads\": 1592, \"seeds\": 12, \"concurrent_callers\": 4, \"exact\": true, \"packed\": true, \"cache_bytes\": 0, \"scale_bytes\": 0}], \"faults\": [{\"fault\": \"truncate\", \"signal\": \"SIGABRT\", \"stopped_before_return\": true}, {\"fault\": \"bounds\", \"signal\": \"SIGABRT\", \"stopped_before_return\": true}]}\n",
+      "stderr": "",
+      "records": [
+        {
+          "budget": 0,
+          "owned": null,
+          "checked": 12084,
+          "hits": 0,
+          "misses": 12084,
+          "reads": 24168,
+          "slots": 0,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 4624,
+          "owned": null,
+          "checked": 12084,
+          "hits": 47,
+          "misses": 12037,
+          "reads": 24074,
+          "slots": 16,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 1114928,
+          "owned": null,
+          "checked": 12084,
+          "hits": 7885,
+          "misses": 4199,
+          "reads": 8398,
+          "slots": 4092,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 1114928,
+          "owned": [
+            0,
+            4099
+          ],
+          "checked": 12084,
+          "hits": 7893,
+          "misses": 4191,
+          "reads": 8382,
+          "slots": 4092,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "budget": 69632,
+          "owned": [
+            1000,
+            3000
+          ],
+          "checked": 5751,
+          "hits": 690,
+          "misses": 5061,
+          "reads": 10122,
+          "slots": 252,
+          "scale_bytes": 0,
+          "ways": 4,
+          "threads": 96,
+          "passed": true
+        },
+        {
+          "status": "PASS",
+          "cases": [
+            {
+              "rank": 0,
+              "owned_range": [
+                0,
+                1024
+              ],
+              "owned_reads": 1658,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 1,
+              "owned_range": [
+                1024,
+                2049
+              ],
+              "owned_reads": 1554,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 2,
+              "owned_range": [
+                2049,
+                3074
+              ],
+              "owned_reads": 1568,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            },
+            {
+              "rank": 3,
+              "owned_range": [
+                3074,
+                4099
+              ],
+              "owned_reads": 1592,
+              "seeds": 12,
+              "concurrent_callers": 4,
+              "exact": true,
+              "packed": true,
+              "cache_bytes": 0,
+              "scale_bytes": 0
+            }
+          ],
+          "faults": [
+            {
+              "fault": "truncate",
+              "signal": "SIGABRT",
+              "stopped_before_return": true
+            },
+            {
+              "fault": "bounds",
+              "signal": "SIGABRT",
+              "stopped_before_return": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

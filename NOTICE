@@ -1,0 +1,25 @@
+DeepSeek V4.1 Flash, four DGX Sparks, SGLang TP4 and NVMe Engram.
+
+This adaptation builds on MiaAI-Lab/DeepSeek-v4.1-Flash-DGX-Sparks at
+e59e6eb67479aa68f6fa700c600dc90a0729b5ec and our eight-Spark SG17 composition
+at 66aa6bd5085e63bbb011557075765e3191e807b2. The combined preparation is
+AGPL-3.0-or-later; see LICENSE. Copyright (C) 2026 zurih for Mia's source.
+Source: https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-DGX-Sparks
+
+The original Engram row-store recipe and some utilities derive from
+0xSero/deepseek-v4.1-flash-4x-rtx-pro-6000, MIT; see LICENSE.upstream-MIT.
+SGLang source under patches/source and validation retains Apache-2.0;
+see LICENSE.sglang. The B12x source archive retains Apache-2.0 with the
+license inside it and in vendor/LICENSE.b12x. Its composed source history
+and file hashes are recorded in vendor/.
+Source: https://github.com/sgl-project/sglang
+Source: https://github.com/local-inference-lab/b12x
+
+bench/v41bench.py and prompts-v1.json are unchanged from tonyd2wild's
+benchmark, MIT; see LICENSE.benchmark-MIT. The sparkDash benchmark source
+and its MIT license remain in bench/sparkdash/upstream.
+
+Local modifications dated 12 September 2026: TP4 serving configuration,
+strict required packed NVMe shards, source/ownership/graph validation,
+and four-rank RoCEnante integration derived from the SG17 transport route.
+No model weights, private connection settings or credentials are included.
