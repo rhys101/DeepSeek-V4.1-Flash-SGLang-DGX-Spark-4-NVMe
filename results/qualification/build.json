@@ -1,1 +1,17 @@
-{"status": "PASS", "image_id": "sha256:c8b288cc0251635760c4a5d5ec390d5bed497e30bf4298138414a32759b0e072", "source_sha256": {"python/sglang/srt/models/deepseek_v4.py": "75003c5d644f9a0278d443481ccbf97423697165b5b8d620274b1faa38c144ac", "python/sglang/kernels/ops/attention/flash_mla_sm120.py": "2fe25ba5e2ff91f6028b6a32c315ba8875d8780b9341bae9411af1cc927885bf", "python/sglang/kernels/jit/csrc/deepseek_v4/c2.cuh": "55f32ba512fca86826a27d66f36d4667848c17cbbe0d34096ffedead0ce469e4", "python/sglang/kernels/ops/attention/dsv4/c2.py": "9da953bedcebad1b6168cce61453bd487689363358a2569b8a0c366b955e5bea", "python/sglang/kernels/ops/attention/dsv4/candidate_blocks.py": "d7fc6c5984d10331a04d3586a537def4d531a440f2db3113423785b9aa4016ea", "python/sglang/kernels/ops/attention/dsv4/indexer_postprocess.py": "55a52c4e6c71568705958ed35f821260b38b1d371637712c47dc0e964f9c1f54", "python/sglang/srt/layers/attention/deepseek_v4_backend.py": "20a711344de7666d83b3dfa3ce7e9621729cbe40ed9a433d28e53872216e65d1", "python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py": "8387704e671b1a67d116ccca9523092083eb0d299e654a5d6c7949f7245bf6df", "python/sglang/srt/distributed/device_communicators/pynccl.py": "adda773dab640212bf58a7fa6f8a0d220087f82223ec6aaecc398c6735a4020c", "python/sglang/srt/distributed/parallel_state.py": "2a2afab0f8c0f93afc104152537b69b030a0b098618fa8271167afd4bf66de4f", "python/sglang/srt/managers/scheduler_components/batch_result_processor.py": "220dbd3c502c82f2aa4b35b853797b8effea09cc0495477123cc7f114ab8ec03"}}
+{
+  "status": "PASS",
+  "image_id": "sha256:c8b288cc0251635760c4a5d5ec390d5bed497e30bf4298138414a32759b0e072",
+  "source_sha256": {
+    "python/sglang/srt/models/deepseek_v4.py": "75003c5d644f9a0278d443481ccbf97423697165b5b8d620274b1faa38c144ac",
+    "python/sglang/kernels/ops/attention/flash_mla_sm120.py": "2fe25ba5e2ff91f6028b6a32c315ba8875d8780b9341bae9411af1cc927885bf",
+    "python/sglang/kernels/jit/csrc/deepseek_v4/c2.cuh": "55f32ba512fca86826a27d66f36d4667848c17cbbe0d34096ffedead0ce469e4",
+    "python/sglang/kernels/ops/attention/dsv4/c2.py": "9da953bedcebad1b6168cce61453bd487689363358a2569b8a0c366b955e5bea",
+    "python/sglang/kernels/ops/attention/dsv4/candidate_blocks.py": "d7fc6c5984d10331a04d3586a537def4d531a440f2db3113423785b9aa4016ea",
+    "python/sglang/kernels/ops/attention/dsv4/indexer_postprocess.py": "55a52c4e6c71568705958ed35f821260b38b1d371637712c47dc0e964f9c1f54",
+    "python/sglang/srt/layers/attention/deepseek_v4_backend.py": "20a711344de7666d83b3dfa3ce7e9621729cbe40ed9a433d28e53872216e65d1",
+    "python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py": "8387704e671b1a67d116ccca9523092083eb0d299e654a5d6c7949f7245bf6df",
+    "python/sglang/srt/distributed/device_communicators/pynccl.py": "adda773dab640212bf58a7fa6f8a0d220087f82223ec6aaecc398c6735a4020c",
+    "python/sglang/srt/distributed/parallel_state.py": "2a2afab0f8c0f93afc104152537b69b030a0b098618fa8271167afd4bf66de4f",
+    "python/sglang/srt/managers/scheduler_components/batch_result_processor.py": "220dbd3c502c82f2aa4b35b853797b8effea09cc0495477123cc7f114ab8ec03"
+  }
+}

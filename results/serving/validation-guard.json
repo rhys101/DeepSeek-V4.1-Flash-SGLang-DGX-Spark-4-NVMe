@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "started": 1789223605.3178606,
+  "time": 1789224493.8240857,
+  "sample_count": 364,
+  "minimum_available_gib_by_rank": {
+    "0": 19.524616241455078,
+    "1": 21.02347183227539,
+    "2": 21.23017120361328,
+    "3": 20.902061462402344
+  },
+  "initial_swap_used_gib_by_rank": {
+    "0": 3.8042068481445312,
+    "1": 2.6783218383789062,
+    "2": 2.577617645263672,
+    "3": 2.41827392578125
+  },
+  "maximum_swap_used_gib_by_rank": {
+    "0": 3.8042068481445312,
+    "1": 2.6783218383789062,
+    "2": 2.5807533264160156,
+    "3": 2.41827392578125
+  },
+  "minimum_reserve_gib": 2,
+  "method": "OS /proc/meminfo and docker inspect only; no GPU telemetry queries"
+}

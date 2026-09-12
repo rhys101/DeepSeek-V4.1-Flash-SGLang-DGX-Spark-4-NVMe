@@ -1,0 +1,406 @@
+{
+  "checked_date_utc": "2026-09-12",
+  "tony_commit": "fc725ecf10869c184f4347dd73336536d395753c",
+  "tony": {
+    "boot10": {
+      "source_url": "https://github.com/tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark/blob/fc725ecf10869c184f4347dd73336536d395753c/results/boot10/bench-boot10.json",
+      "original_source_sha256": "e352b099e7f61844cf7144a3df62db978a2e8f74a2cf553aaddbce50b09a5715",
+      "headline": [
+        {
+          "level": "C1",
+          "agg_tok_s": 37.95,
+          "per_stream_tok_s": 43.12,
+          "ttft_mean_s": 0.441
+        },
+        {
+          "level": "C2",
+          "agg_tok_s": 64.3,
+          "per_stream_tok_s": 37.43,
+          "ttft_mean_s": 0.441
+        },
+        {
+          "level": "C3",
+          "agg_tok_s": 78.7,
+          "per_stream_tok_s": 30.62,
+          "ttft_mean_s": 0.793
+        },
+        {
+          "level": "C4",
+          "agg_tok_s": 85.72,
+          "per_stream_tok_s": 24.66,
+          "ttft_mean_s": 0.579
+        },
+        {
+          "level": "C5",
+          "agg_tok_s": 114.2,
+          "per_stream_tok_s": 27.01,
+          "ttft_mean_s": 0.585
+        },
+        {
+          "level": "C6",
+          "agg_tok_s": 131.86,
+          "per_stream_tok_s": 25.35,
+          "ttft_mean_s": 0.502
+        }
+      ],
+      "coding": [
+        {
+          "c": 1,
+          "category": "coding",
+          "wall_s": 3.007,
+          "tokens": 200,
+          "agg_tok_s": 66.5,
+          "per_stream_tok_s": 73.78,
+          "ttft_mean_s": 0.309
+        },
+        {
+          "c": 2,
+          "category": "coding",
+          "wall_s": 4.93,
+          "tokens": 400,
+          "agg_tok_s": 81.13,
+          "per_stream_tok_s": 44.98,
+          "ttft_mean_s": 0.437
+        },
+        {
+          "c": 3,
+          "category": "coding",
+          "wall_s": 6.493,
+          "tokens": 600,
+          "agg_tok_s": 92.41,
+          "per_stream_tok_s": 33.76,
+          "ttft_mean_s": 0.492
+        },
+        {
+          "c": 4,
+          "category": "coding",
+          "wall_s": 6.462,
+          "tokens": 800,
+          "agg_tok_s": 123.8,
+          "per_stream_tok_s": 34.26,
+          "ttft_mean_s": 0.515
+        },
+        {
+          "c": 5,
+          "category": "coding",
+          "wall_s": 5.085,
+          "tokens": 1000,
+          "agg_tok_s": 196.67,
+          "per_stream_tok_s": 44.1,
+          "ttft_mean_s": 0.399
+        },
+        {
+          "c": 6,
+          "category": "coding",
+          "wall_s": 5.322,
+          "tokens": 1200,
+          "agg_tok_s": 225.48,
+          "per_stream_tok_s": 41.47,
+          "ttft_mean_s": 0.418
+        }
+      ]
+    },
+    "exl3tp4b": {
+      "source_url": "https://github.com/tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark/blob/fc725ecf10869c184f4347dd73336536d395753c/results/exl3tp4b/bench-exl3tp4b.json",
+      "original_source_sha256": "85a90f709e19c70c42d07855970cc9aa0110ceb22bcdf3bce50a6e57efdb9bf4",
+      "headline": [
+        {
+          "level": "C1",
+          "agg_tok_s": 41.62,
+          "per_stream_tok_s": 46.36,
+          "ttft_mean_s": 0.37
+        },
+        {
+          "level": "C2",
+          "agg_tok_s": 62.18,
+          "per_stream_tok_s": 37.55,
+          "ttft_mean_s": 0.768
+        },
+        {
+          "level": "C3",
+          "agg_tok_s": 101.14,
+          "per_stream_tok_s": 38.17,
+          "ttft_mean_s": 0.442
+        },
+        {
+          "level": "C4",
+          "agg_tok_s": 106.72,
+          "per_stream_tok_s": 30.88,
+          "ttft_mean_s": 0.507
+        },
+        {
+          "level": "C5",
+          "agg_tok_s": 129.15,
+          "per_stream_tok_s": 30.4,
+          "ttft_mean_s": 0.563
+        },
+        {
+          "level": "C6",
+          "agg_tok_s": 141.19,
+          "per_stream_tok_s": 27.7,
+          "ttft_mean_s": 0.579
+        }
+      ],
+      "coding": [
+        {
+          "c": 1,
+          "category": "coding",
+          "wall_s": 2.619,
+          "tokens": 200,
+          "agg_tok_s": 76.35,
+          "per_stream_tok_s": 81.54,
+          "ttft_mean_s": 0.178
+        },
+        {
+          "c": 2,
+          "category": "coding",
+          "wall_s": 4.535,
+          "tokens": 400,
+          "agg_tok_s": 88.2,
+          "per_stream_tok_s": 48.29,
+          "ttft_mean_s": 0.413
+        },
+        {
+          "c": 3,
+          "category": "coding",
+          "wall_s": 3.386,
+          "tokens": 600,
+          "agg_tok_s": 177.2,
+          "per_stream_tok_s": 64.32,
+          "ttft_mean_s": 0.29
+        },
+        {
+          "c": 4,
+          "category": "coding",
+          "wall_s": 6.192,
+          "tokens": 800,
+          "agg_tok_s": 129.2,
+          "per_stream_tok_s": 35.81,
+          "ttft_mean_s": 0.515
+        },
+        {
+          "c": 5,
+          "category": "coding",
+          "wall_s": 6.86,
+          "tokens": 1000,
+          "agg_tok_s": 145.77,
+          "per_stream_tok_s": 32.17,
+          "ttft_mean_s": 0.64
+        },
+        {
+          "c": 6,
+          "category": "coding",
+          "wall_s": 4.109,
+          "tokens": 1200,
+          "agg_tok_s": 292.07,
+          "per_stream_tok_s": 53.65,
+          "ttft_mean_s": 0.38
+        }
+      ]
+    },
+    "exl3tp4b-rep1": {
+      "source_url": "https://github.com/tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark/blob/fc725ecf10869c184f4347dd73336536d395753c/results/exl3tp4b-rep1/bench-exl3tp4b-rep1.json",
+      "original_source_sha256": "2039fa5bc22eb91e5a299efd3364ea3a6d41fe9dcb6628dafa4e15f0a835d69b",
+      "headline": [
+        {
+          "level": "C1",
+          "agg_tok_s": 54.11,
+          "per_stream_tok_s": 60.1,
+          "ttft_mean_s": 0.259
+        },
+        {
+          "level": "C2",
+          "agg_tok_s": 90.84,
+          "per_stream_tok_s": 52.2,
+          "ttft_mean_s": 0.33
+        },
+        {
+          "level": "C3",
+          "agg_tok_s": 115.47,
+          "per_stream_tok_s": 44.44,
+          "ttft_mean_s": 0.355
+        },
+        {
+          "level": "C4",
+          "agg_tok_s": 137.81,
+          "per_stream_tok_s": 40.42,
+          "ttft_mean_s": 0.427
+        },
+        {
+          "level": "C5",
+          "agg_tok_s": 167.57,
+          "per_stream_tok_s": 38.77,
+          "ttft_mean_s": 0.436
+        },
+        {
+          "level": "C6",
+          "agg_tok_s": 170.92,
+          "per_stream_tok_s": 33.11,
+          "ttft_mean_s": 0.466
+        }
+      ],
+      "coding": [
+        {
+          "c": 1,
+          "category": "coding",
+          "wall_s": 2.638,
+          "tokens": 200,
+          "agg_tok_s": 75.82,
+          "per_stream_tok_s": 81.2,
+          "ttft_mean_s": 0.186
+        },
+        {
+          "c": 2,
+          "category": "coding",
+          "wall_s": 2.813,
+          "tokens": 400,
+          "agg_tok_s": 142.21,
+          "per_stream_tok_s": 78.09,
+          "ttft_mean_s": 0.263
+        },
+        {
+          "c": 3,
+          "category": "coding",
+          "wall_s": 3.408,
+          "tokens": 600,
+          "agg_tok_s": 176.06,
+          "per_stream_tok_s": 64.47,
+          "ttft_mean_s": 0.288
+        },
+        {
+          "c": 4,
+          "category": "coding",
+          "wall_s": 3.529,
+          "tokens": 800,
+          "agg_tok_s": 226.66,
+          "per_stream_tok_s": 62.81,
+          "ttft_mean_s": 0.337
+        },
+        {
+          "c": 5,
+          "category": "coding",
+          "wall_s": 3.767,
+          "tokens": 1000,
+          "agg_tok_s": 265.49,
+          "per_stream_tok_s": 59.15,
+          "ttft_mean_s": 0.363
+        },
+        {
+          "c": 6,
+          "category": "coding",
+          "wall_s": 4.259,
+          "tokens": 1200,
+          "agg_tok_s": 281.75,
+          "per_stream_tok_s": 52.35,
+          "ttft_mean_s": 0.371
+        }
+      ]
+    },
+    "exl3tp4b-rep2": {
+      "source_url": "https://github.com/tonyd2wild/DeepSeek-V4.1-Flash-vLLM-DGX-Spark/blob/fc725ecf10869c184f4347dd73336536d395753c/results/exl3tp4b-rep2/bench-exl3tp4b-rep2.json",
+      "original_source_sha256": "8fb089a199cbb04dba11ee8e0414d013ebb6f8e1aa0082b82aef2275e5f0a68c",
+      "headline": [
+        {
+          "level": "C1",
+          "agg_tok_s": 57.15,
+          "per_stream_tok_s": 63.37,
+          "ttft_mean_s": 0.25
+        },
+        {
+          "level": "C2",
+          "agg_tok_s": 89.23,
+          "per_stream_tok_s": 51.15,
+          "ttft_mean_s": 0.328
+        },
+        {
+          "level": "C3",
+          "agg_tok_s": 112.63,
+          "per_stream_tok_s": 44.2,
+          "ttft_mean_s": 0.38
+        },
+        {
+          "level": "C4",
+          "agg_tok_s": 142.64,
+          "per_stream_tok_s": 42.14,
+          "ttft_mean_s": 0.417
+        },
+        {
+          "level": "C5",
+          "agg_tok_s": 165.89,
+          "per_stream_tok_s": 39.13,
+          "ttft_mean_s": 0.435
+        },
+        {
+          "level": "C6",
+          "agg_tok_s": 176.14,
+          "per_stream_tok_s": 34.81,
+          "ttft_mean_s": 0.48
+        }
+      ],
+      "coding": [
+        {
+          "c": 1,
+          "category": "coding",
+          "wall_s": 2.637,
+          "tokens": 200,
+          "agg_tok_s": 75.83,
+          "per_stream_tok_s": 81.11,
+          "ttft_mean_s": 0.183
+        },
+        {
+          "c": 2,
+          "category": "coding",
+          "wall_s": 3.13,
+          "tokens": 400,
+          "agg_tok_s": 127.8,
+          "per_stream_tok_s": 70.62,
+          "ttft_mean_s": 0.272
+        },
+        {
+          "c": 3,
+          "category": "coding",
+          "wall_s": 3.384,
+          "tokens": 600,
+          "agg_tok_s": 177.31,
+          "per_stream_tok_s": 65.54,
+          "ttft_mean_s": 0.297
+        },
+        {
+          "c": 4,
+          "category": "coding",
+          "wall_s": 3.647,
+          "tokens": 800,
+          "agg_tok_s": 219.39,
+          "per_stream_tok_s": 61.78,
+          "ttft_mean_s": 0.336
+        },
+        {
+          "c": 5,
+          "category": "coding",
+          "wall_s": 3.789,
+          "tokens": 1000,
+          "agg_tok_s": 263.93,
+          "per_stream_tok_s": 59.18,
+          "ttft_mean_s": 0.355
+        },
+        {
+          "c": 6,
+          "category": "coding",
+          "wall_s": 4.056,
+          "tokens": 1200,
+          "agg_tok_s": 295.84,
+          "per_stream_tok_s": 55.64,
+          "ttft_mean_s": 0.369
+        }
+      ]
+    }
+  },
+  "mia": {
+    "commit": "e59e6eb67479aa68f6fa700c600dc90a0729b5ec",
+    "source_url": "https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-DGX-Sparks/blob/e59e6eb67479aa68f6fa700c600dc90a0729b5ec/README.md",
+    "tp": 3,
+    "tp4_status": "Profile documented but not booted",
+    "prose_c1": 37.9,
+    "prose_c4_aggregate": 78.6
+  }
+}

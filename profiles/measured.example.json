@@ -1,0 +1,53 @@
+{
+  "name": "nvme-roce-03",
+  "image": "deepseek-v41-sglang8:native-heads-v1",
+  "expected_image_id": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
+  "model_store": "/srv/spark/models",
+  "model_subpath": "DeepSeek-V4.1-Flash",
+  "run_dir": "/srv/spark/deepseek-4.1-flash/sglang4-nvme/nvme-roce-03",
+  "engram_dir": "/srv/spark/deepseek-4.1-flash/sglang4-nvme/engram-tp4",
+  "head_ip": "192.0.2.11",
+  "fabric_interface": "enp1s0f0np0",
+  "nccl_hcas": "=rocep1s0f0:1,roceP2p1s0f0:1",
+  "dist_port": 29649,
+  "api_host": "0.0.0.0",
+  "api_port": 8004,
+  "nccl_test_port": 29659,
+  "tp_size": 4,
+  "ep_size": 4,
+  "context_length": 1000000,
+  "max_running_requests": 8,
+  "max_total_tokens": 4000000,
+  "chunked_prefill_size": 2048,
+  "max_prefill_tokens": 2048,
+  "mem_fraction_static": 0.8,
+  "draft_length": 5,
+  "min_free_slots_delay": 1,
+  "minimum_available_gib": 2,
+  "io_threads": 96,
+  "row_cache_gib": 0,
+  "resident_scales": false,
+  "roce_enabled": true,
+  "workers": [
+    {
+      "rank": 0,
+      "host": "operator@192.0.2.11",
+      "ip": "192.0.2.11"
+    },
+    {
+      "rank": 1,
+      "host": "operator@192.0.2.12",
+      "ip": "192.0.2.12"
+    },
+    {
+      "rank": 2,
+      "host": "operator@192.0.2.13",
+      "ip": "192.0.2.13"
+    },
+    {
+      "rank": 3,
+      "host": "operator@192.0.2.14",
+      "ip": "192.0.2.14"
+    }
+  ]
+}

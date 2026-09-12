@@ -1,11 +1,24 @@
 # DeepSeek V4.1 Flash on four DGX Sparks: TP4 with NVMe Engram
 
-This separate repository evaluates the original-precision DeepSeek V4.1 Flash checkpoint with SGLang TP4/EP4, exact node-local NVMe Engram lookup and RoCEnante communication. It builds on the [SG17 eight-Spark result](https://github.com/rhys101/DeepSeek-V4.1-Flash-vLLM-DGX-Spark-8/commit/66aa6bd5085e63bbb011557075765e3191e807b2).
+**82.73 coding decode tok/s at C1 · 340.41 aggregate coding tok/s at C8**, retaining the original checkpoint precision. These are repeat-suite means after a successful 299,102-token retrieval check, measured on 12 September 2026.
 
-**Status: four-rank serving and capability smoke checks passed; benchmark collection is in progress. No final TP4 throughput is claimed yet.** The eight-Spark result of 134.91 coding decode tokens/s is a reference from a different configuration, not a TP4 measurement.
+This separate repository contains the SGLang TP4/EP4 implementation, exact node-local NVMe Engram storage, four-rank RoCEnante integration, qualification evidence and complete benchmark results. The [SG17 eight-Spark project](https://github.com/rhys101/DeepSeek-V4.1-Flash-vLLM-DGX-Spark-8) remains separate.
 
-The initial test profile uses four Sparks, TP4/EP4, native checkpoint MXFP4 expert and FP8 dense weights, BF16 activation dtype, five-token DSpark speculation, a 1M-token context limit, 4M logical KV tokens, eight request slots and 2,048-token prefill chunks. Exact Engram rows remain on each rank's local NVMe, with no additional quantization, row cache or resident scale table. The server resolves these settings; full-pool and 1M-input occupancy have not been validated.
+| Workload, tok/s | First repeat suite | Repeat after 299K input |
+|---|---:|---:|
+| Coding C1 decode | 82.71 | 82.73 |
+| Coding C4 aggregate | 202.38 | 211.81 |
+| Coding C8 aggregate | 335.47 | 340.41 |
+| Prose C1 decode | 52.61 | 52.62 |
+| Prose C4 aggregate | 117.02 | 116.91 |
+| Prose C8 aggregate | 162.49 | 162.18 |
 
-[Upstream comparison targets](docs/comparison-targets.md) · [Qualification](docs/qualification.md) · [Reproduction](docs/reproduction.md) · [Source identity](versions.lock.json)
+Each suite contains five C1 coding samples, three C4/C8 coding waves and three prose waves per concurrency. C1 coding ranges were 82.44–82.89 in the first suite; all samples and both suites are retained. Coding uses the unchanged 200-token community workload; prose uses the pinned 256-token sparkDash workload. Aggregate coding timing includes the complete batch duration. [Full results and timing definitions](docs/results.md).
 
-The row reader has passed the original CPU parity/cache suite, packed ownership and page-boundary cases, concurrent callers, and fatal truncated-file/out-of-range checks on all four nodes. The real NVMe GPU lookup and changing CUDA graphs are bit-exact against checkpoint bytes on all four ranks. The upstream transport suite and actual SGLang graph/fault integration also passed. [Qualification details](docs/qualification.md). Full-model startup and the text, C8, vision, structured JSON and tool-call smoke checks passed. Throughput measurement is in progress.
+Against the latest published targets, this profile is competitive with Tony's TP4 EXL3 configuration: coding C1 is slightly higher, coding C6 sits within his published range, mixed-workload C6 is higher, and mixed-workload C1 is lower than his latest repeats. His EXL3 experts use different quantization. Prose C1 reaches 52.62 tok/s versus Mia's reported 37.9 on **three** Sparks; her four-Spark profile is documented but unbooted. [Comparison targets and pinned sources](docs/comparison-targets.md).
+
+The tested profile uses four Sparks, TP4/EP4, native MXFP4 expert and FP8 dense checkpoint weights, BF16 activations, five-token DSpark speculation, eight request slots, 2,048-token prefill chunks, a configured 1M context limit and a 4M logical KV pool. Each rank stores about 47.21 GiB of exact packed Engram rows on local NVMe, with **no row cache, resident scale table or additional quantization**. The 1M limit and full 4M pool occupancy have not been stress-tested; bounded retrieval passed at 32,870, 131,174 and 299,102 input tokens.
+
+Text, C8 arithmetic, one/four-image understanding, structured JSON and a tool round trip passed before and after the long request. Both Engram tables were bit-exact against original checkpoint bytes in the GPU lookup and changing-graph tests. The minimum observed OS memory reserve during serving validation was **19.52 GiB**; all four ranks finished healthy without OOMs, restarts or recorded RoCEnante transport faults.
+
+[Reproduction](docs/reproduction.md) · [Qualification](docs/qualification.md) · [Source identity](results/source-identity.json) · [Machine-readable summary](results/measurement-summary.json) · [Sanitized measured profile](profiles/measured.example.json)

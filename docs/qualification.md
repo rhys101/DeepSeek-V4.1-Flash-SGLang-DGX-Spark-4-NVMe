@@ -10,6 +10,7 @@ All four intended serving Sparks passed the tests below before the full model wa
 | Upstream four-GPU transport suite | 74 passed and one expected oversized int64 all-gather skip per rank | [Upstream summary](../results/qualification/roce-upstream.json) |
 | Actual SGLang transport integration | 24 changing graph replays, mixed RoCEnante/NCCL routes, stable pointers and allocations, scheduler fault rejection on all ranks | [Integration](../results/qualification/roce-integration.json) |
 | Actual NVMe GPU lookup | Bit-exact local and TP-assembled checkpoint rows at six eager sizes per layer; 72 changing graph replays per rank | [NVMe GPU](../results/qualification/nvme-gpu.json) |
+| Full-model serving | Text, C8, vision, structured JSON, tools and 299K retrieval passed; repeat suite passed afterwards | [Serving results](results.md#serving-validation) |
 | Public Dockerfile | Built on Linux ARM64; all eleven baked SGLang source hashes verified | [Build](../results/qualification/build.json) |
 
 The NVMe graph test covers 144, 576 and 1,152 row IDs with twelve changed-input replays per layer and size. It uses the real packed-file callback, real `EngramEmbedding.forward`, original GPU dequantization and an actual four-rank SGLang communication group. The independent reference decodes the original checkpoint bytes on the CPU. The largest eager lookup contains 49,152 row IDs. Empty inputs, invalid checkpoint shapes, ownership boundaries, fixed graph buffers and the absence of a row/scale cache are checked. The probe does not load the complete model.

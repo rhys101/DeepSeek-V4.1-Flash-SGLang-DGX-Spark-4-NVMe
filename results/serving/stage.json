@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "ranks": [
+    {
+      "rank": 0,
+      "image": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
+      "source_files": 75,
+      "row_store_library_sha256": "2b6fbdf605eefbf641c67bf94641e1077903e20da768733034066cf59efd3f4d"
+    },
+    {
+      "rank": 1,
+      "image": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
+      "source_files": 75,
+      "row_store_library_sha256": "2b6fbdf605eefbf641c67bf94641e1077903e20da768733034066cf59efd3f4d"
+    },
+    {
+      "rank": 2,
+      "image": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
+      "source_files": 75,
+      "row_store_library_sha256": "2b6fbdf605eefbf641c67bf94641e1077903e20da768733034066cf59efd3f4d"
+    },
+    {
+      "rank": 3,
+      "image": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
+      "source_files": 75,
+      "row_store_library_sha256": "2b6fbdf605eefbf641c67bf94641e1077903e20da768733034066cf59efd3f4d"
+    }
+  ]
+}

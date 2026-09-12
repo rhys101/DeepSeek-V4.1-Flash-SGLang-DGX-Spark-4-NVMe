@@ -1,0 +1,475 @@
+{
+  "status": "PASS",
+  "community": {
+    "headline": [
+      {
+        "level": "C1",
+        "agg_tok_s": 52.04,
+        "per_stream_tok_s": 58.25,
+        "ttft_mean_s": 0.281
+      },
+      {
+        "level": "C2",
+        "agg_tok_s": 87.25,
+        "per_stream_tok_s": 50.46,
+        "ttft_mean_s": 0.364
+      },
+      {
+        "level": "C3",
+        "agg_tok_s": 111.99,
+        "per_stream_tok_s": 42.94,
+        "ttft_mean_s": 0.345
+      },
+      {
+        "level": "C4",
+        "agg_tok_s": 139.89,
+        "per_stream_tok_s": 40.29,
+        "ttft_mean_s": 0.335
+      },
+      {
+        "level": "C5",
+        "agg_tok_s": 160.68,
+        "per_stream_tok_s": 37.25,
+        "ttft_mean_s": 0.389
+      },
+      {
+        "level": "C6",
+        "agg_tok_s": 180.6,
+        "per_stream_tok_s": 35.45,
+        "ttft_mean_s": 0.396
+      },
+      {
+        "level": "C8",
+        "agg_tok_s": 212.76,
+        "per_stream_tok_s": 31.44,
+        "ttft_mean_s": 0.454
+      }
+    ],
+    "coding": [
+      {
+        "c": 1,
+        "category": "coding",
+        "wall_s": 2.619,
+        "tokens": 200,
+        "agg_tok_s": 76.38,
+        "per_stream_tok_s": 82.99,
+        "ttft_mean_s": 0.22
+      },
+      {
+        "c": 2,
+        "category": "coding",
+        "wall_s": 3.41,
+        "tokens": 400,
+        "agg_tok_s": 117.31,
+        "per_stream_tok_s": 71.87,
+        "ttft_mean_s": 0.64
+      },
+      {
+        "c": 3,
+        "category": "coding",
+        "wall_s": 3.786,
+        "tokens": 600,
+        "agg_tok_s": 158.47,
+        "per_stream_tok_s": 62.71,
+        "ttft_mean_s": 0.527
+      },
+      {
+        "c": 4,
+        "category": "coding",
+        "wall_s": 3.867,
+        "tokens": 800,
+        "agg_tok_s": 206.9,
+        "per_stream_tok_s": 56.25,
+        "ttft_mean_s": 0.281
+      },
+      {
+        "c": 5,
+        "category": "coding",
+        "wall_s": 4.2,
+        "tokens": 1000,
+        "agg_tok_s": 238.08,
+        "per_stream_tok_s": 51.67,
+        "ttft_mean_s": 0.305
+      },
+      {
+        "c": 6,
+        "category": "coding",
+        "wall_s": 4.235,
+        "tokens": 1200,
+        "agg_tok_s": 283.36,
+        "per_stream_tok_s": 52.62,
+        "ttft_mean_s": 0.312
+      },
+      {
+        "c": 8,
+        "category": "coding",
+        "wall_s": 4.837,
+        "tokens": 1600,
+        "agg_tok_s": 330.81,
+        "per_stream_tok_s": 46.32,
+        "ttft_mean_s": 0.373
+      }
+    ],
+    "prefill": [
+      {
+        "target": 2000,
+        "prompt_tokens": 2950,
+        "ttft_s": 1.314,
+        "prefill_tok_s": 2245.8
+      },
+      {
+        "target": 8000,
+        "prompt_tokens": 11592,
+        "ttft_s": 3.875,
+        "prefill_tok_s": 2991.8
+      },
+      {
+        "target": 32000,
+        "prompt_tokens": 46810,
+        "ttft_s": 15.434,
+        "prefill_tok_s": 3032.9
+      },
+      {
+        "target": 64000,
+        "prompt_tokens": 93335,
+        "ttft_s": 43.821,
+        "prefill_tok_s": 2129.9
+      }
+    ],
+    "requests": 261
+  },
+  "repeats": {
+    "repeat-fresh": {
+      "1": {
+        "coding_decode": {
+          "n": 5,
+          "mean": 82.708,
+          "minimum": 82.44,
+          "maximum": 82.89,
+          "sample_standard_deviation": 0.17866169147301955
+        },
+        "coding_aggregate": {
+          "n": 5,
+          "mean": 75.986,
+          "minimum": 75.34,
+          "maximum": 76.32,
+          "sample_standard_deviation": 0.38063105496004584
+        },
+        "coding_ttft_seconds": {
+          "n": 5,
+          "mean": 0.2254,
+          "minimum": 0.219,
+          "maximum": 0.24,
+          "sample_standard_deviation": 0.008590692637965807
+        },
+        "prose_decode": {
+          "n": 3,
+          "mean": 52.60666666666666,
+          "minimum": 52.55,
+          "maximum": 52.66,
+          "sample_standard_deviation": 0.055075705472860816
+        },
+        "prose_aggregate": {
+          "n": 3,
+          "mean": 52.60666666666666,
+          "minimum": 52.55,
+          "maximum": 52.66,
+          "sample_standard_deviation": 0.055075705472860816
+        }
+      },
+      "4": {
+        "coding_decode": {
+          "n": 3,
+          "mean": 56.03333333333333,
+          "minimum": 54.48,
+          "maximum": 57.13,
+          "sample_standard_deviation": 1.382762934610753
+        },
+        "coding_aggregate": {
+          "n": 3,
+          "mean": 202.38,
+          "minimum": 194.55,
+          "maximum": 206.86,
+          "sample_standard_deviation": 6.80447646773798
+        },
+        "coding_ttft_seconds": {
+          "n": 3,
+          "mean": 0.29200000000000004,
+          "minimum": 0.273,
+          "maximum": 0.328,
+          "sample_standard_deviation": 0.03119294792096444
+        },
+        "prose_decode": {
+          "n": 3,
+          "mean": 29.61,
+          "minimum": 29.54,
+          "maximum": 29.71,
+          "sample_standard_deviation": 0.088881944173157
+        },
+        "prose_aggregate": {
+          "n": 3,
+          "mean": 117.02,
+          "minimum": 116.77,
+          "maximum": 117.33,
+          "sample_standard_deviation": 0.28478061731796434
+        }
+      },
+      "8": {
+        "coding_decode": {
+          "n": 3,
+          "mean": 46.38666666666666,
+          "minimum": 46.04,
+          "maximum": 46.91,
+          "sample_standard_deviation": 0.4611218204914312
+        },
+        "coding_aggregate": {
+          "n": 3,
+          "mean": 335.47333333333336,
+          "minimum": 333.41,
+          "maximum": 339.15,
+          "sample_standard_deviation": 3.192026524534716
+        },
+        "coding_ttft_seconds": {
+          "n": 3,
+          "mean": 0.31533333333333335,
+          "minimum": 0.313,
+          "maximum": 0.317,
+          "sample_standard_deviation": 0.0020816659994661343
+        },
+        "prose_decode": {
+          "n": 3,
+          "mean": 21.53333333333333,
+          "minimum": 21.41,
+          "maximum": 21.74,
+          "sample_standard_deviation": 0.1800925687898672
+        },
+        "prose_aggregate": {
+          "n": 3,
+          "mean": 162.48666666666668,
+          "minimum": 161.63,
+          "maximum": 163.93,
+          "sample_standard_deviation": 1.2572324102302421
+        }
+      }
+    },
+    "repeat-after-long": {
+      "1": {
+        "coding_decode": {
+          "n": 5,
+          "mean": 82.73,
+          "minimum": 82.53,
+          "maximum": 82.87,
+          "sample_standard_deviation": 0.13057564857200582
+        },
+        "coding_aggregate": {
+          "n": 5,
+          "mean": 75.648,
+          "minimum": 75.08,
+          "maximum": 75.95,
+          "sample_standard_deviation": 0.34448512304597506
+        },
+        "coding_ttft_seconds": {
+          "n": 5,
+          "mean": 0.2378,
+          "minimum": 0.227,
+          "maximum": 0.26,
+          "sample_standard_deviation": 0.013590437814875577
+        },
+        "prose_decode": {
+          "n": 3,
+          "mean": 52.62,
+          "minimum": 52.45,
+          "maximum": 52.8,
+          "sample_standard_deviation": 0.1752141546793495
+        },
+        "prose_aggregate": {
+          "n": 3,
+          "mean": 52.62,
+          "minimum": 52.45,
+          "maximum": 52.8,
+          "sample_standard_deviation": 0.1752141546793495
+        }
+      },
+      "4": {
+        "coding_decode": {
+          "n": 3,
+          "mean": 58.053333333333335,
+          "minimum": 54.14,
+          "maximum": 61.11,
+          "sample_standard_deviation": 3.563093225462018
+        },
+        "coding_aggregate": {
+          "n": 3,
+          "mean": 211.81333333333333,
+          "minimum": 200.99,
+          "maximum": 223.77,
+          "sample_standard_deviation": 11.432210343294656
+        },
+        "coding_ttft_seconds": {
+          "n": 3,
+          "mean": 0.2743333333333334,
+          "minimum": 0.268,
+          "maximum": 0.279,
+          "sample_standard_deviation": 0.005686240703077332
+        },
+        "prose_decode": {
+          "n": 3,
+          "mean": 29.573333333333334,
+          "minimum": 29.19,
+          "maximum": 29.78,
+          "sample_standard_deviation": 0.332315111503123
+        },
+        "prose_aggregate": {
+          "n": 3,
+          "mean": 116.90666666666667,
+          "minimum": 115.42,
+          "maximum": 117.7,
+          "sample_standard_deviation": 1.2884616150019097
+        }
+      },
+      "8": {
+        "coding_decode": {
+          "n": 3,
+          "mean": 46.96333333333333,
+          "minimum": 46.34,
+          "maximum": 47.54,
+          "sample_standard_deviation": 0.6013595707505873
+        },
+        "coding_aggregate": {
+          "n": 3,
+          "mean": 340.41333333333336,
+          "minimum": 335.16,
+          "maximum": 345.69,
+          "sample_standard_deviation": 5.265038777951515
+        },
+        "coding_ttft_seconds": {
+          "n": 3,
+          "mean": 0.32566666666666666,
+          "minimum": 0.315,
+          "maximum": 0.337,
+          "sample_standard_deviation": 0.011015141094572214
+        },
+        "prose_decode": {
+          "n": 3,
+          "mean": 21.483333333333334,
+          "minimum": 21.41,
+          "maximum": 21.61,
+          "sample_standard_deviation": 0.11015141094572173
+        },
+        "prose_aggregate": {
+          "n": 3,
+          "mean": 162.17666666666668,
+          "minimum": 161.65,
+          "maximum": 163.09,
+          "sample_standard_deviation": 0.7940612906654854
+        }
+      }
+    }
+  },
+  "long_context": {
+    "status": "PASS",
+    "tag": "tp4-nvme-roce-v3-qualification",
+    "cases": [
+      {
+        "filler_units": 32768,
+        "prompt_sha256": "ce967e39bf3fa947f90869764a965f7183c11f15abb9495df0d5b963aba472ed",
+        "expected": {
+          "alpha": "11207983",
+          "beta": "36363512",
+          "gamma": "12737872"
+        },
+        "actual": {
+          "alpha": "11207983",
+          "beta": "36363512",
+          "gamma": "12737872"
+        },
+        "usage": {
+          "prompt_tokens": 32870,
+          "total_tokens": 32890,
+          "completion_tokens": 20,
+          "prompt_tokens_details": null,
+          "reasoning_tokens": 0
+        },
+        "total_s": 10.014605283737183,
+        "finish_reason": "stop",
+        "passed": true
+      },
+      {
+        "filler_units": 131072,
+        "prompt_sha256": "5bf1109e2bed57d4e5315d138e234e357fdf3fb99d4495ebafe1f9f9393dde4e",
+        "expected": {
+          "alpha": "56311107",
+          "beta": "41594477",
+          "gamma": "24013360"
+        },
+        "actual": {
+          "alpha": "56311107",
+          "beta": "41594477",
+          "gamma": "24013360"
+        },
+        "usage": {
+          "prompt_tokens": 131174,
+          "total_tokens": 131194,
+          "completion_tokens": 20,
+          "prompt_tokens_details": null,
+          "reasoning_tokens": 0
+        },
+        "total_s": 54.51699638366699,
+        "finish_reason": "stop",
+        "passed": true
+      },
+      {
+        "filler_units": 299000,
+        "prompt_sha256": "094bc741ebe9d9b2154c11824e78dc474ede574e676dcf701e39495b724c4db6",
+        "expected": {
+          "alpha": "19511870",
+          "beta": "23283684",
+          "gamma": "36013711"
+        },
+        "actual": {
+          "alpha": "19511870",
+          "beta": "23283684",
+          "gamma": "36013711"
+        },
+        "usage": {
+          "prompt_tokens": 299102,
+          "total_tokens": 299122,
+          "completion_tokens": 20,
+          "prompt_tokens_details": null,
+          "reasoning_tokens": 0
+        },
+        "total_s": 164.1035614013672,
+        "finish_reason": "stop",
+        "passed": true
+      }
+    ],
+    "method": "C1; unique prefix per size, identical prompts across engines, thinking off, 256-token output budget; exact retrieval of three records separated by repeated-word filler. Records at beginning, middle and end. This is a capability smoke, not broad long-context quality."
+  },
+  "guard": {
+    "status": "COMPLETE",
+    "started": 1789223605.3178606,
+    "time": 1789224493.8240857,
+    "sample_count": 364,
+    "minimum_available_gib_by_rank": {
+      "0": 19.524616241455078,
+      "1": 21.02347183227539,
+      "2": 21.23017120361328,
+      "3": 20.902061462402344
+    },
+    "initial_swap_used_gib_by_rank": {
+      "0": 3.8042068481445312,
+      "1": 2.6783218383789062,
+      "2": 2.577617645263672,
+      "3": 2.41827392578125
+    },
+    "maximum_swap_used_gib_by_rank": {
+      "0": 3.8042068481445312,
+      "1": 2.6783218383789062,
+      "2": 2.5807533264160156,
+      "3": 2.41827392578125
+    },
+    "minimum_reserve_gib": 2,
+    "method": "OS /proc/meminfo and docker inspect only; no GPU telemetry queries"
+  },
+  "benchmark_sha256": "e0d6b2d25bd585d11fbdf39c2ddcdf7a4de8ab685af6bd42465e69f3ee6e80a8"
+}

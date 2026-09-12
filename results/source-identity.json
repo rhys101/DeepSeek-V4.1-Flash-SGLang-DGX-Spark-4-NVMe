@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "published_runtime_commit": "25e7cb82f6524e3bbc46db6a9a54125e75e36d0e",
+  "measured_image_id": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
+  "all_four_ranks_identical": true,
+  "runtime": {
+    "sglang": {
+      "python/sglang/srt/models/deepseek_v4.py": "75003c5d644f9a0278d443481ccbf97423697165b5b8d620274b1faa38c144ac",
+      "python/sglang/kernels/ops/attention/flash_mla_sm120.py": "2fe25ba5e2ff91f6028b6a32c315ba8875d8780b9341bae9411af1cc927885bf",
+      "python/sglang/kernels/jit/csrc/deepseek_v4/c2.cuh": "55f32ba512fca86826a27d66f36d4667848c17cbbe0d34096ffedead0ce469e4",
+      "python/sglang/kernels/ops/attention/dsv4/c2.py": "9da953bedcebad1b6168cce61453bd487689363358a2569b8a0c366b955e5bea",
+      "python/sglang/kernels/ops/attention/dsv4/candidate_blocks.py": "d7fc6c5984d10331a04d3586a537def4d531a440f2db3113423785b9aa4016ea",
+      "python/sglang/kernels/ops/attention/dsv4/indexer_postprocess.py": "55a52c4e6c71568705958ed35f821260b38b1d371637712c47dc0e964f9c1f54",
+      "python/sglang/srt/layers/attention/deepseek_v4_backend.py": "20a711344de7666d83b3dfa3ce7e9621729cbe40ed9a433d28e53872216e65d1",
+      "python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py": "8387704e671b1a67d116ccca9523092083eb0d299e654a5d6c7949f7245bf6df",
+      "python/sglang/srt/distributed/device_communicators/pynccl.py": "adda773dab640212bf58a7fa6f8a0d220087f82223ec6aaecc398c6735a4020c",
+      "python/sglang/srt/distributed/parallel_state.py": "2a2afab0f8c0f93afc104152537b69b030a0b098618fa8271167afd4bf66de4f",
+      "python/sglang/srt/managers/scheduler_components/batch_result_processor.py": "220dbd3c502c82f2aa4b35b853797b8effea09cc0495477123cc7f114ab8ec03"
+    },
+    "adapters": {
+      "mxfp8_b12x.py": "2ec377aefa12682f34e2b4b000c0a131777294aeb5784bfd816b569d8f1f0276",
+      "engram_backend.py": "40563d08621979227cec62a6feb14c226262a74044a1d00530f50866128fd175",
+      "prefill_empty_cache.py": "24dadef526ec7dfc18527fd068d9b685a34cab1bf137a4591f0113e118d71b75",
+      "sitecustomize.py": "8c3d022a828f31b5a0f1516d49e3ea4c285ee340c4443b2ce460dfa7781db277",
+      "admission.py": "4f330f510983c79338a7eb3acdb9e700007a7186445c9473f51812de713f3a3b",
+      "row_store.cpp": "9a9ed278c48bedd65a0e143535aa52391bd666bb67ca01a6bdb47aa4f8ecdb73"
+    },
+    "runtime": {
+      "runtime/launch.py": "e7c55478d7f2e2612add86d8aceaac5ef5e539bc44857ade235e27de27eb998b",
+      "runtime/configuration.py": "c1cc22b9aa0ecde171f81a1b1212e5e76be58a36b01725a9cf9aa4700faa2d5f"
+    },
+    "b12x_files": 241,
+    "b12x_archive_sha256": "4922d0db9395fb8b537d7e216d509a5747867a45f20c18290e385786609dd05f",
+    "row_store_library_sha256": "2b6fbdf605eefbf641c67bf94641e1077903e20da768733034066cf59efd3f4d",
+    "sglang_commit": "e087e662ba1ac4ef7747537e2a9141085efd4561"
+  },
+  "nvme_gpu_probe_adapter": {
+    "sha256": "0ebc5fc84bff99d982314048a569b403e88f0550f6d6e777cb0a4bb7a38784af",
+    "serving_sha256": "40563d08621979227cec62a6feb14c226262a74044a1d00530f50866128fd175",
+    "python_ast_identical": true,
+    "change": "Corrected a stale fallback comment; executable code is identical."
+  },
+  "public_redactions": "Private network addresses, account names and host paths replaced with documentation examples. Prompts, usage counts, timing samples and calculated metrics are unchanged."
+}

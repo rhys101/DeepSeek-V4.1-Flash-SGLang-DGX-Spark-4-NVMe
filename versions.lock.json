@@ -1,5 +1,5 @@
 {
-  "status": "TP4_NVME_QUALIFICATION_IN_PROGRESS",
+  "status": "TP4_NVME_SERVING_AND_BENCHMARKS_PASSED",
   "recorded": "2026-09-12",
   "base_image": "lmsysorg/sglang@sha256:3475d88ec3124867d9d6f7b3bd49afdcf8ef4d6a9f8454fab331d5adb5204de7",
   "base_index_digest": "sha256:e56358a68b06427362283c8c8a9d7d706448082ae53098ea1131b5d51aa1fd62",
@@ -67,10 +67,13 @@
     "after_sha256": "8387704e671b1a67d116ccca9523092083eb0d299e654a5d6c7949f7245bf6df",
     "purpose": "Apply the existing speculative backend context through draft construction/capture/execution; record actual all-rank layout."
   },
-  "description": "TP4/NVMe experimental source composition; serving validation is pending.",
+  "description": "Measured TP4/EP4 NVMe Engram profile with four-rank RoCEnante; original checkpoint precision.",
   "sg17_reference_commit": "66aa6bd5085e63bbb011557075765e3191e807b2",
   "b12x_source_archive_sha256": "4922d0db9395fb8b537d7e216d509a5747867a45f20c18290e385786609dd05f",
   "runtime_configuration_sha256": "c1cc22b9aa0ecde171f81a1b1212e5e76be58a36b01725a9cf9aa4700faa2d5f",
   "base_native_head_image_id": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
-  "base_native_head_image_note": "Reuses the SG17 native-head image on each Spark; all eleven TP4 source overlays are mounted and verified. Runtime identity includes patches, adapters, frozen B12x sources and compiled row-store, not image ID alone."
+  "base_native_head_image_note": "Reuses the SG17 native-head image on each Spark; all eleven TP4 source overlays are mounted and verified. Runtime identity includes patches, adapters, frozen B12x sources and compiled row-store, not image ID alone.",
+  "measured_runtime_commit": "25e7cb82f6524e3bbc46db6a9a54125e75e36d0e",
+  "measurement_summary": "results/measurement-summary.json",
+  "source_identity": "results/source-identity.json"
 }

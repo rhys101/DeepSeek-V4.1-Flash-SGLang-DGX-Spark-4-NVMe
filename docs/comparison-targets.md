@@ -5,7 +5,7 @@ The community benchmark and prompt-set bytes match Tony's latest source exactly.
 | Reference | Precision and hardware | Recorded result | Comparison limit |
 |---|---|---|---|
 | Mia, TP3 | Original mixed-precision checkpoint; three Sparks; NVMe Engram | Prose C1 37.9 tok/s; C4 aggregate 78.6 tok/s | Different Spark count; her TP4 profile is explicitly not booted |
-| Tony, boot 10 | Original mixed-precision checkpoint; four Sparks | Coding C1 73.78 tok/s; C6 coding aggregate 225.5 tok/s | One measured batch per cell; no repeat suite |
+| Tony, boot 10 | Original mixed-precision checkpoint; four Sparks | Coding C1 73.78 tok/s; C6 coding aggregate 225.48 tok/s | One measured batch per cell; no repeat suite |
 | Tony, TP4 EXL3 initial | EXL3 3.5-bit experts; four Sparks | Coding C1 81.54 tok/s | Different expert quantization |
 | Tony, TP4 EXL3 repeat 1 / 2 | EXL3 3.5-bit experts; four Sparks | Coding C1 81.20 / 81.11 tok/s; C6 coding aggregate 281.75 / 295.84 tok/s | Later runs on the same process, different expert quantization |
 | Our SG17 | Original mixed precision; eight Sparks; resident Engram | Coding C1 134.68 / 134.906 tok/s; repeat C8 aggregate 474.52 tok/s | Different Spark count and Engram storage; not a TP4 result |
