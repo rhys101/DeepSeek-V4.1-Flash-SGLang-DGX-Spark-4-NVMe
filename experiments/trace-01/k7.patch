@@ -1,0 +1,68 @@
+--- a/runtime/configuration.py
++++ b/runtime/configuration.py
+@@ -37,7 +37,7 @@
+     fixed = dict(tp_size=4, ep_size=4, context_length=1000000,
+                  max_running_requests=8, max_total_tokens=4000000,
+                  chunked_prefill_size=2048, max_prefill_tokens=2048,
+-                 mem_fraction_static=0.80, draft_length=5,
++                 mem_fraction_static=0.80, draft_length=7,
+                  min_free_slots_delay=1, minimum_available_gib=2,
+                  io_threads=96, row_cache_gib=0, resident_scales=False)
+     for key, value in fixed.items():
+@@ -70,7 +70,7 @@
+         '--mem-fraction-static', str(c['mem_fraction_static']),
+         '--cuda-graph-max-bs-decode', '8', '--cuda-graph-bs-decode', *map(str, range(1, 9)),
+         '--enable-decoder-swa-bounded-replay', '--disable-custom-all-reduce',
+-        '--speculative-algorithm', 'DSPARK', '--speculative-dspark-block-size', '5',
++        '--speculative-algorithm', 'DSPARK', '--speculative-dspark-block-size', '7',
+         '--speculative-accept-threshold-single', '1.0', '--speculative-accept-threshold-acc', '1.0',
+         '--random-seed', '0', '--enable-multimodal',
+         '--limit-mm-data-per-request', '{"image":4,"video":0,"audio":0}',
+--- a/scripts/cluster.py
++++ b/scripts/cluster.py
+@@ -244,7 +244,7 @@
+                 with urllib.request.urlopen(base + '/server_info', timeout=20) as response:
+                     info = json.load(response)
+                 expected = dict(tp_size=4, ep_size=4, context_length=c['context_length'], max_total_tokens=c['max_total_tokens'],
+-                                max_running_requests=8, speculative_dspark_block_size=5, chunked_prefill_size=2048,
++                                max_running_requests=8, speculative_dspark_block_size=7, chunked_prefill_size=2048,
+                                 moe_runner_backend='flashinfer_mxfp4', speculative_moe_runner_backend='flashinfer_mxfp4')
+                 if any(info.get(key) != value for key, value in expected.items()):
+                     raise RuntimeError('Resolved server configuration differs')
+--- a/bench/repeat-client.py
++++ b/bench/repeat-client.py
+@@ -31,7 +31,7 @@
+ before = get('/v1/loads')
+ assert all(x['num_running_reqs'] == x['num_waiting_reqs'] == 0 for x in before['loads'])
+ info = get('/server_info')
+-assert (info['tp_size'], info['ep_size'], info['context_length'], info['max_total_tokens'], info['max_running_requests'], info['speculative_dspark_block_size'], info['chunked_prefill_size']) == (4, 4, 1000000, 4000000, 8, 5, 2048)
++assert (info['tp_size'], info['ep_size'], info['context_length'], info['max_total_tokens'], info['max_running_requests'], info['speculative_dspark_block_size'], info['chunked_prefill_size']) == (4, 4, 1000000, 4000000, 8, 7, 2048)
+ save('loads-before.json', before)
+ save('server-info.json', info)
+ want = 'e0d6b2d25bd585d11fbdf39c2ddcdf7a4de8ab685af6bd42465e69f3ee6e80a8'
+--- a/versions.lock.json
++++ b/versions.lock.json
+@@ -1,5 +1,5 @@
+ {
+-  "status": "TP4_NVME_SERVING_AND_BENCHMARKS_PASSED",
++  "status": "EXPERIMENT_NOT_YET_QUALIFIED",
+   "recorded": "2026-09-12",
+   "base_image": "lmsysorg/sglang@sha256:3475d88ec3124867d9d6f7b3bd49afdcf8ef4d6a9f8454fab331d5adb5204de7",
+   "base_index_digest": "sha256:e56358a68b06427362283c8c8a9d7d706448082ae53098ea1131b5d51aa1fd62",
+@@ -67,13 +67,11 @@
+     "after_sha256": "8387704e671b1a67d116ccca9523092083eb0d299e654a5d6c7949f7245bf6df",
+     "purpose": "Apply the existing speculative backend context through draft construction/capture/execution; record actual all-rank layout."
+   },
+-  "description": "Measured TP4/EP4 NVMe Engram profile with four-rank RoCEnante; original checkpoint precision.",
++  "description": "TP4 seven-token DSpark experiment; source and precision otherwise unchanged.",
+   "sg17_reference_commit": "66aa6bd5085e63bbb011557075765e3191e807b2",
+   "b12x_source_archive_sha256": "4922d0db9395fb8b537d7e216d509a5747867a45f20c18290e385786609dd05f",
+-  "runtime_configuration_sha256": "c1cc22b9aa0ecde171f81a1b1212e5e76be58a36b01725a9cf9aa4700faa2d5f",
++  "runtime_configuration_sha256": "8a10e35ca7dabdf629d0452a5766fb89e1760157f1c1745511e40bd05639f49d",
+   "base_native_head_image_id": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
+   "base_native_head_image_note": "Reuses the SG17 native-head image on each Spark; all eleven TP4 source overlays are mounted and verified. Runtime identity includes patches, adapters, frozen B12x sources and compiled row-store, not image ID alone.",
+-  "measured_runtime_commit": "25e7cb82f6524e3bbc46db6a9a54125e75e36d0e",
+-  "measurement_summary": "results/measurement-summary.json",
+-  "source_identity": "results/source-identity.json"
++  "baseline_runtime_commit": "25e7cb82f6524e3bbc46db6a9a54125e75e36d0e"
+ }

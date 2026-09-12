@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "minimum_available_gib": 111.18408584594727,
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-12T15:33:56.052635312Z",
+    "FinishedAt": "2026-09-12T15:34:50.669458928Z"
+  },
+  "finished": 1789227291.9697773
+}

@@ -1,0 +1,6 @@
+{
+  "archive_sha256": "5f85f60bbdaf76bb5b32a7e7fa10c30cbcfdfbf67336b53ee4640ecc397c96e9",
+  "files": 661,
+  "scope": "Component experiments only. The serving profiles continue using the existing 241-file frozen B12x source archive.",
+  "verification": "All 661 unpacked files match the source manifest used by both component runs."
+}

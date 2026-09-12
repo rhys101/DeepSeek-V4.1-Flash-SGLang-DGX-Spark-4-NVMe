@@ -1,0 +1,9 @@
+{
+  "image": "sha256:e7681b5276525821f9be286ed3bf0f51acb5239da27f69f60fdeb57e68c05581",
+  "b12x_files": 661,
+  "files": {
+    "moe_weights.py": "1e799405604b845e453e3f20f2d1d448cf36a886417344aed669fbd49396a924",
+    "bench-b12x-tp4.py": "23e359445f20b7a7d7c51aeed0b77806203702e24ab028e7f7cac01e27444f59",
+    "run-component.py": "14603907b45643a7d17741f4c72db8c252ab4d150ab464568d81a540de48e4d8"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "trace_files": 44,
+  "gpu_coverage": "All four TP4 and all eight TP8 ranks in every saved capture.",
+  "complete_cycles_per_trace": 6,
+  "trace_attribution_reproduced": true,
+  "component_dependency_files_verified": 661,
+  "selected_runtime_unchanged": true,
+  "k7_patch_applies_to_measured_baseline": true,
+  "python_syntax_and_json_valid": true,
+  "relative_document_links_valid": true,
+  "infrastructure_identifiers_redacted": true
+}

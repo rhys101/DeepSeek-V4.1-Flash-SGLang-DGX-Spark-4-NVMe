@@ -2,6 +2,8 @@
 
 **82.73 coding decode tok/s at C1 · 340.41 aggregate coding tok/s at C8**, retaining the original checkpoint precision. These are repeat-suite means after a successful 299,102-token retrieval check, measured on 12 September 2026.
 
+A subsequent [trace and optimization iteration](docs/trace-iteration-01.md) retained the five-token default: seven tokens improved coding C1 by about 6% but regressed prose. The same iteration measured the restored TP8 reference at 135.40 coding tok/s and published all-rank GPU traces, explaining the observed 1.63× C1 scaling.
+
 This separate repository contains the SGLang TP4/EP4 implementation, exact node-local NVMe Engram storage, four-rank RoCEnante integration, qualification evidence and complete benchmark results. The [SG17 eight-Spark project](https://github.com/rhys101/DeepSeek-V4.1-Flash-vLLM-DGX-Spark-8) remains separate.
 
 | Workload, tok/s | First repeat suite | Repeat after 299K input |

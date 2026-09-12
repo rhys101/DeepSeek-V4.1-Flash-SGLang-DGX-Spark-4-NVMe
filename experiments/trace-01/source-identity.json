@@ -1,0 +1,12 @@
+{
+  "baseline_public_commit": "a92d28383ae7254890f0fcff9c3ebfe8b6c52b14",
+  "baseline_runtime_commit": "25e7cb82f6524e3bbc46db6a9a54125e75e36d0e",
+  "candidate_status": "TESTED_REJECTED_AS_DEFAULT",
+  "changed_files": {
+    "runtime/configuration.py": "8a10e35ca7dabdf629d0452a5766fb89e1760157f1c1745511e40bd05639f49d",
+    "scripts/cluster.py": "29b9c979b32b4262272c0d83399a46b4940319c585660983580745f6bb7a208b",
+    "bench/repeat-client.py": "ba235eefe191bdcd98afe9bb05660c113db2ddb857e48eda8b6fc2f6572f7ae3",
+    "versions.lock.json": "7329c41e6e6cbcaa847d880365f85f60bddca6f54869e13ff20a64611fa97d24"
+  },
+  "note": "The patch reproduces the staged metadata, including its prequalification status. Final qualification and the decision are recorded in this experiment, without rewriting the staged bytes. Inference patches, adapters, weights and frozen B12x sources are unchanged."
+}
