@@ -1,0 +1,52 @@
+{
+  "baseline_public_commit": "1efaec74a8163a204783f73d82bb6d2f4db1bae6",
+  "status": "REPRODUCIBLE_OPTIONAL_EXPERIMENTS_STATIC_FIVE_RETAINS_DEFAULT",
+  "note": "Each patch applies independently to the baseline. Staged experiment metadata is preserved exactly. Final qualification and selection belong in the measured result report.",
+  "variants": {
+    "k7-roce1m": {
+      "candidate": "candidate-k7-roce1m",
+      "patch_sha256": "db2bf35bc7f1b9c6ce21c219d66e9c820ca97ee7b70d16781c4453ad4b273059",
+      "changed_files": {
+        "bench/repeat-client.py": "ba235eefe191bdcd98afe9bb05660c113db2ddb857e48eda8b6fc2f6572f7ae3",
+        "patches/manifest.json": "0787d407fad18b5a4efb06cd54468b55cf614cb852c8d9a2928faae3a083a492",
+        "patches/source/python/sglang/srt/distributed/device_communicators/pynccl.py": "a00da90cede573f2d8a241b2923bddccfbe467b108da72257cea372fe19fc216",
+        "runtime/configuration.py": "8a10e35ca7dabdf629d0452a5766fb89e1760157f1c1745511e40bd05639f49d",
+        "scripts/cluster.py": "29b9c979b32b4262272c0d83399a46b4940319c585660983580745f6bb7a208b",
+        "versions.lock.json": "d28248095f3c4498eade9ea8192ec4a6daed28411660113dde994e8e100be0a3"
+      },
+      "apply_check": true,
+      "patched_bytes_exactly_equal_to_staged_source": true
+    },
+    "compact-calibration": {
+      "candidate": "candidate-compact5e",
+      "patch_sha256": "e3b05fa555c61c3ad76ba45bba604ad94f228b649aa3425266fad93a9cb6ef38",
+      "changed_files": {
+        "patches/manifest.json": "86958516fd33eca0c34ee523c340ea60268f3a8da710dbec8cfff436bb7a3249",
+        "patches/source/python/sglang/srt/layers/attention/dsv4/dsv41_sparse.py": "607267eccdbc1b5f9700c379577fc935a44766414df31c0df84147466b97b842",
+        "patches/source/python/sglang/srt/layers/engram.py": "f1a5623f759658a72250509c331df5c3fd8a8603b810ce1e0529df02dd6d149a",
+        "patches/source/python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py": "c60a2f2343b66b7598de544be5ce8722c6b67f633414558e833ba8b7b0cd4b30",
+        "runtime/configuration.py": "ee3d934452987a0500da88444806438670d0d144c4b532867b685647e7dd61ea",
+        "runtime/sps-bootstrap.json": "d75b63b652dbe90dd42705d61cd9c940f254bb68d491164ba3c4fb577c8583c1",
+        "versions.lock.json": "ca9f30650108c81bdda1950c7baac89fb31f2a68df27c8d728558acadf003e28"
+      },
+      "apply_check": true,
+      "patched_bytes_exactly_equal_to_staged_source": true
+    },
+    "compact-measured": {
+      "candidate": "candidate-compact5-measured",
+      "patch_sha256": "dc41b0339b96b2707e281603062f1f775058ebc6ff1c92e4c0487f6ad445b15a",
+      "changed_files": {
+        "patches/manifest.json": "86958516fd33eca0c34ee523c340ea60268f3a8da710dbec8cfff436bb7a3249",
+        "patches/source/python/sglang/srt/layers/attention/dsv4/dsv41_sparse.py": "607267eccdbc1b5f9700c379577fc935a44766414df31c0df84147466b97b842",
+        "patches/source/python/sglang/srt/layers/engram.py": "f1a5623f759658a72250509c331df5c3fd8a8603b810ce1e0529df02dd6d149a",
+        "patches/source/python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py": "c60a2f2343b66b7598de544be5ce8722c6b67f633414558e833ba8b7b0cd4b30",
+        "runtime/configuration.py": "b2791d97ce255e300b3f72995d744891867a71087d8cd3c5d93057b366a8e59b",
+        "runtime/sps-measured.json": "2ca1c57cb58402c357558439109657bc9ef98bc941b2c861487de6a20afa78ff",
+        "versions.lock.json": "e72ae72b766d9d66dae41fdac95aaae7d1be68b2ffe04e3b13dccc0f0c92322b"
+      },
+      "apply_check": true,
+      "patched_bytes_exactly_equal_to_staged_source": true
+    }
+  },
+  "decision": "Compact measured and seven-token/1MiB candidates passed bounded qualification, but regressions reject promotion as a general default. Calibration variant is diagnostic only."
+}

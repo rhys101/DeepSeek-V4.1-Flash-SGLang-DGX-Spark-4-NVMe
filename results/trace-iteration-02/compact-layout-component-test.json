@@ -1,0 +1,301 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "lens": [
+        1
+      ],
+      "replay_lens": [
+        1
+      ],
+      "graph_tokens": 1,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        2
+      ],
+      "replay_lens": [
+        2
+      ],
+      "graph_tokens": 2,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        3
+      ],
+      "replay_lens": [
+        3
+      ],
+      "graph_tokens": 3,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        4
+      ],
+      "replay_lens": [
+        4
+      ],
+      "graph_tokens": 4,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        5
+      ],
+      "replay_lens": [
+        5
+      ],
+      "graph_tokens": 5,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        6
+      ],
+      "replay_lens": [
+        6
+      ],
+      "graph_tokens": 6,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "replay_lens": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "graph_tokens": 48,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        6,
+        5,
+        6,
+        5,
+        6,
+        5,
+        6,
+        5
+      ],
+      "replay_lens": [
+        5,
+        6,
+        5,
+        6,
+        5,
+        6,
+        5,
+        6
+      ],
+      "graph_tokens": 44,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "replay_lens": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "graph_tokens": 8,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        6,
+        1,
+        5,
+        2,
+        4,
+        3,
+        2,
+        1
+      ],
+      "replay_lens": [
+        1,
+        2,
+        3,
+        4,
+        2,
+        5,
+        1,
+        6
+      ],
+      "graph_tokens": 24,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        6,
+        0,
+        3,
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      "replay_lens": [
+        0,
+        0,
+        1,
+        2,
+        0,
+        3,
+        0,
+        6
+      ],
+      "graph_tokens": 12,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "replay_lens": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        12
+      ],
+      "graph_tokens": 12,
+      "ghost_rows": 0,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        1
+      ],
+      "replay_lens": [
+        1,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "graph_tokens": 44,
+      "ghost_rows": 1,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    },
+    {
+      "lens": [
+        6,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "replay_lens": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        6
+      ],
+      "graph_tokens": 12,
+      "ghost_rows": 4,
+      "exact_hash": true,
+      "history_unchanged": true,
+      "exact_request_indices": true
+    }
+  ],
+  "comparisons": 98,
+  "method": "Bit-exact against installed uniform CUDA hash path per request; exact sparse-attention request indices; capture/replay with changed real layout buffers; no verification history mutation; dense accepted-history commit checked independently."
+}

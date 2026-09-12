@@ -1,0 +1,301 @@
+{
+  "method": "Original streaming clients; no profiler elapsed times. Coding aggregate includes TTFT; SparkDash aggregate excludes it. Arithmetic means across complete repeated trials. Round-to-round variation is reported, not treated as a confidence interval.",
+  "rows": [
+    {
+      "workload": "coding",
+      "c": 1,
+      "metric": "decode_per_stream_tok_s",
+      "before": {
+        "mean": 88.368,
+        "stdev": 0.1267675037223652,
+        "trials": [
+          88.5,
+          88.23,
+          88.27,
+          88.34,
+          88.5
+        ]
+      },
+      "after": {
+        "mean": 88.936,
+        "stdev": 0.18049930747789214,
+        "trials": [
+          89.24,
+          88.93,
+          88.91,
+          88.81,
+          88.79
+        ]
+      },
+      "delta_percent": 0.6427666123483666
+    },
+    {
+      "workload": "coding",
+      "c": 1,
+      "metric": "aggregate_including_ttft_tok_s",
+      "before": {
+        "mean": 80.62,
+        "stdev": 0.07141428428542822,
+        "trials": [
+          80.69,
+          80.5,
+          80.63,
+          80.63,
+          80.65
+        ]
+      },
+      "after": {
+        "mean": 80.998,
+        "stdev": 0.3763907544029177,
+        "trials": [
+          81.41,
+          80.4,
+          81.19,
+          80.96,
+          81.03
+        ]
+      },
+      "delta_percent": 0.4688662862813109
+    },
+    {
+      "workload": "prose",
+      "c": 1,
+      "metric": "decode_per_stream_tok_s",
+      "before": {
+        "mean": 47.27333333333333,
+        "stdev": 0.0907377172587745,
+        "trials": [
+          47.37,
+          47.19,
+          47.26
+        ]
+      },
+      "after": {
+        "mean": 47.413333333333334,
+        "stdev": 0.08386497083606052,
+        "trials": [
+          47.36,
+          47.37,
+          47.51
+        ]
+      },
+      "delta_percent": 0.29615004935834577
+    },
+    {
+      "workload": "prose",
+      "c": 1,
+      "metric": "aggregate_decode_tok_s",
+      "before": {
+        "mean": 47.27333333333333,
+        "stdev": 0.0907377172587745,
+        "trials": [
+          47.37,
+          47.19,
+          47.26
+        ]
+      },
+      "after": {
+        "mean": 47.413333333333334,
+        "stdev": 0.08386497083606052,
+        "trials": [
+          47.36,
+          47.37,
+          47.51
+        ]
+      },
+      "delta_percent": 0.29615004935834577
+    },
+    {
+      "workload": "coding",
+      "c": 4,
+      "metric": "decode_per_stream_tok_s",
+      "before": {
+        "mean": 59.99666666666666,
+        "stdev": 0.7583095234357333,
+        "trials": [
+          59.17,
+          60.66,
+          60.16
+        ]
+      },
+      "after": {
+        "mean": 60.92666666666667,
+        "stdev": 1.1072638950734996,
+        "trials": [
+          62.2,
+          60.19,
+          60.39
+        ]
+      },
+      "delta_percent": 1.5500861158953327
+    },
+    {
+      "workload": "coding",
+      "c": 4,
+      "metric": "aggregate_including_ttft_tok_s",
+      "before": {
+        "mean": 217.31666666666666,
+        "stdev": 2.6699126078082185,
+        "trials": [
+          219.64,
+          217.91,
+          214.4
+        ]
+      },
+      "after": {
+        "mean": 218.60666666666668,
+        "stdev": 5.060141631746425,
+        "trials": [
+          224.27,
+          214.53,
+          217.02
+        ]
+      },
+      "delta_percent": 0.5936038039727087
+    },
+    {
+      "workload": "prose",
+      "c": 4,
+      "metric": "decode_per_stream_tok_s",
+      "before": {
+        "mean": 26.47,
+        "stdev": 0.01732050807568738,
+        "trials": [
+          26.49,
+          26.46,
+          26.46
+        ]
+      },
+      "after": {
+        "mean": 26.523333333333333,
+        "stdev": 0.04932882862316202,
+        "trials": [
+          26.49,
+          26.5,
+          26.58
+        ]
+      },
+      "delta_percent": 0.20148595894724508
+    },
+    {
+      "workload": "prose",
+      "c": 4,
+      "metric": "aggregate_decode_tok_s",
+      "before": {
+        "mean": 103.11333333333333,
+        "stdev": 0.05859465277082888,
+        "trials": [
+          103.18,
+          103.09,
+          103.07
+        ]
+      },
+      "after": {
+        "mean": 103.34666666666666,
+        "stdev": 0.19502136635079814,
+        "trials": [
+          103.21,
+          103.26,
+          103.57
+        ]
+      },
+      "delta_percent": 0.22628822654684466
+    },
+    {
+      "workload": "coding",
+      "c": 8,
+      "metric": "decode_per_stream_tok_s",
+      "before": {
+        "mean": 46.84666666666667,
+        "stdev": 1.1361484644769508,
+        "trials": [
+          47.03,
+          47.88,
+          45.63
+        ]
+      },
+      "after": {
+        "mean": 47.156666666666666,
+        "stdev": 1.5910478727346116,
+        "trials": [
+          47.09,
+          45.6,
+          48.78
+        ]
+      },
+      "delta_percent": 0.661733314358881
+    },
+    {
+      "workload": "coding",
+      "c": 8,
+      "metric": "aggregate_including_ttft_tok_s",
+      "before": {
+        "mean": 331.1433333333333,
+        "stdev": 9.424082625557432,
+        "trials": [
+          326.21,
+          342.01,
+          325.21
+        ]
+      },
+      "after": {
+        "mean": 336.42333333333335,
+        "stdev": 8.931138411945778,
+        "trials": [
+          333.24,
+          329.52,
+          346.51
+        ]
+      },
+      "delta_percent": 1.5944757053843794
+    },
+    {
+      "workload": "prose",
+      "c": 8,
+      "metric": "decode_per_stream_tok_s",
+      "before": {
+        "mean": 18.65,
+        "stdev": 0.02645751311064601,
+        "trials": [
+          18.63,
+          18.64,
+          18.68
+        ]
+      },
+      "after": {
+        "mean": 18.78,
+        "stdev": 0.009999999999999787,
+        "trials": [
+          18.77,
+          18.78,
+          18.79
+        ]
+      },
+      "delta_percent": 0.6970509383378065
+    },
+    {
+      "workload": "prose",
+      "c": 8,
+      "metric": "aggregate_decode_tok_s",
+      "before": {
+        "mean": 139.19666666666666,
+        "stdev": 0.16862186493254333,
+        "trials": [
+          139.08,
+          139.12,
+          139.39
+        ]
+      },
+      "after": {
+        "mean": 145.38333333333333,
+        "stdev": 0.0709459888459828,
+        "trials": [
+          145.32,
+          145.37,
+          145.46
+        ]
+      },
+      "delta_percent": 4.4445508752604335
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "sort_json",
+  "arrival_target_s": 1.0,
+  "actual_start_s": 1.0006077339639887,
+  "finish_s": 2.079702813993208,
+  "ttft_s": 0.263373070047237,
+  "total_s": 1.0790950800292194,
+  "stream_events": 6,
+  "prompt_tokens": 31,
+  "verified_rows_per_step": 6.0,
+  "completion_tokens_per_verify": 3.8,
+  "exact_check_passed": true,
+  "exact_check_error": null,
+  "response": {
+    "text": "{\"ordered\":[\"ash\",\"birch\",\"cedar\",\"elm\",\"walnut\"]}",
+    "output_ids": [
+      24313,
+      28798,
+      3362,
+      10931,
+      1844,
+      10177,
+      93808,
+      348,
+      10177,
+      1187,
+      287,
+      10177,
+      39263,
+      10177,
+      22711,
+      22852,
+      13747,
+      95,
+      1
+    ],
+    "meta_info": {
+      "id": "0a47e00b3caf48ba95919ccf4c191316",
+      "finish_reason": {
+        "type": "stop",
+        "matched": 1
+      },
+      "prompt_tokens": 31,
+      "weight_version": "default",
+      "num_retractions": 0,
+      "reasoning_tokens": 0,
+      "completion_tokens": 19,
+      "cached_tokens": 0,
+      "weight_versions": [
+        {
+          "version": "default",
+          "start": 0,
+          "end": 19
+        }
+      ],
+      "cached_tokens_details": null,
+      "dp_rank": null,
+      "e2e_latency": 1.074635025986936,
+      "spec_accept_rate": 0.56,
+      "spec_accept_length": 3.8,
+      "spec_num_correct_drafts": 14,
+      "spec_num_proposed_drafts": 25,
+      "spec_verify_ct": 5,
+      "spec_accepted_drafts": 14,
+      "spec_proposed_drafts": 25,
+      "spec_correct_drafts_histogram": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        2
+      ],
+      "spec_accept_histogram": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        2
+      ]
+    }
+  }
+}

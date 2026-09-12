@@ -1,0 +1,95 @@
+{
+  "id": "extract_facts",
+  "arrival_target_s": 3.7,
+  "actual_start_s": 3.7006421459955163,
+  "finish_s": 5.4214139970135875,
+  "ttft_s": 0.4373574719647877,
+  "total_s": 1.7207718510180712,
+  "stream_events": 7,
+  "prompt_tokens": 79,
+  "verified_rows_per_step": 6.0,
+  "completion_tokens_per_verify": 5.0,
+  "exact_check_passed": false,
+  "exact_check_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')",
+  "response": {
+    "text": "```json\n{\n  \"owner\": \"Lina\",\n  \"date\": \"18 October\",\n  \"rooms\": 11\n}\n```",
+    "output_ids": [
+      9854,
+      14479,
+      201,
+      2054,
+      223,
+      582,
+      33980,
+      3362,
+      582,
+      46,
+      2091,
+      3955,
+      223,
+      582,
+      4367,
+      3362,
+      582,
+      864,
+      5857,
+      3955,
+      223,
+      582,
+      16458,
+      3362,
+      223,
+      779,
+      201,
+      1778,
+      9854,
+      1
+    ],
+    "meta_info": {
+      "id": "0bae560451f84516bfa4ad44fd1f7430",
+      "finish_reason": {
+        "type": "stop",
+        "matched": 1
+      },
+      "prompt_tokens": 79,
+      "weight_version": "default",
+      "num_retractions": 0,
+      "reasoning_tokens": 0,
+      "completion_tokens": 30,
+      "cached_tokens": 0,
+      "weight_versions": [
+        {
+          "version": "default",
+          "start": 0,
+          "end": 30
+        }
+      ],
+      "cached_tokens_details": null,
+      "dp_rank": null,
+      "e2e_latency": 1.7156612499966286,
+      "spec_accept_rate": 0.8,
+      "spec_accept_length": 5.0,
+      "spec_num_correct_drafts": 24,
+      "spec_num_proposed_drafts": 30,
+      "spec_verify_ct": 6,
+      "spec_accepted_drafts": 24,
+      "spec_proposed_drafts": 30,
+      "spec_correct_drafts_histogram": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        4
+      ],
+      "spec_accept_histogram": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        4
+      ]
+    }
+  }
+}

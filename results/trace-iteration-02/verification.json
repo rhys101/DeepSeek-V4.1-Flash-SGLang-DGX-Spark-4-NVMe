@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "raw_traces": 24,
+  "complete_cycles_per_trace": 6,
+  "all_four_ranks_covered": true,
+  "trace_attribution_reproduced": true,
+  "principal_throughput_comparisons_reproduced": true,
+  "all_eight_target_graph_collective_counts_reproduced": true,
+  "frozen_client_source_and_runtime_hashes_verified": true,
+  "fitted_cost_table_reproduced": true,
+  "all_three_source_patches_apply_and_match_staged_hashes": true,
+  "selected_runtime_unchanged": true,
+  "python_syntax_and_json_valid": true,
+  "relative_document_links_valid": true,
+  "infrastructure_identifiers_redacted": true,
+  "final_tp4_health_and_sg17_restoration_passed": true
+}

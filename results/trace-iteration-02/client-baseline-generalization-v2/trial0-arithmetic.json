@@ -1,0 +1,86 @@
+{
+  "id": "arithmetic",
+  "arrival_target_s": 0.0,
+  "actual_start_s": 0.0010249799815937877,
+  "finish_s": 1.255645728961099,
+  "ttft_s": 0.41871601599268615,
+  "total_s": 1.2546207489795052,
+  "stream_events": 5,
+  "prompt_tokens": 58,
+  "verified_rows_per_step": 6.0,
+  "completion_tokens_per_verify": 5.25,
+  "exact_check_passed": true,
+  "exact_check_error": null,
+  "response": {
+    "text": "{\"product\": 1073, \"square_sum\": 650, \"gcd\": 42}",
+    "output_ids": [
+      24313,
+      9520,
+      3362,
+      223,
+      7792,
+      21,
+      14,
+      582,
+      45749,
+      37173,
+      3362,
+      223,
+      17720,
+      14,
+      582,
+      115060,
+      3362,
+      223,
+      3180,
+      95,
+      1
+    ],
+    "meta_info": {
+      "id": "b77c91ca82ab407481148c000f091ff9",
+      "finish_reason": {
+        "type": "stop",
+        "matched": 1
+      },
+      "prompt_tokens": 58,
+      "weight_version": "default",
+      "num_retractions": 0,
+      "reasoning_tokens": 0,
+      "completion_tokens": 21,
+      "cached_tokens": 0,
+      "weight_versions": [
+        {
+          "version": "default",
+          "start": 0,
+          "end": 21
+        }
+      ],
+      "cached_tokens_details": null,
+      "dp_rank": null,
+      "e2e_latency": 1.2317925600218587,
+      "spec_accept_rate": 0.85,
+      "spec_accept_length": 5.25,
+      "spec_num_correct_drafts": 17,
+      "spec_num_proposed_drafts": 20,
+      "spec_verify_ct": 4,
+      "spec_accepted_drafts": 17,
+      "spec_proposed_drafts": 20,
+      "spec_correct_drafts_histogram": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2
+      ],
+      "spec_accept_histogram": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        2
+      ]
+    }
+  }
+}

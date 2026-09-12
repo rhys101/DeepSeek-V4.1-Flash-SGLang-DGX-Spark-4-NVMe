@@ -1,0 +1,665 @@
+{
+  "method": "Identical frozen protocol, tokenized inputs and arrivals; an excluded warmup cohort and three measured trials. Cohort throughput and request latency include prefill and scheduling. These native-streaming results are separate from the original OpenAI benchmark. Exact-format failures remain failures. Open-ended tasks have fixed output caps and are not a comprehensive quality evaluation.",
+  "protocol_sha256": "9ebc8eca0df7174f1042a7626cb639403e58376cfd7365f8e032e026f93bf198",
+  "overall": {
+    "cohort_tok_s": {
+      "before": {
+        "mean": 100.43883868126294,
+        "stdev": 0.8866000675089214,
+        "trials": [
+          99.74817378021818,
+          101.43861454076385,
+          100.12972772280676
+        ]
+      },
+      "after": {
+        "mean": 106.1625927427124,
+        "stdev": 0.8208649278298336,
+        "trials": [
+          107.09126880256935,
+          105.8625404748801,
+          105.53396895068776
+        ]
+      },
+      "delta_percent": 5.69874576070466
+    },
+    "wall_s": {
+      "before": {
+        "mean": 22.91727756198573,
+        "stdev": 0.19986376399760752,
+        "trials": [
+          23.078116749005858,
+          22.693527611962054,
+          22.980188324989285
+        ]
+      },
+      "after": {
+        "mean": 21.693965501675848,
+        "stdev": 0.1602590710930432,
+        "trials": [
+          21.5143589740037,
+          21.745180019992404,
+          21.82235751103144
+        ]
+      },
+      "delta_percent": -5.337946695462048
+    },
+    "mean_latency_s": {
+      "before": {
+        "mean": 10.224878507858698,
+        "stdev": 0.07321752274526491,
+        "trials": [
+          10.249116957333172,
+          10.142615296834265,
+          10.282903269408658
+        ]
+      },
+      "after": {
+        "mean": 9.362301765504526,
+        "stdev": 0.06727551807682347,
+        "trials": [
+          9.41698672650576,
+          9.287176844581458,
+          9.382741725426362
+        ]
+      },
+      "delta_percent": -8.436058596600516
+    },
+    "median_latency_s": {
+      "before": {
+        "mean": 10.834689781671235,
+        "stdev": 0.07188639465170203,
+        "trials": [
+          10.810082618991146,
+          10.915648438531207,
+          10.778338287491351
+        ]
+      },
+      "after": {
+        "mean": 9.57717453800918,
+        "stdev": 0.05840663477531943,
+        "trials": [
+          9.643178981001256,
+          9.5561679454986,
+          9.53217668752768
+        ]
+      },
+      "delta_percent": -11.606379776459885
+    },
+    "completion_tokens": {
+      "before": {
+        "mean": 2301.6666666666665,
+        "stdev": 0.5773502691896257,
+        "trials": [
+          2302,
+          2302,
+          2301
+        ]
+      },
+      "after": {
+        "mean": 2303,
+        "stdev": 1.0,
+        "trials": [
+          2304,
+          2302,
+          2303
+        ]
+      },
+      "delta_percent": 0.05792903692976026
+    }
+  },
+  "cases": [
+    {
+      "id": "scene",
+      "arrival_target_s": 0.0,
+      "output_budget": 320,
+      "before_latency": {
+        "mean": 22.89127650631902,
+        "stdev": 0.19237503297097944,
+        "trials": [
+          23.07778476201929,
+          22.693527611962054,
+          22.902517144975718
+        ]
+      },
+      "after_latency": {
+        "mean": 21.693315633009963,
+        "stdev": 0.16037780429351936,
+        "trials": [
+          21.51351928303484,
+          21.744795134000015,
+          21.82163248199504
+        ]
+      },
+      "latency_delta_percent": -5.233263741226346,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 2.2891463519683004,
+      "before_output_tokens": [
+        320,
+        320,
+        320
+      ],
+      "after_output_tokens": [
+        320,
+        320,
+        320
+      ],
+      "before_exact_checks": [
+        null,
+        null,
+        null
+      ],
+      "after_exact_checks": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "interval_code",
+      "arrival_target_s": 0.0,
+      "output_budget": 320,
+      "before_latency": {
+        "mean": 15.828700517343046,
+        "stdev": 0.4603549951627758,
+        "trials": [
+          16.021014326019213,
+          15.30337200302165,
+          16.161715222988278
+        ]
+      },
+      "after_latency": {
+        "mean": 15.028412730336035,
+        "stdev": 0.20993708672885217,
+        "trials": [
+          15.265234219026752,
+          14.865165981987957,
+          14.954837989993393
+        ]
+      },
+      "latency_delta_percent": -5.055928540249777,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 4.3498343122243295,
+      "before_output_tokens": [
+        320,
+        320,
+        320
+      ],
+      "after_output_tokens": [
+        320,
+        320,
+        320
+      ],
+      "before_exact_checks": [
+        null,
+        null,
+        null
+      ],
+      "after_exact_checks": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "arithmetic",
+      "arrival_target_s": 0.0,
+      "output_budget": 64,
+      "before_latency": {
+        "mean": 1.1311725326619733,
+        "stdev": 0.13076249950972763,
+        "trials": [
+          1.262435742013622,
+          1.0009165619849227,
+          1.1301652939873748
+        ]
+      },
+      "after_latency": {
+        "mean": 1.0949638923436094,
+        "stdev": 0.02834231089749002,
+        "trials": [
+          1.0638900609919801,
+          1.1016070269979537,
+          1.119394589040894
+        ]
+      },
+      "latency_delta_percent": -3.2009829864905415,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 6.0,
+      "before_output_tokens": [
+        21,
+        21,
+        21
+      ],
+      "after_output_tokens": [
+        21,
+        21,
+        21
+      ],
+      "before_exact_checks": [
+        true,
+        true,
+        true
+      ],
+      "after_exact_checks": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "incident_summary",
+      "arrival_target_s": 0.5,
+      "output_budget": 256,
+      "before_latency": {
+        "mean": 8.908362266006103,
+        "stdev": 0.16167091516785487,
+        "trials": [
+          8.991167002008297,
+          9.011856470024213,
+          8.7220633259858
+        ]
+      },
+      "after_latency": {
+        "mean": 7.7713230920295855,
+        "stdev": 0.04365263695361381,
+        "trials": [
+          7.793414851010311,
+          7.799513909034431,
+          7.721040516044013
+        ]
+      },
+      "latency_delta_percent": -12.76372850614087,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 5.007013658176449,
+      "before_output_tokens": [
+        167,
+        167,
+        166
+      ],
+      "after_output_tokens": [
+        168,
+        167,
+        168
+      ],
+      "before_exact_checks": [
+        null,
+        null,
+        null
+      ],
+      "after_exact_checks": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "sort_json",
+      "arrival_target_s": 1.0,
+      "output_budget": 64,
+      "before_latency": {
+        "mean": 1.126407938330279,
+        "stdev": 0.08388307220928225,
+        "trials": [
+          1.0895745850284584,
+          1.067243380995933,
+          1.2224058489664458
+        ]
+      },
+      "after_latency": {
+        "mean": 1.0919816466630436,
+        "stdev": 0.030270980072226755,
+        "trials": [
+          1.0604428559890948,
+          1.0947007260401733,
+          1.1208013579598628
+        ]
+      },
+      "latency_delta_percent": -3.056289865842643,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 5.066666666666666,
+      "before_output_tokens": [
+        19,
+        19,
+        19
+      ],
+      "after_output_tokens": [
+        19,
+        19,
+        19
+      ],
+      "before_exact_checks": [
+        true,
+        true,
+        true
+      ],
+      "after_exact_checks": [
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "translation",
+      "arrival_target_s": 1.6,
+      "output_budget": 160,
+      "before_latency": {
+        "mean": 4.573869692995989,
+        "stdev": 0.031948492831357284,
+        "trials": [
+          4.551085488987155,
+          4.560134792991448,
+          4.610388797009364
+        ]
+      },
+      "after_latency": {
+        "mean": 3.991450959331511,
+        "stdev": 0.15948280500048762,
+        "trials": [
+          4.172111702035181,
+          3.870200737961568,
+          3.9320404379977845
+        ]
+      },
+      "latency_delta_percent": -12.73361011041353,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 4.346825396825397,
+      "before_output_tokens": [
+        60,
+        60,
+        60
+      ],
+      "after_output_tokens": [
+        60,
+        60,
+        60
+      ],
+      "before_exact_checks": [
+        null,
+        null,
+        null
+      ],
+      "after_exact_checks": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "concurrency_explanation",
+      "arrival_target_s": 2.2,
+      "output_budget": 320,
+      "before_latency": {
+        "mean": 15.612258778652176,
+        "stdev": 0.062169486333383366,
+        "trials": [
+          15.540937951998785,
+          15.64084460400045,
+          15.654993779957294
+        ]
+      },
+      "after_latency": {
+        "mean": 14.288782374681128,
+        "stdev": 0.30473628726081675,
+        "trials": [
+          14.426303445012309,
+          13.939521980006248,
+          14.50052169902483
+        ]
+      },
+      "latency_delta_percent": -8.477161586513915,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 4.082592711528453,
+      "before_output_tokens": [
+        320,
+        320,
+        320
+      ],
+      "after_output_tokens": [
+        320,
+        320,
+        320
+      ],
+      "before_exact_checks": [
+        null,
+        null,
+        null
+      ],
+      "after_exact_checks": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "requirements",
+      "arrival_target_s": 2.8,
+      "output_budget": 256,
+      "before_latency": {
+        "mean": 13.974090649358308,
+        "stdev": 0.057309348249981,
+        "trials": [
+          13.949834774015471,
+          14.039539322024211,
+          13.93289785203524
+        ]
+      },
+      "after_latency": {
+        "mean": 12.651118030655198,
+        "stdev": 0.26018094378645784,
+        "trials": [
+          12.951524397998583,
+          12.50425166497007,
+          12.49757802899694
+        ]
+      },
+      "latency_delta_percent": -9.467325294357243,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 3.8248814955486603,
+      "before_output_tokens": [
+        256,
+        256,
+        256
+      ],
+      "after_output_tokens": [
+        256,
+        256,
+        256
+      ],
+      "before_exact_checks": [
+        null,
+        null,
+        null
+      ],
+      "after_exact_checks": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "extract_facts",
+      "arrival_target_s": 3.7,
+      "output_budget": 96,
+      "before_latency": {
+        "mean": 1.7224707066585931,
+        "stdev": 0.04048893025309007,
+        "trials": [
+          1.6870818099705502,
+          1.7137062629917637,
+          1.7666240470134653
+        ]
+      },
+      "after_latency": {
+        "mean": 1.519663754676003,
+        "stdev": 0.06431825386374235,
+        "trials": [
+          1.5776379980379716,
+          1.4504761589923874,
+          1.5308771069976501
+        ]
+      },
+      "latency_delta_percent": -11.77418873938435,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 6.0,
+      "before_output_tokens": [
+        30,
+        30,
+        30
+      ],
+      "after_output_tokens": [
+        30,
+        30,
+        30
+      ],
+      "before_exact_checks": [
+        false,
+        false,
+        false
+      ],
+      "after_exact_checks": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "technical_design",
+      "arrival_target_s": 4.5,
+      "output_budget": 384,
+      "before_latency": {
+        "mean": 18.261389098654035,
+        "stdev": 0.24995464666376807,
+        "trials": [
+          18.314946123980917,
+          17.988996947999112,
+          18.480224223982077
+        ]
+      },
+      "after_latency": {
+        "mean": 16.84182035001383,
+        "stdev": 0.1141475028284887,
+        "trials": [
+          16.756833599996753,
+          16.79706355801318,
+          16.971563892031554
+        ]
+      },
+      "latency_delta_percent": -7.773607697482532,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 3.394031975050988,
+      "before_output_tokens": [
+        384,
+        384,
+        384
+      ],
+      "after_output_tokens": [
+        384,
+        384,
+        384
+      ],
+      "before_exact_checks": [
+        null,
+        null,
+        null
+      ],
+      "after_exact_checks": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "edit_note",
+      "arrival_target_s": 5.4,
+      "output_budget": 160,
+      "before_latency": {
+        "mean": 5.907526109988491,
+        "stdev": 0.05951544257811845,
+        "trials": [
+          5.874542685982306,
+          5.8718051969772205,
+          5.976230447005946
+        ]
+      },
+      "after_latency": {
+        "mean": 4.991762738325633,
+        "stdev": 0.07791900492439541,
+        "trials": [
+          4.929985193943139,
+          4.966003275010735,
+          5.079299746023025
+        ]
+      },
+      "latency_delta_percent": -15.501639004429924,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 4.091570881226054,
+      "before_output_tokens": [
+        85,
+        85,
+        85
+      ],
+      "after_output_tokens": [
+        86,
+        85,
+        85
+      ],
+      "before_exact_checks": [
+        null,
+        null,
+        null
+      ],
+      "after_exact_checks": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "id": "csv_parse_code",
+      "arrival_target_s": 6.4,
+      "output_budget": 320,
+      "before_latency": {
+        "mean": 12.761017297336366,
+        "stdev": 0.1145832806544088,
+        "trials": [
+          12.628998235973995,
+          12.8194404070382,
+          12.834613248996902
+        ]
+      },
+      "after_latency": {
+        "mean": 11.383025983988773,
+        "stdev": 0.09640412077454781,
+        "trials": [
+          11.4929431109922,
+          11.31282198196277,
+          11.343312859011348
+        ]
+      },
+      "latency_delta_percent": -10.798444052224765,
+      "before_mean_verify_cap": 6.0,
+      "after_mean_verify_cap": 4.480840465875336,
+      "before_output_tokens": [
+        320,
+        320,
+        320
+      ],
+      "after_output_tokens": [
+        320,
+        320,
+        320
+      ],
+      "before_exact_checks": [
+        null,
+        null,
+        null
+      ],
+      "after_exact_checks": [
+        null,
+        null,
+        null
+      ]
+    }
+  ]
+}

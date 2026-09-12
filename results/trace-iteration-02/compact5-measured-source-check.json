@@ -1,0 +1,64 @@
+{
+  "status": "SOURCE_CHECK_PASS_NOT_SERVING_QUALIFICATION",
+  "overlay_count": 14,
+  "overlays_exactly_equal_to_calibrated_runtime": true,
+  "sps_table_sha256": "2ca1c57cb58402c357558439109657bc9ef98bc941b2c861487de6a20afa78ff",
+  "overlays": [
+    {
+      "source": "python/sglang/srt/models/deepseek_v4.py",
+      "sha256": "75003c5d644f9a0278d443481ccbf97423697165b5b8d620274b1faa38c144ac"
+    },
+    {
+      "source": "python/sglang/kernels/ops/attention/flash_mla_sm120.py",
+      "sha256": "2fe25ba5e2ff91f6028b6a32c315ba8875d8780b9341bae9411af1cc927885bf"
+    },
+    {
+      "source": "python/sglang/kernels/jit/csrc/deepseek_v4/c2.cuh",
+      "sha256": "55f32ba512fca86826a27d66f36d4667848c17cbbe0d34096ffedead0ce469e4"
+    },
+    {
+      "source": "python/sglang/kernels/ops/attention/dsv4/c2.py",
+      "sha256": "9da953bedcebad1b6168cce61453bd487689363358a2569b8a0c366b955e5bea"
+    },
+    {
+      "source": "python/sglang/kernels/ops/attention/dsv4/candidate_blocks.py",
+      "sha256": "d7fc6c5984d10331a04d3586a537def4d531a440f2db3113423785b9aa4016ea"
+    },
+    {
+      "source": "python/sglang/kernels/ops/attention/dsv4/indexer_postprocess.py",
+      "sha256": "55a52c4e6c71568705958ed35f821260b38b1d371637712c47dc0e964f9c1f54"
+    },
+    {
+      "source": "python/sglang/srt/layers/attention/deepseek_v4_backend.py",
+      "sha256": "20a711344de7666d83b3dfa3ce7e9621729cbe40ed9a433d28e53872216e65d1"
+    },
+    {
+      "source": "python/sglang/srt/speculative/dspark_components/dspark_worker_v2.py",
+      "sha256": "8387704e671b1a67d116ccca9523092083eb0d299e654a5d6c7949f7245bf6df"
+    },
+    {
+      "source": "python/sglang/srt/distributed/device_communicators/pynccl.py",
+      "sha256": "adda773dab640212bf58a7fa6f8a0d220087f82223ec6aaecc398c6735a4020c"
+    },
+    {
+      "source": "python/sglang/srt/distributed/parallel_state.py",
+      "sha256": "2a2afab0f8c0f93afc104152537b69b030a0b098618fa8271167afd4bf66de4f"
+    },
+    {
+      "source": "python/sglang/srt/managers/scheduler_components/batch_result_processor.py",
+      "sha256": "220dbd3c502c82f2aa4b35b853797b8effea09cc0495477123cc7f114ab8ec03"
+    },
+    {
+      "source": "python/sglang/srt/model_executor/runner/decode_cuda_graph_runner.py",
+      "sha256": "c60a2f2343b66b7598de544be5ce8722c6b67f633414558e833ba8b7b0cd4b30"
+    },
+    {
+      "source": "python/sglang/srt/layers/engram.py",
+      "sha256": "f1a5623f759658a72250509c331df5c3fd8a8603b810ce1e0529df02dd6d149a"
+    },
+    {
+      "source": "python/sglang/srt/layers/attention/dsv4/dsv41_sparse.py",
+      "sha256": "607267eccdbc1b5f9700c379577fc935a44766414df31c0df84147466b97b842"
+    }
+  ]
+}

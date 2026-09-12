@@ -1,0 +1,392 @@
+{
+  "profile": {
+    "start_unix": 1789231949.526629,
+    "finish_unix": 1789231949.965638,
+    "body": {
+      "output_dir": "/state/trace-iter2/baseline-prose-prose-c1",
+      "num_steps": 8,
+      "activities": [
+        "CPU",
+        "GPU"
+      ],
+      "with_stack": false,
+      "record_shapes": true,
+      "profile_id": "baseline-prose-prose-c1",
+      "merge_profiles": false,
+      "detailed_annotations": true
+    },
+    "response": {
+      "status": 200,
+      "message": "Start profiling.\n"
+    },
+    "trigger": "Every stream has delivered eight nonempty chunks; chunks are not tokens."
+  },
+  "streams": [
+    {
+      "stream": 0,
+      "start_unix": 1789231948.9735477,
+      "finish_unix": 1789231955.1841197,
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 288,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789231949121931190,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231949178868328,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231949238892392,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231949295406367,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231949353695236,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231949411312034,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231949467524632,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789231949526497500,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231949583682582,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231949975142635,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231950140014690,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231950200864474,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231950262318599,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231950325193912,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231950381109049,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231950442886903,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231950502217607,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231951327650636,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231951392959601,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231951453608966,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231951515548521,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231951572475858,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231951631567149,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231951691123054,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231951748014904,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231951806629312,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231951862876703,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231951921119668,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231951979638810,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231952038123920,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231952097729061,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231952157531926,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231952213610504,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231952274320645,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789231952332830019,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789231952391801266,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231952450270528,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231952509981274,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231952568033729,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231952627965877,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231952688297214,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231952747866275,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231952810149172,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231952871350645,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789231952928733781,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231952987753001,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231953049597407,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231953108986282,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231953167248276,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231953225811784,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231953284635256,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231953341031563,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231953402859255,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231953460704324,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231953521223123,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231953579314811,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231953639602981,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231953699706021,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231953758506685,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231953817211045,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231953876721514,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789231953937219597,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231953996063382,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231954054998581,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231954113344302,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231954170365055,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231954228885865,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231954288560057,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231954349685470,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231954409020238,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231954469020976,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231954526419279,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231954585860492,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231954645178306,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231954707005850,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231954764702041,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789231954824803234,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231954886530052,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231954944604469,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231955003203381,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231955062707495,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231955122764739,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231955183986178,
+          "characters": 10
+        }
+      ],
+      "text": "# How a Hash Map Works: A Detailed Explanation\n\nA hash map (also called hash table, dictionary, or associative array) is a data structure that stores key-value pairs and provides average-case O(1) lookup, insertion, and deletion. Below is a thorough walkthrough of its internals.\n\n---\n\n## 1. Core Components\n\nA hash map consists of:\n\n- **An array of buckets** (often called slots or bins). Each bucket can hold one or more entries.\n- **A hash function** that converts a key into an integer.\n- **A collision resolution strategy** for when two keys map to the same bucket.\n- **A load factor threshold** that triggers resizing.\n\nEach entry typically stores:\n- The key\n- The value\n- (Optionally) a cached hash code\n- (For chaining) a pointer to the next entry\n\n---\n\n## 2. Step-by-Step Operation\n\n### Step 1: Compute the Hash Code\n\nWhen you insert or look up a key `k`, the map first computes a hash code:\n\n```\nh = hash(k)\n```\n\nThe hash function should:\n- Be **deterministic** (same key \u2192 same hash).\n- Be **fast** to compute.\n- **Distribute keys uniformly",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a detailed step-by-step explanation of how a hash map works, including collision handling, resizing, and time complexity. Be thorough."
+          }
+        ],
+        "max_tokens": 256,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    }
+  ],
+  "scope": "Diagnostic profile; never use these elapsed times as benchmark results."
+}

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "tag": "tp4-trace02-compact5-measured",
+  "cases": [
+    {
+      "filler_units": 32768,
+      "prompt_sha256": "06cb028f5593feae24675fd7394a313b84ce6b914ff369951d79b0eafdbfd187",
+      "expected": {
+        "alpha": "11207983",
+        "beta": "36363512",
+        "gamma": "12737872"
+      },
+      "actual": {
+        "alpha": "11207983",
+        "beta": "36363512",
+        "gamma": "12737872"
+      },
+      "usage": {
+        "prompt_tokens": 32869,
+        "total_tokens": 32889,
+        "completion_tokens": 20,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "total_s": 9.211999893188477,
+      "finish_reason": "stop",
+      "passed": true
+    },
+    {
+      "filler_units": 131072,
+      "prompt_sha256": "ceddead689ec4fb12d8d096e819aeadd4e77e5f6ffb946304b81c66b5efc1ee6",
+      "expected": {
+        "alpha": "56311107",
+        "beta": "41594477",
+        "gamma": "24013360"
+      },
+      "actual": {
+        "alpha": "56311107",
+        "beta": "41594477",
+        "gamma": "24013360"
+      },
+      "usage": {
+        "prompt_tokens": 131173,
+        "total_tokens": 131193,
+        "completion_tokens": 20,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "total_s": 42.56117486953735,
+      "finish_reason": "stop",
+      "passed": true
+    },
+    {
+      "filler_units": 299000,
+      "prompt_sha256": "a3ff52595dc75b98a42707a113c897bc1677cd29a29902a270bf934ddcb0bc6d",
+      "expected": {
+        "alpha": "19511870",
+        "beta": "23283684",
+        "gamma": "36013711"
+      },
+      "actual": {
+        "alpha": "19511870",
+        "beta": "23283684",
+        "gamma": "36013711"
+      },
+      "usage": {
+        "prompt_tokens": 299101,
+        "total_tokens": 299121,
+        "completion_tokens": 20,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "total_s": 115.90919184684753,
+      "finish_reason": "stop",
+      "passed": true
+    }
+  ],
+  "method": "C1; unique prefix per size, identical prompts across engines, thinking off, 256-token output budget; exact retrieval of three records separated by repeated-word filler. Records at beginning, middle and end. This is a capability smoke, not broad long-context quality."
+}

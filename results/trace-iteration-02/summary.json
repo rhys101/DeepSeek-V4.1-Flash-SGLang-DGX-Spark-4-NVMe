@@ -1,0 +1,666 @@
+{
+  "status": "COMPLETE_STATIC_FIVE_RETAINS_DEFAULT",
+  "general_ten_percent_throughput_gain_demonstrated": false,
+  "adaptive_frozen_arrival_test": {
+    "cohort_tok_s": {
+      "before": {
+        "mean": 100.43883868126294,
+        "stdev": 0.8866000675089214,
+        "trials": [
+          99.74817378021818,
+          101.43861454076385,
+          100.12972772280676
+        ]
+      },
+      "after": {
+        "mean": 106.1625927427124,
+        "stdev": 0.8208649278298336,
+        "trials": [
+          107.09126880256935,
+          105.8625404748801,
+          105.53396895068776
+        ]
+      },
+      "delta_percent": 5.69874576070466
+    },
+    "wall_s": {
+      "before": {
+        "mean": 22.91727756198573,
+        "stdev": 0.19986376399760752,
+        "trials": [
+          23.078116749005858,
+          22.693527611962054,
+          22.980188324989285
+        ]
+      },
+      "after": {
+        "mean": 21.693965501675848,
+        "stdev": 0.1602590710930432,
+        "trials": [
+          21.5143589740037,
+          21.745180019992404,
+          21.82235751103144
+        ]
+      },
+      "delta_percent": -5.337946695462048
+    },
+    "mean_latency_s": {
+      "before": {
+        "mean": 10.224878507858698,
+        "stdev": 0.07321752274526491,
+        "trials": [
+          10.249116957333172,
+          10.142615296834265,
+          10.282903269408658
+        ]
+      },
+      "after": {
+        "mean": 9.362301765504526,
+        "stdev": 0.06727551807682347,
+        "trials": [
+          9.41698672650576,
+          9.287176844581458,
+          9.382741725426362
+        ]
+      },
+      "delta_percent": -8.436058596600516
+    },
+    "median_latency_s": {
+      "before": {
+        "mean": 10.834689781671235,
+        "stdev": 0.07188639465170203,
+        "trials": [
+          10.810082618991146,
+          10.915648438531207,
+          10.778338287491351
+        ]
+      },
+      "after": {
+        "mean": 9.57717453800918,
+        "stdev": 0.05840663477531943,
+        "trials": [
+          9.643178981001256,
+          9.5561679454986,
+          9.53217668752768
+        ]
+      },
+      "delta_percent": -11.606379776459885
+    },
+    "completion_tokens": {
+      "before": {
+        "mean": 2301.6666666666665,
+        "stdev": 0.5773502691896257,
+        "trials": [
+          2302,
+          2302,
+          2301
+        ]
+      },
+      "after": {
+        "mean": 2303,
+        "stdev": 1.0,
+        "trials": [
+          2304,
+          2302,
+          2303
+        ]
+      },
+      "delta_percent": 0.05792903692976026
+    }
+  },
+  "all_repeated_community_categories": [
+    {
+      "category": "coding",
+      "c": 1,
+      "metric": "per_stream_tok_s",
+      "before": {
+        "mean": 78.89333333333333,
+        "stdev": 0.1379613472438279,
+        "trials": [
+          79.05,
+          78.84,
+          78.79
+        ],
+        "output_tokens": [
+          200,
+          200,
+          200
+        ]
+      },
+      "after": {
+        "mean": 79.05333333333333,
+        "stdev": 0.07505553499464714,
+        "trials": [
+          79.05,
+          79.13,
+          78.98
+        ],
+        "output_tokens": [
+          200,
+          200,
+          200
+        ]
+      },
+      "delta_percent": 0.20280547574784702
+    },
+    {
+      "category": "coding",
+      "c": 8,
+      "metric": "agg_tok_s",
+      "before": {
+        "mean": 349.4066666666667,
+        "stdev": 8.469323074091195,
+        "trials": [
+          358.98,
+          346.35,
+          342.89
+        ],
+        "output_tokens": [
+          1600,
+          1600,
+          1600
+        ]
+      },
+      "after": {
+        "mean": 303.25,
+        "stdev": 1.7563314038073938,
+        "trials": [
+          301.27,
+          303.86,
+          304.62
+        ],
+        "output_tokens": [
+          1600,
+          1600,
+          1600
+        ]
+      },
+      "delta_percent": -13.21001316517526
+    },
+    {
+      "category": "json",
+      "c": 1,
+      "metric": "per_stream_tok_s",
+      "before": {
+        "mean": 67.38,
+        "stdev": 0.11269427669585051,
+        "trials": [
+          67.51,
+          67.32,
+          67.31
+        ],
+        "output_tokens": [
+          86,
+          86,
+          86
+        ]
+      },
+      "after": {
+        "mean": 48.32666666666667,
+        "stdev": 0.03214550253664489,
+        "trials": [
+          48.29,
+          48.35,
+          48.34
+        ],
+        "output_tokens": [
+          88,
+          88,
+          88
+        ]
+      },
+      "delta_percent": -28.2774314831305
+    },
+    {
+      "category": "json",
+      "c": 8,
+      "metric": "agg_tok_s",
+      "before": {
+        "mean": 193.61666666666667,
+        "stdev": 16.878099221575074,
+        "trials": [
+          181.82,
+          186.08,
+          212.95
+        ],
+        "output_tokens": [
+          706,
+          694,
+          685
+        ]
+      },
+      "after": {
+        "mean": 178.77333333333334,
+        "stdev": 2.9014536586568656,
+        "trials": [
+          181.78,
+          175.99,
+          178.55
+        ],
+        "output_tokens": [
+          697,
+          700,
+          703
+        ]
+      },
+      "delta_percent": -7.6663510372729675
+    },
+    {
+      "category": "narrative",
+      "c": 1,
+      "metric": "per_stream_tok_s",
+      "before": {
+        "mean": 33.73,
+        "stdev": 0.05567764362829999,
+        "trials": [
+          33.79,
+          33.72,
+          33.68
+        ],
+        "output_tokens": [
+          138,
+          138,
+          138
+        ]
+      },
+      "after": {
+        "mean": 36.513333333333335,
+        "stdev": 0.020816659994661167,
+        "trials": [
+          36.53,
+          36.49,
+          36.52
+        ],
+        "output_tokens": [
+          135,
+          135,
+          135
+        ]
+      },
+      "delta_percent": 8.251803537899027
+    },
+    {
+      "category": "narrative",
+      "c": 8,
+      "metric": "agg_tok_s",
+      "before": {
+        "mean": 107.76333333333334,
+        "stdev": 3.96430742164799,
+        "trials": [
+          105.95,
+          112.31,
+          105.03
+        ],
+        "output_tokens": [
+          1094,
+          1130,
+          1175
+        ]
+      },
+      "after": {
+        "mean": 128.45666666666665,
+        "stdev": 2.364663471476082,
+        "trials": [
+          130.6,
+          128.85,
+          125.92
+        ],
+        "output_tokens": [
+          1158,
+          1105,
+          1106
+        ]
+      },
+      "delta_percent": 19.202573540783806
+    },
+    {
+      "category": "prose",
+      "c": 1,
+      "metric": "per_stream_tok_s",
+      "before": {
+        "mean": 36.57333333333333,
+        "stdev": 0.040414518843272795,
+        "trials": [
+          36.58,
+          36.53,
+          36.61
+        ],
+        "output_tokens": [
+          123,
+          123,
+          123
+        ]
+      },
+      "after": {
+        "mean": 42.696666666666665,
+        "stdev": 0.08082903768654941,
+        "trials": [
+          42.77,
+          42.61,
+          42.71
+        ],
+        "output_tokens": [
+          123,
+          123,
+          123
+        ]
+      },
+      "delta_percent": 16.74261757200146
+    },
+    {
+      "category": "prose",
+      "c": 8,
+      "metric": "agg_tok_s",
+      "before": {
+        "mean": 131.03666666666666,
+        "stdev": 3.044081689661652,
+        "trials": [
+          127.62,
+          133.46,
+          132.03
+        ],
+        "output_tokens": [
+          998,
+          1000,
+          985
+        ]
+      },
+      "after": {
+        "mean": 141.39,
+        "stdev": 2.879218644007427,
+        "trials": [
+          140.64,
+          138.96,
+          144.57
+        ],
+        "output_tokens": [
+          975,
+          968,
+          997
+        ]
+      },
+      "delta_percent": 7.901096385235684
+    },
+    {
+      "category": "math",
+      "c": 1,
+      "metric": "per_stream_tok_s",
+      "before": {
+        "mean": 83.56333333333333,
+        "stdev": 0.09018499505646095,
+        "trials": [
+          83.65,
+          83.57,
+          83.47
+        ],
+        "output_tokens": [
+          200,
+          200,
+          200
+        ]
+      },
+      "after": {
+        "mean": 78.71,
+        "stdev": 0.07000000000000028,
+        "trials": [
+          78.71,
+          78.78,
+          78.64
+        ],
+        "output_tokens": [
+          200,
+          200,
+          200
+        ]
+      },
+      "delta_percent": -5.807970002792295
+    },
+    {
+      "category": "math",
+      "c": 8,
+      "metric": "agg_tok_s",
+      "before": {
+        "mean": 349.03,
+        "stdev": 14.299150324407382,
+        "trials": [
+          340.06,
+          341.51,
+          365.52
+        ],
+        "output_tokens": [
+          1600,
+          1600,
+          1600
+        ]
+      },
+      "after": {
+        "mean": 286.0233333333333,
+        "stdev": 5.252088473486856,
+        "trials": [
+          290.04,
+          287.95,
+          280.08
+        ],
+        "output_tokens": [
+          1600,
+          1600,
+          1600
+        ]
+      },
+      "delta_percent": -18.05193440869457
+    },
+    {
+      "category": "reasoning",
+      "c": 1,
+      "metric": "per_stream_tok_s",
+      "before": {
+        "mean": 68.16666666666666,
+        "stdev": 0.15885003409925066,
+        "trials": [
+          68.35,
+          68.08,
+          68.07
+        ],
+        "output_tokens": [
+          200,
+          200,
+          200
+        ]
+      },
+      "after": {
+        "mean": 65.72,
+        "stdev": 0.08717797887080916,
+        "trials": [
+          65.66,
+          65.82,
+          65.68
+        ],
+        "output_tokens": [
+          200,
+          200,
+          200
+        ]
+      },
+      "delta_percent": -3.5892420537897207
+    },
+    {
+      "category": "reasoning",
+      "c": 8,
+      "metric": "agg_tok_s",
+      "before": {
+        "mean": 248.47333333333333,
+        "stdev": 10.654211999642833,
+        "trials": [
+          244.09,
+          240.71,
+          260.62
+        ],
+        "output_tokens": [
+          1600,
+          1600,
+          1600
+        ]
+      },
+      "after": {
+        "mean": 218.72333333333333,
+        "stdev": 3.7610814047735386,
+        "trials": [
+          215.37,
+          222.79,
+          218.01
+        ],
+        "output_tokens": [
+          1600,
+          1600,
+          1600
+        ]
+      },
+      "delta_percent": -11.973115827318825
+    },
+    {
+      "category": "summary",
+      "c": 1,
+      "metric": "per_stream_tok_s",
+      "before": {
+        "mean": 34.32,
+        "stdev": 0.08999999999999986,
+        "trials": [
+          34.41,
+          34.32,
+          34.23
+        ],
+        "output_tokens": [
+          104,
+          104,
+          104
+        ]
+      },
+      "after": {
+        "mean": 35.913333333333334,
+        "stdev": 0.02309401076758454,
+        "trials": [
+          35.9,
+          35.9,
+          35.94
+        ],
+        "output_tokens": [
+          121,
+          121,
+          121
+        ]
+      },
+      "delta_percent": 4.642579642579636
+    },
+    {
+      "category": "summary",
+      "c": 8,
+      "metric": "agg_tok_s",
+      "before": {
+        "mean": 122.76333333333334,
+        "stdev": 8.829328022750847,
+        "trials": [
+          118.64,
+          132.9,
+          116.75
+        ],
+        "output_tokens": [
+          901,
+          912,
+          935
+        ]
+      },
+      "after": {
+        "mean": 141.09333333333333,
+        "stdev": 3.5511735149571795,
+        "trials": [
+          140.01,
+          138.21,
+          145.06
+        ],
+        "output_tokens": [
+          927,
+          880,
+          895
+        ]
+      },
+      "delta_percent": 14.931168372749726
+    },
+    {
+      "category": "format",
+      "c": 1,
+      "metric": "per_stream_tok_s",
+      "before": {
+        "mean": 88.24666666666667,
+        "stdev": 0.41525092815469433,
+        "trials": [
+          88.44,
+          87.77,
+          88.53
+        ],
+        "output_tokens": [
+          102,
+          102,
+          102
+        ]
+      },
+      "after": {
+        "mean": 87.73,
+        "stdev": 0.259999999999998,
+        "trials": [
+          87.73,
+          87.99,
+          87.47
+        ],
+        "output_tokens": [
+          102,
+          102,
+          102
+        ]
+      },
+      "delta_percent": -0.5854800936768156
+    },
+    {
+      "category": "format",
+      "c": 8,
+      "metric": "agg_tok_s",
+      "before": {
+        "mean": 296.89666666666665,
+        "stdev": 64.00732874705314,
+        "trials": [
+          226.59,
+          351.79,
+          312.31
+        ],
+        "output_tokens": [
+          920,
+          816,
+          822
+        ]
+      },
+      "after": {
+        "mean": 308.2266666666667,
+        "stdev": 19.367241242193806,
+        "trials": [
+          330.58,
+          297.63,
+          296.47
+        ],
+        "output_tokens": [
+          816,
+          819,
+          819
+        ]
+      },
+      "delta_percent": 3.8161425411759486
+    }
+  ],
+  "source_identity": "../../experiments/trace-02/source-identity.json",
+  "report": "../../docs/trace-iteration-02.md",
+  "limitations": [
+    "Sequential runs; three repeats per case.",
+    "Small unseen fixture; fixed output caps.",
+    "Strict extraction JSON fails on both profiles.",
+    "No TP8 adaptive serving validation.",
+    "No comprehensive quality or fully occupied 1M-context/4M-KV validation."
+  ]
+}

@@ -1,0 +1,1819 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "frac": 0.01,
+      "control": [
+        true
+      ],
+      "responses": [
+        {
+          "stream": 0,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1002,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "323",
+            "output_ids": [
+              18033,
+              1
+            ],
+            "meta_info": {
+              "id": "beb1a1bac22844189485011efbfd992f",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.3895445670350455,
+              "spec_accept_rate": 0.0,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 0,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 1.0,
+              "spec_accepted_drafts": 0,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                1
+              ],
+              "spec_accept_histogram": [
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234861.7257977
+            }
+          }
+        },
+        {
+          "stream": 1,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            864,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "342",
+            "output_ids": [
+              19642,
+              1
+            ],
+            "meta_info": {
+              "id": "e5b2be8e409c4dd787bf33acd0174f1b",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.3842213489697315,
+              "spec_accept_rate": 0.0,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 0,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 1.0,
+              "spec_accepted_drafts": 0,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                1
+              ],
+              "spec_accept_histogram": [
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234861.7289016
+            }
+          }
+        },
+        {
+          "stream": 2,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            511,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "361",
+            "output_ids": [
+              20192,
+              1
+            ],
+            "meta_info": {
+              "id": "955b38f1e45444609b920485e2d4cf70",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.38349357299739495,
+              "spec_accept_rate": 0.0,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 0,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 1.0,
+              "spec_accepted_drafts": 0,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                1
+              ],
+              "spec_accept_histogram": [
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234861.729497
+            }
+          }
+        },
+        {
+          "stream": 3,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            397,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "380",
+            "output_ids": [
+              17419,
+              1
+            ],
+            "meta_info": {
+              "id": "d6e7308dfb414cf7bab9f7bebeb12def",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.388628966989927,
+              "spec_accept_rate": 0.0,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 0,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 1.0,
+              "spec_accepted_drafts": 0,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                1
+              ],
+              "spec_accept_histogram": [
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234861.7272556
+            }
+          }
+        },
+        {
+          "stream": 4,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1602,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "399",
+            "output_ids": [
+              20375,
+              1
+            ],
+            "meta_info": {
+              "id": "9342b2f3f7ef40d38fcef2d59bb82776",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.3871272699907422,
+              "spec_accept_rate": 0.0,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 0,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 1.0,
+              "spec_accepted_drafts": 0,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                1
+              ],
+              "spec_accept_histogram": [
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234861.72785
+            }
+          }
+        },
+        {
+          "stream": 5,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1302,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "418",
+            "output_ids": [
+              24024,
+              1
+            ],
+            "meta_info": {
+              "id": "47f075e48b8643c0a58d834419e9de99",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.38986986299278215,
+              "spec_accept_rate": 0.0,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 0,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 1.0,
+              "spec_accepted_drafts": 0,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                1
+              ],
+              "spec_accept_histogram": [
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234861.725324
+            }
+          }
+        },
+        {
+          "stream": 6,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1349,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "437",
+            "output_ids": [
+              23207,
+              1
+            ],
+            "meta_info": {
+              "id": "a3f7206c0b8848139abd5a6ae3755940",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.38536598900100216,
+              "spec_accept_rate": 0.0,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 0,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 1.0,
+              "spec_accepted_drafts": 0,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                1
+              ],
+              "spec_accept_histogram": [
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234861.7280705
+            }
+          }
+        },
+        {
+          "stream": 7,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1173,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "456",
+            "output_ids": [
+              18009,
+              1
+            ],
+            "meta_info": {
+              "id": "4345418ef4d74e12b54017f05fd48184",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.3889139429666102,
+              "spec_accept_rate": 0.0,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 0,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 1.0,
+              "spec_accepted_drafts": 0,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                1
+              ],
+              "spec_accept_histogram": [
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234861.7265704
+            }
+          }
+        }
+      ]
+    },
+    {
+      "frac": 0.4,
+      "control": [
+        true
+      ],
+      "responses": [
+        {
+          "stream": 0,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1002,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "323",
+            "output_ids": [
+              18033,
+              1
+            ],
+            "meta_info": {
+              "id": "f0f16dba9cf74923ac27ca57a34e84f5",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.6565419789985754,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 2.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234862.5323782
+            }
+          }
+        },
+        {
+          "stream": 1,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            864,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "342",
+            "output_ids": [
+              19642,
+              1
+            ],
+            "meta_info": {
+              "id": "e870bab4d219480a93993f9b0b24958e",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.6533372420235537,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 4.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234862.5330803
+            }
+          }
+        },
+        {
+          "stream": 2,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            511,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "361",
+            "output_ids": [
+              20192,
+              1
+            ],
+            "meta_info": {
+              "id": "e0b44d08f39e4e9a9fdece2ba605f4f5",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.6561368909897283,
+              "spec_accept_rate": 0.0,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 0,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 1.0,
+              "spec_accepted_drafts": 0,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                1
+              ],
+              "spec_accept_histogram": [
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234862.5326154
+            }
+          }
+        },
+        {
+          "stream": 3,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            397,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "380",
+            "output_ids": [
+              17419,
+              1
+            ],
+            "meta_info": {
+              "id": "3c60f9b4f19b4578bf592c2147cda8ab",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.6569598980131559,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 3.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234862.5315137
+            }
+          }
+        },
+        {
+          "stream": 4,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1602,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "399",
+            "output_ids": [
+              20375,
+              1
+            ],
+            "meta_info": {
+              "id": "05acb65ddae64506b406b579425fecff",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.6545155299827456,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 4.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234862.5329406
+            }
+          }
+        },
+        {
+          "stream": 5,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1302,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "418",
+            "output_ids": [
+              24024,
+              1
+            ],
+            "meta_info": {
+              "id": "c09fba96bfb145e2aa361b3c82891c1d",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.6554838989977725,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 4.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234862.5327902
+            }
+          }
+        },
+        {
+          "stream": 6,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1349,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "437",
+            "output_ids": [
+              23207,
+              1
+            ],
+            "meta_info": {
+              "id": "c4d6864403774f9d9c251bc58df67097",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.6516563129844144,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 4.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234862.5333908
+            }
+          }
+        },
+        {
+          "stream": 7,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1173,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "456",
+            "output_ids": [
+              18009,
+              1
+            ],
+            "meta_info": {
+              "id": "70986ca81523418087d099503facc330",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.6523347769980319,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 2.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234862.5332136
+            }
+          }
+        }
+      ]
+    },
+    {
+      "frac": 1.0,
+      "control": [
+        true
+      ],
+      "responses": [
+        {
+          "stream": 0,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1002,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "323",
+            "output_ids": [
+              18033,
+              1
+            ],
+            "meta_info": {
+              "id": "7d60b9c9325e4ad7ac4296779efe3535",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.34252030798234046,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 6.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234863.0114248
+            }
+          }
+        },
+        {
+          "stream": 1,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            864,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "342",
+            "output_ids": [
+              19642,
+              1
+            ],
+            "meta_info": {
+              "id": "f9df3d559df44b2c935d18a1383ef59e",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.3444328050245531,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 6.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234863.0103445
+            }
+          }
+        },
+        {
+          "stream": 2,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            511,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "361",
+            "output_ids": [
+              20192,
+              1
+            ],
+            "meta_info": {
+              "id": "8a8066c70eca4a2f82eca1970949837d",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.3404669310548343,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 6.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234863.0118706
+            }
+          }
+        },
+        {
+          "stream": 3,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            397,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "380",
+            "output_ids": [
+              17419,
+              1
+            ],
+            "meta_info": {
+              "id": "ce62544b086640918e0d619f83bef37b",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.33947934600291774,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 6.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234863.0120838
+            }
+          }
+        },
+        {
+          "stream": 4,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1602,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "399",
+            "output_ids": [
+              20375,
+              1
+            ],
+            "meta_info": {
+              "id": "5cc7a491c4144d66b7c182c515c28d57",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.34393469197675586,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 6.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234863.0109203
+            }
+          }
+        },
+        {
+          "stream": 5,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1302,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "418",
+            "output_ids": [
+              24024,
+              1
+            ],
+            "meta_info": {
+              "id": "a211b081721f467e8f7a252920933572",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.33865797001635656,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 6.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234863.0122557
+            }
+          }
+        },
+        {
+          "stream": 6,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1349,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "437",
+            "output_ids": [
+              23207,
+              1
+            ],
+            "meta_info": {
+              "id": "e0c17250cafd4e019b44008d2b426793",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.34151390701299533,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 6.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234863.011649
+            }
+          }
+        },
+        {
+          "stream": 7,
+          "input_ids": [
+            0,
+            128803,
+            3085,
+            344,
+            223,
+            1173,
+            2734,
+            223,
+            511,
+            33,
+            20870,
+            1353,
+            270,
+            9132,
+            16,
+            128804,
+            128822
+          ],
+          "response": {
+            "text": "456",
+            "output_ids": [
+              18009,
+              1
+            ],
+            "meta_info": {
+              "id": "7db3ce141fda4907a5ff66181d0a2db7",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 1
+              },
+              "prompt_tokens": 17,
+              "weight_version": "default",
+              "num_retractions": 0,
+              "reasoning_tokens": 0,
+              "completion_tokens": 2,
+              "cached_tokens": 0,
+              "weight_versions": [
+                {
+                  "version": "default",
+                  "start": 0,
+                  "end": 2
+                }
+              ],
+              "cached_tokens_details": null,
+              "dp_rank": null,
+              "e2e_latency": 0.34322163596516475,
+              "spec_accept_rate": 0.2,
+              "spec_accept_length": 2.0,
+              "spec_num_correct_drafts": 1,
+              "spec_num_proposed_drafts": 5,
+              "spec_verify_ct": 1,
+              "spec_cap_length": 6.0,
+              "spec_accepted_drafts": 1,
+              "spec_proposed_drafts": 5,
+              "spec_correct_drafts_histogram": [
+                0,
+                1
+              ],
+              "spec_accept_histogram": [
+                0,
+                1
+              ],
+              "spec_cap_lens_histogram": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+              ],
+              "response_sent_to_client_ts": 1789234863.0111856
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

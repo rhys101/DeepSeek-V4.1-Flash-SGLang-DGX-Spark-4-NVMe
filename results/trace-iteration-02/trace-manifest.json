@@ -1,0 +1,149 @@
+{
+  "sanitization": "Only infrastructure metadata is anonymized. Every trace event and numeric value is unchanged; deterministic gzip uses mtime=0.",
+  "files": [
+    {
+      "path": "traces-baseline/rank0/baseline-prose-prose-c1/baseline-prose-prose-c1-TP-0-EP-0.trace.json.gz",
+      "original_sha256": "bdc875094412a5faa783461d1d3062472acc10464f747e41ff1af12ee715dc20",
+      "public_sha256": "9741a9d1fda1c365fdcaa5e482254534402ccec1e76a96f9cee405ddcb22ef73",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-baseline/rank0/baseline-prose-prose-c8/baseline-prose-prose-c8-TP-0-EP-0.trace.json.gz",
+      "original_sha256": "08f4edfad96a1073a3ef2c7452a88231fbf14aad97e36ec3f5f83213de42d809",
+      "public_sha256": "43aa4a8eee9ce9c7802ce255f1bc4423adcbf73c9ba537635c29ad7b6b633d7c",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-baseline/rank1/baseline-prose-prose-c1/baseline-prose-prose-c1-TP-1-EP-1.trace.json.gz",
+      "original_sha256": "54b31358bb63e563cb784cca9b2df471f9c75e2d04cc79222abd46a878d96b2e",
+      "public_sha256": "3eecc58c3c4eec60757bbaf5f9b5f5d89dc4a599d9afc4adbf0245bd6e1a7db8",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-baseline/rank1/baseline-prose-prose-c8/baseline-prose-prose-c8-TP-1-EP-1.trace.json.gz",
+      "original_sha256": "c7e250abaa6cdb0f76718816ac68cbea3a22e9782012dc43d10b022d495ad5d4",
+      "public_sha256": "d56ab4a051231d989efa0aabd084acce1a73c4df825f67b6c4d8f6b09a8f7f8f",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-baseline/rank2/baseline-prose-prose-c1/baseline-prose-prose-c1-TP-2-EP-2.trace.json.gz",
+      "original_sha256": "cf5514fc2b693930050420e578a9917ce26db54f59d4f7b1bd3a5df6151e767d",
+      "public_sha256": "24ad3ff9216fdabef2d410d1cb470de5b342f7d4c7198b77f331339228fd7817",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-baseline/rank2/baseline-prose-prose-c8/baseline-prose-prose-c8-TP-2-EP-2.trace.json.gz",
+      "original_sha256": "4c6b6e83f6f351e56b3fc454b2d880645b9d7da78e3809784797c694a7f82d7f",
+      "public_sha256": "834d9edcc36f602da8e45a9a0628f99632aa94277d6b0aab28353e865806ceeb",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-baseline/rank3/baseline-prose-prose-c1/baseline-prose-prose-c1-TP-3-EP-3.trace.json.gz",
+      "original_sha256": "cfe62dc6c531fd3cf2638133e5b07fe25501e4e55b66ea3633a2a19929d5f44d",
+      "public_sha256": "e6b3c2c1e2f578493649be3cca9bd6da550f798de561a57639296c36880739d8",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-baseline/rank3/baseline-prose-prose-c8/baseline-prose-prose-c8-TP-3-EP-3.trace.json.gz",
+      "original_sha256": "0e1adbd1ec9af399ae45e4690d3e884a1136cd82bf1bd9b842451c8e31e14fe4",
+      "public_sha256": "bfc2d9325d286df4f20c0ee9802529bd3b4fe15a6bf6bebd76ab5354eda8259f",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-k7roce1m/rank0/k7roce1m-coding-c1/k7roce1m-coding-c1-TP-0-EP-0.trace.json.gz",
+      "original_sha256": "68e730c70544bf0965b661133f6f836adacaecd2d4e5478b5d67fd46a62fee6e",
+      "public_sha256": "6b5268b6c25248db4cb26eb96090e96ae45c94d3d46a60e226324b7a470d6c22",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-k7roce1m/rank0/k7roce1m-coding-c8/k7roce1m-coding-c8-TP-0-EP-0.trace.json.gz",
+      "original_sha256": "d942b958b3e9e789b3b255699b167758abd8e133617fe69b7d6c8005ccedff4f",
+      "public_sha256": "6abbcccb8af85d949ccd1494073539b7bb129a66a1aba9775e6101d045dc12d2",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-k7roce1m/rank1/k7roce1m-coding-c1/k7roce1m-coding-c1-TP-1-EP-1.trace.json.gz",
+      "original_sha256": "77f74466ba60b9e6785e8c9a8e9cc67b5b342a6140eea94eb82d571d7b0cf2e6",
+      "public_sha256": "cc71f7668505bcdaa003b56b7e2a11e78d5cada8b18fd28265da165e8a59f11a",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-k7roce1m/rank1/k7roce1m-coding-c8/k7roce1m-coding-c8-TP-1-EP-1.trace.json.gz",
+      "original_sha256": "5c8792d9b626c60fa48e8c6af5fdb23adc2ba52f2929abe7b94587c5351e625f",
+      "public_sha256": "c79ad13e63f11baee1ffe844901ac86c3ad9606d37637b7407b48c9816dd9c74",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-k7roce1m/rank2/k7roce1m-coding-c1/k7roce1m-coding-c1-TP-2-EP-2.trace.json.gz",
+      "original_sha256": "419f771d44d222a58339243171f0969fb3517a574bce409c23566ca0c3eb707e",
+      "public_sha256": "c1522e8de0981cf54988bfa9a2bd63d69c58e902abe7e029f5c063b572e83a53",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-k7roce1m/rank2/k7roce1m-coding-c8/k7roce1m-coding-c8-TP-2-EP-2.trace.json.gz",
+      "original_sha256": "4a0d4d1e8c2a1272972658d1d42c16017ed2ab36e12991aaa5ecacccc0f79692",
+      "public_sha256": "c48c03b5bc10b42af4bb35a9f7d58a226502a77c64bb3dc3cbf4410fb11f8039",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-k7roce1m/rank3/k7roce1m-coding-c1/k7roce1m-coding-c1-TP-3-EP-3.trace.json.gz",
+      "original_sha256": "534c5db9bc87736720cd820a243f420edc1b3c6db4387c32bee2a22de7f90558",
+      "public_sha256": "ac2f5552e80749bfd93648b45d368ea4296bc7a517a953301539650c01beb3af",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-k7roce1m/rank3/k7roce1m-coding-c8/k7roce1m-coding-c8-TP-3-EP-3.trace.json.gz",
+      "original_sha256": "3d1448b6bba05e9465ce5cd54890187da8a3aae185c70643cbfc9fb4b230b522",
+      "public_sha256": "151caaebc5fdce0a6779be1c54f13d504b3eda65e8f5ba52a9c63f058c326b86",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-compact5-measured/rank0/compact5-measured-coding-c1/compact5-measured-coding-c1-TP-0-EP-0.trace.json.gz",
+      "original_sha256": "e74d08f382e56c5fab407adb0a3b011924a0cc278dd61b633be7eb6cc1339d19",
+      "public_sha256": "8083989816acad516b3749c9af932e38532e635d3536901fdfb6ca49a9b29400",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-compact5-measured/rank0/compact5-measured-coding-c8/compact5-measured-coding-c8-TP-0-EP-0.trace.json.gz",
+      "original_sha256": "b0ed229df3950792a53607468b6bfa8d9d8b0299e6a0eae0dd961bee002848d4",
+      "public_sha256": "c6cff9cc8fa403bfc60ba5145348b017b29e2a83a9c435b884e57eb4bc33d998",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-compact5-measured/rank1/compact5-measured-coding-c1/compact5-measured-coding-c1-TP-1-EP-1.trace.json.gz",
+      "original_sha256": "a9d25a01cd74add06815096046c0d6fc83f9c448a333f37981e957df43d390df",
+      "public_sha256": "a3fee97dbb644884aef597ffcef4f111a40be67edfb614ce34c4ccec77708df4",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-compact5-measured/rank1/compact5-measured-coding-c8/compact5-measured-coding-c8-TP-1-EP-1.trace.json.gz",
+      "original_sha256": "19298d03b7b3960fbebd89c320f8cf2ec9d597ad1df0000c9b9e1cccfab6a36d",
+      "public_sha256": "2dcb7c9e9143009b0308e015d4c43cea4edc5609c63cf905cd91ea01e6783e5b",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-compact5-measured/rank2/compact5-measured-coding-c1/compact5-measured-coding-c1-TP-2-EP-2.trace.json.gz",
+      "original_sha256": "6fb819d228356bf387adaf12b49dbb61210ca5e24c3c5939936cf2f8ddc2920b",
+      "public_sha256": "f2180d5a2bfc752b71715d7a7661f608b25dd772b9ef0b9a7d6b4d841594b18a",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-compact5-measured/rank2/compact5-measured-coding-c8/compact5-measured-coding-c8-TP-2-EP-2.trace.json.gz",
+      "original_sha256": "f0b70d9bf7447cc7423017b615c42896ae85339883fbf0d1ff479e7e3a013795",
+      "public_sha256": "20b4fc36943ddf0f461996b59be07d08899064d40e2db670c20c800fe711a835",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-compact5-measured/rank3/compact5-measured-coding-c1/compact5-measured-coding-c1-TP-3-EP-3.trace.json.gz",
+      "original_sha256": "89fb07e9cf792797b1a80517dc50fb84eb70062fa53dafa444273f8b7d55677a",
+      "public_sha256": "c392ed80cfe1f7d1395ef2bd02f8fe9a192a527bc88069934af70d331d257ce6",
+      "trace_events_identical": true
+    },
+    {
+      "path": "traces-compact5-measured/rank3/compact5-measured-coding-c8/compact5-measured-coding-c8-TP-3-EP-3.trace.json.gz",
+      "original_sha256": "6efd92e5fd5fb5e67f99b8a6f3ff8dc3f5ca77556ae4b2c8e71ded30b97a2f91",
+      "public_sha256": "6d5bc1655ae39b3758356d4b8e80f748917d59292a1270e6ea9bf8615d03d98d",
+      "trace_events_identical": true
+    }
+  ]
+}

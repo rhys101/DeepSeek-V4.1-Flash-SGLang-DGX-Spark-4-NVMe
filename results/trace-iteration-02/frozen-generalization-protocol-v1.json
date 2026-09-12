@@ -1,0 +1,13 @@
+{
+  "frozen_utc": "2026-09-12T18:34:07.060090+00:00",
+  "status": "FROZEN_BEFORE_EITHER_RUNTIME_GENERALIZATION_EVALUATION",
+  "files": {
+    "generalization-client.py": "a0106cf0654d6cbb14c080f4f3205713d66d24b0c6eb1ac8dd0e5d9085057709",
+    "repeat-mixed-client.py": "1748ded66afe615e1ab39c4c9dfb5a8b3412a602e5f774409c436c478c521107",
+    "candidate-compact5-measured/runtime/configuration.py": "b2791d97ce255e300b3f72995d744891867a71087d8cd3c5d93057b366a8e59b",
+    "candidate-compact5-measured/runtime/sps-measured.json": "2ca1c57cb58402c357558439109657bc9ef98bc941b2c861487de6a20afa78ff",
+    "candidate-compact5-measured/patches/manifest.json": "86958516fd33eca0c34ee523c340ea60268f3a8da710dbec8cfff436bb7a3249"
+  },
+  "policy": "No parameter or source retuning using these evaluation outcomes. All workload results and failed checks retained.",
+  "harness_note": "Invalid JSON is retained as a failed quality check, rather than discarding the cohort. No evaluation has run at this freeze."
+}

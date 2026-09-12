@@ -1,0 +1,5 @@
+{
+  "status": "PASS",
+  "finished": "2026-09-12T18:35:40.154505+00:00",
+  "harness_recovery": "Post-run idle verification completed separately after the original immediate idle assertion failed. No workload was rerun or discarded."
+}

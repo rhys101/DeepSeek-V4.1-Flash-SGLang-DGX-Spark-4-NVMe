@@ -1,0 +1,1679 @@
+{
+  "profile": {
+    "start_unix": 1789237411.5996196,
+    "finish_unix": 1789237411.7129524,
+    "body": {
+      "output_dir": "/state/trace-iter2/compact5-measured-coding-c8",
+      "num_steps": 8,
+      "activities": [
+        "CPU",
+        "GPU"
+      ],
+      "with_stack": false,
+      "record_shapes": true,
+      "profile_id": "compact5-measured-coding-c8",
+      "merge_profiles": false,
+      "detailed_annotations": true
+    },
+    "response": {
+      "status": 200,
+      "message": "Start profiling.\n"
+    },
+    "trigger": "Every stream has delivered eight nonempty chunks; chunks are not tokens."
+  },
+  "streams": [
+    {
+      "stream": 0,
+      "start_unix": 1789237410.5615773,
+      "finish_unix": 1789237416.582136,
+      "usage": {
+        "prompt_tokens": 47,
+        "total_tokens": 247,
+        "completion_tokens": 200,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789237410982168825,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237411090250639,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789237411182366113,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411274640773,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789237411360929818,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237411431429105,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237411508934866,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411598923980,
+          "characters": 33
+        },
+        {
+          "unix_ns": 1789237411710396604,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411827479009,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237411933653069,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412050196603,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412163370557,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237412277551733,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237412396008792,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237412516671040,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412638545231,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789237413675973474,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413803346185,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237413924428415,
+          "characters": 39
+        },
+        {
+          "unix_ns": 1789237414050730314,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789237414175838178,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789237414297724553,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414421409534,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237414546132142,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237414659229174,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237414769855226,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237414882011829,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237414991325312,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415103399513,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415217202366,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415333047743,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237415453815871,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415573358155,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237415698464700,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415829376136,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789237415960243068,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789237416084557670,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416206828546,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416329231455,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237416450923804,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237416581360021,
+          "characters": 6
+        }
+      ],
+      "text": "```python\ndef merge_intervals(intervals):\n    \"\"\"Merge overlapping intervals and return them sorted by start.\"\"\"\n    if not intervals:\n        return []\n    intervals = sorted(intervals, key=lambda x: x[0])\n    merged = [list(intervals[0])]\n    for start, end in intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return [tuple(m) for m in merged]\n\n\nprint(merge_intervals([(1, 3), (2, 6), (8, 10), (15, 18)]))  # [(1, 6), (8, 10), (15, 18)]\nprint(merge_intervals([(1, 4), (4, 5)]))                      # [(1, 5)]\n```",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "[bench v1 run coding c8 s0] Write a Python function merge_intervals(intervals) that merges overlapping intervals and returns them sorted. Include a one-line docstring and two example calls."
+          }
+        ],
+        "max_tokens": 200,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 1,
+      "start_unix": 1789237410.5613575,
+      "finish_unix": 1789237416.5824409,
+      "usage": {
+        "prompt_tokens": 47,
+        "total_tokens": 247,
+        "completion_tokens": 200,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789237411000972376,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237411089898024,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789237411182127219,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411275141453,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789237411360693388,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237411431845879,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237411509054328,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411599304407,
+          "characters": 33
+        },
+        {
+          "unix_ns": 1789237411710557032,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411827329832,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237411934253935,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412050452909,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412163892267,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237412278067160,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237412396351178,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237412517136925,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412638615292,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789237413675435955,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413803627979,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237413924021749,
+          "characters": 39
+        },
+        {
+          "unix_ns": 1789237414050855587,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237414176075138,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237414297867379,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414421564362,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414546686873,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789237414659689369,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237414769735884,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237414882133986,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237414991772884,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415103043342,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415216841926,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415333182033,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237415453532594,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237415573419539,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415698267454,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789237415828883601,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415959732670,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237416084823845,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416206613135,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237416329854091,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237416450260442,
+          "characters": 6
+        }
+      ],
+      "text": "```python\ndef merge_intervals(intervals):\n    \"\"\"Merge overlapping intervals and return them sorted by start.\"\"\"\n    if not intervals:\n        return []\n    intervals = sorted(intervals, key=lambda x: x[0])\n    merged = [list(intervals[0])]\n    for start, end in intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return [tuple(i) for i in merged]\n\n\nprint(merge_intervals([(1, 3), (2, 6), (8, 10), (15, 18)]))  # [(1, 6), (8, 10), (15, 18)]\nprint(merge_intervals([(1, 4), (4, 5)]))                      # [(1, 5)]\n```",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "[bench v1 run coding c8 s1] Write a Python function merge_intervals(intervals) that merges overlapping intervals and returns them sorted. Include a one-line docstring and two example calls."
+          }
+        ],
+        "max_tokens": 200,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 2,
+      "start_unix": 1789237410.562471,
+      "finish_unix": 1789237416.5819228,
+      "usage": {
+        "prompt_tokens": 47,
+        "total_tokens": 247,
+        "completion_tokens": 200,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789237411000192067,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237411090528285,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789237411182651644,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411274814907,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789237411361079305,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237411431606475,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237411509522137,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237411599535005,
+          "characters": 33
+        },
+        {
+          "unix_ns": 1789237411710148052,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237411827597208,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411934027525,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412049620263,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412163816025,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412277708925,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237412396110460,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237412516798146,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237412638380395,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413675614888,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237413803727995,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789237413924141191,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237414051288150,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789237414175717063,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789237414298294632,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789237414421999049,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414546377839,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237414659572772,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237414769636619,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237414882249952,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237414991926559,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415103160740,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415217318632,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415332805112,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415453932808,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237415573244895,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237415698103760,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415828753048,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789237415960439133,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237416085187090,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237416206716928,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416329947645,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237416450546663,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237416581796101,
+          "characters": 6
+        }
+      ],
+      "text": "```python\ndef merge_intervals(intervals):\n    \"\"\"Merge overlapping intervals and return them sorted by start.\"\"\"\n    if not intervals:\n        return []\n    intervals = sorted(intervals, key=lambda x: x[0])\n    merged = [list(intervals[0])]\n    for start, end in intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return [tuple(m) for m in merged]\n\n\nprint(merge_intervals([(1, 3), (2, 6), (8, 10), (15, 18)]))  # [(1, 6), (8, 10), (15, 18)]\nprint(merge_intervals([(1, 4), (4, 5)]))                      # [(1, 5)]\n```",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "[bench v1 run coding c8 s2] Write a Python function merge_intervals(intervals) that merges overlapping intervals and returns them sorted. Include a one-line docstring and two example calls."
+          }
+        ],
+        "max_tokens": 200,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 3,
+      "start_unix": 1789237410.5617964,
+      "finish_unix": 1789237417.1452322,
+      "usage": {
+        "prompt_tokens": 47,
+        "total_tokens": 247,
+        "completion_tokens": 200,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789237410999396509,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237411089315292,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789237411181825339,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411274222135,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789237411360407597,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237411431048859,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237411508726128,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411598529727,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411709903447,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237411826766094,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789237411933218682,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237412049141734,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412162976125,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412277145127,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237412395437540,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237412516427718,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237412638911472,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789237413675185199,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237413803565883,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413923675296,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237414050216920,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237414175064832,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237414297487944,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414421170660,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789237414545898358,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237414659038990,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789237414768803341,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414881358816,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237414990938944,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237415102690516,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415216485975,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237415332297930,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415453089742,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237415572997926,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415697895423,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237415828308823,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415960130720,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789237416085452202,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237416206212140,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416329692281,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237416450096297,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237416582297603,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789237416718082877,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237416819473000,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237416915158957,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237416966993400,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237417022679659,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237417080887873,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237417145102766,
+          "characters": 2
+        }
+      ],
+      "text": "```python\ndef merge_intervals(intervals):\n    \"\"\"Merge overlapping intervals and return them sorted by start.\"\"\"\n    if not intervals:\n        return []\n    sorted_intervals = sorted(intervals, key=lambda x: x[0])\n    merged = [list(sorted_intervals[0])]\n    for start, end in sorted_intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return [tuple(i) for i in merged]\n\n\nprint(merge_intervals([(1, 3), (2, 6), (8, 10), (15, 18)]))\nprint(merge_intervals([(1, 4), (4, 5), (7, 9)]))\n```\n\nOutput:\n```\n[(1, 6), (8, 10), (15, ",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "[bench v1 run coding c8 s3] Write a Python function merge_intervals(intervals) that merges overlapping intervals and returns them sorted. Include a one-line docstring and two example calls."
+          }
+        ],
+        "max_tokens": 200,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 4,
+      "start_unix": 1789237410.5621283,
+      "finish_unix": 1789237416.8193285,
+      "usage": {
+        "prompt_tokens": 47,
+        "total_tokens": 247,
+        "completion_tokens": 200,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789237411000465234,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237411090392042,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789237411182547139,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411275336656,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789237411361013693,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237411432040631,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237411509248218,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789237411599084017,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237411710629817,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789237411827229084,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411933806965,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412049989839,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412163505678,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412278357269,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237412396580744,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237412517006583,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237412637947852,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413675737606,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789237413803793777,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413924337586,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237414050435406,
+          "characters": 39
+        },
+        {
+          "unix_ns": 1789237414175285992,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237414297608738,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237414421285894,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414546010737,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237414658922454,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237414768995919,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237414881575298,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237414991437430,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415102922718,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415216723717,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415332559526,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415453345687,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237415572865881,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415698558765,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237415829066380,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415960574424,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789237416085325747,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789237416206320091,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416329422349,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416451033488,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237416582694510,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237416718386380,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237416818762400,
+          "characters": 2
+        }
+      ],
+      "text": "```python\ndef merge_intervals(intervals):\n    \"\"\"Merge overlapping intervals and return them sorted by start.\"\"\"\n    if not intervals:\n        return []\n    intervals = sorted(intervals, key=lambda x: x[0])\n    merged = [list(intervals[0])]\n    for start, end in intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return [tuple(m) for m in merged]\n\n\nprint(merge_intervals([(1, 3), (2, 6), (8, 10), (15, 18)]))  # [(1, 6), (8, 10), (15, 18)]\nprint(merge_intervals([(1, 4), (4, 5)]))                      # [(1, 5)]\n```\n\n**",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "[bench v1 run coding c8 s4] Write a Python function merge_intervals(intervals) that merges overlapping intervals and returns them sorted. Include a one-line docstring and two example calls."
+          }
+        ],
+        "max_tokens": 200,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 5,
+      "start_unix": 1789237410.5622551,
+      "finish_unix": 1789237416.5827353,
+      "usage": {
+        "prompt_tokens": 47,
+        "total_tokens": 247,
+        "completion_tokens": 200,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789237411000722392,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237411090072979,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789237411182247583,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411274992857,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789237411360812730,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237411431726167,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237411509174471,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411599187189,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411710273836,
+          "characters": 28
+        },
+        {
+          "unix_ns": 1789237411827137494,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237411933951554,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412049808613,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412163614110,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412277891003,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237412396229832,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237412516918479,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237412638175825,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413675858139,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789237413803894474,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413924261996,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237414051047574,
+          "characters": 39
+        },
+        {
+          "unix_ns": 1789237414175961117,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237414297988654,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237414421690716,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414546257936,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414659326545,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789237414769925436,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237414881819983,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237414991859715,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237415103498517,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789237415216964274,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415332685210,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415453595241,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789237415573463591,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415698362691,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415829229363,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237415960709926,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789237416084929631,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237416206521044,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237416330058281,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237416450402135,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237416582602990,
+          "characters": 9
+        }
+      ],
+      "text": "```python\ndef merge_intervals(intervals):\n    \"\"\"Merge overlapping intervals and return them sorted by start.\"\"\"\n    if not intervals:\n        return []\n    intervals = sorted(intervals, key=lambda x: x[0])\n    merged = [list(intervals[0])]\n    for start, end in intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return [tuple(m) for m in merged]\n\n\nprint(merge_intervals([(1, 3), (2, 6), (8, 10), (15, 18)]))\nprint(merge_intervals([(1, 4), (4, 5), (7, 9)]))\n```\n\nOutput:\n```\n[(1, 6), (8, 10), (15, 18)]\n[(1",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "[bench v1 run coding c8 s5] Write a Python function merge_intervals(intervals) that merges overlapping intervals and returns them sorted. Include a one-line docstring and two example calls."
+          }
+        ],
+        "max_tokens": 200,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 6,
+      "start_unix": 1789237410.5614707,
+      "finish_unix": 1789237416.7186964,
+      "usage": {
+        "prompt_tokens": 47,
+        "total_tokens": 247,
+        "completion_tokens": 200,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789237410999669245,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237411089545880,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789237411181908503,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411274431775,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789237411360489179,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237411431256154,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237411508829330,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411598748614,
+          "characters": 30
+        },
+        {
+          "unix_ns": 1789237411709785188,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789237411826905684,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237411933432399,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412049355912,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412163195923,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237412277369114,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237412395880844,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237412516565303,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789237412638745574,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237413675058454,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413803427306,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237413923781874,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789237414050932670,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789237414175606528,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789237414298065346,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789237414421778359,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789237414546472094,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414659119811,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237414769351550,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237414881900002,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789237414991654624,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237415102821059,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415216602662,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415332432510,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415453226756,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415573532179,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237415698666475,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415829304422,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789237415960319771,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237416084785674,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789237416206410840,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789237416329592986,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416450646379,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237416582076612,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416718493710,
+          "characters": 7
+        }
+      ],
+      "text": "```python\ndef merge_intervals(intervals):\n    \"\"\"Merge overlapping intervals and return them sorted by start.\"\"\"\n    if not intervals:\n        return []\n    sorted_intervals = sorted(intervals, key=lambda x: x[0])\n    merged = [list(sorted_intervals[0])]\n    for start, end in sorted_intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return [tuple(i) for i in merged]\n\n\nprint(merge_intervals([(1, 3), (2, 6), (8, 10), (15, 18)]))  # [(1, 6), (8, 10), (15, 18)]\nprint(merge_intervals([(1, 4), (4, 5), (7, 9)]))",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "[bench v1 run coding c8 s6] Write a Python function merge_intervals(intervals) that merges overlapping intervals and returns them sorted. Include a one-line docstring and two example calls."
+          }
+        ],
+        "max_tokens": 200,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 7,
+      "start_unix": 1789237410.5611706,
+      "finish_unix": 1789237416.8192334,
+      "usage": {
+        "prompt_tokens": 47,
+        "total_tokens": 247,
+        "completion_tokens": 200,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789237410999935089,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789237411089723720,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789237411182010633,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411275255475,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789237411360575249,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237411431961705,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237411509354856,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411599422165,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237411710023370,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237411827027370,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237411934136457,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237412050365507,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412163706501,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237412278241705,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237412396482051,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789237412517047118,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789237412638793623,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413675310131,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789237413803503618,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237413923895906,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789237414051169129,
+          "characters": 39
+        },
+        {
+          "unix_ns": 1789237414175501573,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789237414298178196,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789237414421880699,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789237414546570998,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789237414659468969,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237414769172667,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237414881695842,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237414991149846,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415103281815,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415217081401,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415332926287,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237415453696920,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789237415573111066,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237415697700220,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237415828577111,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789237415959971604,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789237416085073098,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789237416206100804,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789237416329807665,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789237416450764789,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789237416582407848,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789237416718243906,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789237416819055985,
+          "characters": 10
+        }
+      ],
+      "text": "```python\ndef merge_intervals(intervals):\n    \"\"\"Merge overlapping intervals and return them sorted by start.\"\"\"\n    if not intervals:\n        return []\n    intervals = sorted(intervals, key=lambda x: x[0])\n    merged = [list(intervals[0])]\n    for start, end in intervals[1:]:\n        if start <= merged[-1][1]:\n            merged[-1][1] = max(merged[-1][1], end)\n        else:\n            merged.append([start, end])\n    return [tuple(m) for m in merged]\n\n\nprint(merge_intervals([(1, 3), (2, 6), (8, 10), (15, 18)]))\nprint(merge_intervals([(1, 4), (4, 5), (7, 9)]))\n```\n\nOutput:\n```\n[(1, 6), (8, 10), (15, 18)]\n[(1",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "[bench v1 run coding c8 s7] Write a Python function merge_intervals(intervals) that merges overlapping intervals and returns them sorted. Include a one-line docstring and two example calls."
+          }
+        ],
+        "max_tokens": 200,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    }
+  ],
+  "scope": "Diagnostic profile; never use these elapsed times as benchmark results."
+}

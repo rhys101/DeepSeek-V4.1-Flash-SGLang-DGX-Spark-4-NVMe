@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-09-12T18:07:06.362090+00:00",
+  "version": "0.0.0.dev1+ge087e662b",
+  "accelerator": "NVIDIA GB10",
+  "num_accelerators": 4,
+  "loads": [
+    {
+      "timestamp": 1789236426.3610334,
+      "dp_rank": 0,
+      "num_running_reqs": 0,
+      "num_waiting_reqs": 0,
+      "num_waiting_uncached_tokens": 0,
+      "num_used_tokens": 0,
+      "num_total_tokens": 0,
+      "num_active_tokens": 0,
+      "max_total_num_tokens": 4000000,
+      "max_running_requests": 8,
+      "token_usage": 0.0,
+      "gen_throughput": 0.0,
+      "cache_hit_rate": 0.0,
+      "utilization": 0.0,
+      "total_prefill_uncached_tokens": 471017,
+      "total_prefill_busy_us": 169394241,
+      "decode_moments": [
+        3531.0,
+        13783.0,
+        356466803.0,
+        85605.0,
+        1745214096.0,
+        54687.0
+      ],
+      "memory": {
+        "weight_gb": 71.359,
+        "kv_cache_gb": 0.0,
+        "graph_gb": 1.396,
+        "token_capacity": 4000000
+      },
+      "speculative": {
+        "accept_length": 3.9926481187833356,
+        "accept_rate": 0.0
+      },
+      "disaggregation": {
+        "mode": "null",
+        "prefill_bootstrap_queue_reqs": 0,
+        "prefill_inflight_queue_reqs": 0,
+        "decode_prealloc_queue_reqs": 0,
+        "decode_transfer_queue_reqs": 0,
+        "decode_retracted_queue_reqs": 0,
+        "kv_transfer_speed_gb_s": 0.0,
+        "kv_transfer_latency_ms": 0.0
+      },
+      "queues": {
+        "waiting": 0,
+        "grammar": 0,
+        "paused": 0,
+        "retracted": 0,
+        "prealloc_ready": 0
+      }
+    }
+  ]
+}

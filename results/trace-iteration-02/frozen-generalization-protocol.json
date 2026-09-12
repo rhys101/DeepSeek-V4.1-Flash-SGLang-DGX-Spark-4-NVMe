@@ -1,0 +1,14 @@
+{
+  "frozen_utc": "2026-09-12T18:38:14.641050+00:00",
+  "status": "FROZEN_BEFORE_EITHER_RUNTIME_GENERALIZATION_EVALUATION",
+  "files": {
+    "generalization-client.py": "9ebc8eca0df7174f1042a7626cb639403e58376cfd7365f8e032e026f93bf198",
+    "repeat-mixed-client.py": "356db2f05a7bd4994ee4046a21ab08c8f247fb385135afc2dfa700259747aff3",
+    "candidate-compact5-measured/runtime/configuration.py": "b2791d97ce255e300b3f72995d744891867a71087d8cd3c5d93057b366a8e59b",
+    "candidate-compact5-measured/runtime/sps-measured.json": "2ca1c57cb58402c357558439109657bc9ef98bc941b2c861487de6a20afa78ff",
+    "candidate-compact5-measured/patches/manifest.json": "86958516fd33eca0c34ee523c340ea60268f3a8da710dbec8cfff436bb7a3249"
+  },
+  "policy": "No parameter or source retuning using these evaluation outcomes. All workload results and failed checks retained.",
+  "harness_note": "Revision 1 hit an immediate post-response idle race. Revision 2 adds bounded housekeeping waits outside timing, persists individual responses, and gives both runtimes an excluded identical warmup cohort. All prompts, inference source, precision and cost-table bytes are unchanged. Original failed-run artifacts and client source are retained.",
+  "revision": 2
+}

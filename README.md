@@ -4,6 +4,8 @@
 
 A subsequent [trace and optimization iteration](docs/trace-iteration-01.md) retained the five-token default: seven tokens improved coding C1 by about 6% but regressed prose. The same iteration measured the restored TP8 reference at 135.40 coding tok/s and published all-rank GPU traces, explaining the observed 1.63× C1 scaling.
 
+A second [adaptive-verification iteration](docs/trace-iteration-02.md) gained **5.7% throughput on a frozen heterogeneous arrival test**, with 8.4% lower mean request latency. Some repeated categories gained over 10%, while others regressed substantially. The complete optional patches and evidence are published; static five-token serving remains the default.
+
 This separate repository contains the SGLang TP4/EP4 implementation, exact node-local NVMe Engram storage, four-rank RoCEnante integration, qualification evidence and complete benchmark results. The [SG17 eight-Spark project](https://github.com/rhys101/DeepSeek-V4.1-Flash-vLLM-DGX-Spark-8) remains separate.
 
 | Workload, tok/s | First repeat suite | Repeat after 299K input |

@@ -1,0 +1,877 @@
+{
+  "method": "Native per-request counters on chat-tokenized inputs. Static caps are gamma+1; compact caps come from the returned histogram. This measures actual unpadded verification rows, not CUDA graph padding or streaming throughput. Prompt suffixes differ from SparkDash at C8; this is diagnostic evidence.",
+  "rows": [
+    {
+      "workload": "coding",
+      "c": 1,
+      "before": {
+        "steps": 40,
+        "completion_tokens": 200,
+        "accepted_drafts": 160,
+        "completion_tokens_per_verify": 5.0,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.2,
+        "accepted_drafts_histogram": {
+          "0": 1,
+          "1": 4,
+          "2": 4,
+          "3": 2,
+          "4": 3,
+          "5": 26
+        },
+        "verify_cap_histogram": {
+          "6": 40
+        }
+      },
+      "after": {
+        "steps": 39,
+        "completion_tokens": 200,
+        "accepted_drafts": 160,
+        "completion_tokens_per_verify": 5.128205128205129,
+        "verified_rows_per_step": 5.82051282051282,
+        "verified_rows_per_output_token": 1.135,
+        "accepted_drafts_histogram": {
+          "0": 1,
+          "1": 2,
+          "2": 4,
+          "3": 4,
+          "4": 2,
+          "5": 26
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 3,
+          "5": 1,
+          "6": 35
+        }
+      },
+      "verified_rows_per_output_delta_percent": -5.416666666666659
+    },
+    {
+      "workload": "json",
+      "c": 1,
+      "before": {
+        "steps": 30,
+        "completion_tokens": 89,
+        "accepted_drafts": 59,
+        "completion_tokens_per_verify": 2.966666666666667,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 2.0224719101123596,
+        "accepted_drafts_histogram": {
+          "0": 11,
+          "1": 4,
+          "2": 3,
+          "3": 4,
+          "4": 3,
+          "5": 5
+        },
+        "verify_cap_histogram": {
+          "6": 30
+        }
+      },
+      "after": {
+        "steps": 31,
+        "completion_tokens": 86,
+        "accepted_drafts": 55,
+        "completion_tokens_per_verify": 2.774193548387097,
+        "verified_rows_per_step": 4.193548387096774,
+        "verified_rows_per_output_token": 1.5116279069767442,
+        "accepted_drafts_histogram": {
+          "0": 7,
+          "1": 8,
+          "2": 8,
+          "3": 4,
+          "4": 1,
+          "5": 3
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 1,
+          "2": 3,
+          "3": 7,
+          "4": 7,
+          "5": 4,
+          "6": 9
+        }
+      },
+      "verified_rows_per_output_delta_percent": -25.258397932816536
+    },
+    {
+      "workload": "narrative",
+      "c": 1,
+      "before": {
+        "steps": 87,
+        "completion_tokens": 157,
+        "accepted_drafts": 70,
+        "completion_tokens_per_verify": 1.8045977011494252,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 3.3248407643312103,
+        "accepted_drafts_histogram": {
+          "0": 49,
+          "1": 16,
+          "2": 13,
+          "3": 8,
+          "4": 1
+        },
+        "verify_cap_histogram": {
+          "6": 87
+        }
+      },
+      "after": {
+        "steps": 73,
+        "completion_tokens": 134,
+        "accepted_drafts": 61,
+        "completion_tokens_per_verify": 1.8356164383561644,
+        "verified_rows_per_step": 2.780821917808219,
+        "verified_rows_per_output_token": 1.5149253731343284,
+        "accepted_drafts_histogram": {
+          "0": 29,
+          "1": 29,
+          "2": 13,
+          "3": 2
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 2,
+          "2": 26,
+          "3": 35,
+          "4": 8,
+          "5": 0,
+          "6": 2
+        }
+      },
+      "verified_rows_per_output_delta_percent": -54.436152570480935
+    },
+    {
+      "workload": "prose",
+      "c": 1,
+      "before": {
+        "steps": 55,
+        "completion_tokens": 121,
+        "accepted_drafts": 66,
+        "completion_tokens_per_verify": 2.2,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 2.727272727272727,
+        "accepted_drafts_histogram": {
+          "0": 19,
+          "1": 15,
+          "2": 14,
+          "3": 5,
+          "4": 2
+        },
+        "verify_cap_histogram": {
+          "6": 55
+        }
+      },
+      "after": {
+        "steps": 64,
+        "completion_tokens": 131,
+        "accepted_drafts": 67,
+        "completion_tokens_per_verify": 2.046875,
+        "verified_rows_per_step": 3.46875,
+        "verified_rows_per_output_token": 1.6946564885496183,
+        "accepted_drafts_histogram": {
+          "0": 23,
+          "1": 21,
+          "2": 14,
+          "3": 6
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 6,
+          "3": 32,
+          "4": 19,
+          "5": 4,
+          "6": 3
+        }
+      },
+      "verified_rows_per_output_delta_percent": -37.862595419847324
+    },
+    {
+      "workload": "math",
+      "c": 1,
+      "before": {
+        "steps": 38,
+        "completion_tokens": 200,
+        "accepted_drafts": 163,
+        "completion_tokens_per_verify": 5.2631578947368425,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.14,
+        "accepted_drafts_histogram": {
+          "0": 1,
+          "1": 0,
+          "2": 3,
+          "3": 3,
+          "4": 7,
+          "5": 24
+        },
+        "verify_cap_histogram": {
+          "6": 38
+        }
+      },
+      "after": {
+        "steps": 49,
+        "completion_tokens": 200,
+        "accepted_drafts": 154,
+        "completion_tokens_per_verify": 4.081632653061225,
+        "verified_rows_per_step": 5.387755102040816,
+        "verified_rows_per_output_token": 1.32,
+        "accepted_drafts_histogram": {
+          "0": 6,
+          "1": 5,
+          "2": 6,
+          "3": 9,
+          "4": 5,
+          "5": 18
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 2,
+          "4": 10,
+          "5": 4,
+          "6": 33
+        }
+      },
+      "verified_rows_per_output_delta_percent": 15.789473684210531
+    },
+    {
+      "workload": "reasoning",
+      "c": 1,
+      "before": {
+        "steps": 58,
+        "completion_tokens": 200,
+        "accepted_drafts": 144,
+        "completion_tokens_per_verify": 3.4482758620689653,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.74,
+        "accepted_drafts_histogram": {
+          "0": 13,
+          "1": 12,
+          "2": 8,
+          "3": 1,
+          "4": 7,
+          "5": 17
+        },
+        "verify_cap_histogram": {
+          "6": 58
+        }
+      },
+      "after": {
+        "steps": 55,
+        "completion_tokens": 200,
+        "accepted_drafts": 146,
+        "completion_tokens_per_verify": 3.6363636363636362,
+        "verified_rows_per_step": 5.0,
+        "verified_rows_per_output_token": 1.375,
+        "accepted_drafts_histogram": {
+          "0": 5,
+          "1": 7,
+          "2": 14,
+          "3": 15,
+          "4": 4,
+          "5": 10
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 8,
+          "4": 14,
+          "5": 3,
+          "6": 30
+        }
+      },
+      "verified_rows_per_output_delta_percent": -20.977011494252874
+    },
+    {
+      "workload": "summary",
+      "c": 1,
+      "before": {
+        "steps": 39,
+        "completion_tokens": 97,
+        "accepted_drafts": 58,
+        "completion_tokens_per_verify": 2.4871794871794872,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 2.4123711340206184,
+        "accepted_drafts_histogram": {
+          "0": 12,
+          "1": 12,
+          "2": 6,
+          "3": 5,
+          "4": 1,
+          "5": 3
+        },
+        "verify_cap_histogram": {
+          "6": 39
+        }
+      },
+      "after": {
+        "steps": 50,
+        "completion_tokens": 109,
+        "accepted_drafts": 59,
+        "completion_tokens_per_verify": 2.18,
+        "verified_rows_per_step": 3.5,
+        "verified_rows_per_output_token": 1.6055045871559632,
+        "accepted_drafts_histogram": {
+          "0": 15,
+          "1": 18,
+          "2": 12,
+          "3": 3,
+          "4": 2
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 1,
+          "2": 8,
+          "3": 21,
+          "4": 10,
+          "5": 5,
+          "6": 5
+        }
+      },
+      "verified_rows_per_output_delta_percent": -33.447032070885285
+    },
+    {
+      "workload": "format",
+      "c": 1,
+      "before": {
+        "steps": 19,
+        "completion_tokens": 102,
+        "accepted_drafts": 83,
+        "completion_tokens_per_verify": 5.368421052631579,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.1176470588235294,
+        "accepted_drafts_histogram": {
+          "0": 1,
+          "1": 1,
+          "2": 1,
+          "3": 0,
+          "4": 0,
+          "5": 16
+        },
+        "verify_cap_histogram": {
+          "6": 19
+        }
+      },
+      "after": {
+        "steps": 19,
+        "completion_tokens": 102,
+        "accepted_drafts": 83,
+        "completion_tokens_per_verify": 5.368421052631579,
+        "verified_rows_per_step": 5.894736842105263,
+        "verified_rows_per_output_token": 1.0980392156862746,
+        "accepted_drafts_histogram": {
+          "0": 1,
+          "1": 0,
+          "2": 1,
+          "3": 2,
+          "4": 0,
+          "5": 15
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 1,
+          "5": 0,
+          "6": 18
+        }
+      },
+      "verified_rows_per_output_delta_percent": -1.754385964912275
+    },
+    {
+      "workload": "sparkdash_prose",
+      "c": 1,
+      "before": {
+        "steps": 82,
+        "completion_tokens": 256,
+        "accepted_drafts": 177,
+        "completion_tokens_per_verify": 3.1219512195121952,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.921875,
+        "accepted_drafts_histogram": {
+          "0": 18,
+          "1": 19,
+          "2": 12,
+          "3": 10,
+          "4": 11,
+          "5": 12
+        },
+        "verify_cap_histogram": {
+          "6": 82
+        }
+      },
+      "after": {
+        "steps": 99,
+        "completion_tokens": 256,
+        "accepted_drafts": 159,
+        "completion_tokens_per_verify": 2.585858585858586,
+        "verified_rows_per_step": 4.212121212121212,
+        "verified_rows_per_output_token": 1.62890625,
+        "accepted_drafts_histogram": {
+          "0": 24,
+          "1": 21,
+          "2": 31,
+          "3": 17,
+          "4": 5,
+          "5": 1
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 3,
+          "3": 26,
+          "4": 36,
+          "5": 15,
+          "6": 19
+        }
+      },
+      "verified_rows_per_output_delta_percent": -15.243902439024392
+    },
+    {
+      "workload": "coding",
+      "c": 8,
+      "before": {
+        "steps": 323,
+        "completion_tokens": 1600,
+        "accepted_drafts": 1276,
+        "completion_tokens_per_verify": 4.953560371517028,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.21125,
+        "accepted_drafts_histogram": {
+          "0": 12,
+          "1": 32,
+          "2": 27,
+          "3": 28,
+          "4": 14,
+          "5": 210
+        },
+        "verify_cap_histogram": {
+          "6": 323
+        }
+      },
+      "after": {
+        "steps": 334,
+        "completion_tokens": 1600,
+        "accepted_drafts": 1277,
+        "completion_tokens_per_verify": 4.790419161676646,
+        "verified_rows_per_step": 5.517964071856287,
+        "verified_rows_per_output_token": 1.151875,
+        "accepted_drafts_histogram": {
+          "0": 13,
+          "1": 25,
+          "2": 33,
+          "3": 45,
+          "4": 39,
+          "5": 179
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 1,
+          "2": 5,
+          "3": 14,
+          "4": 25,
+          "5": 44,
+          "6": 245
+        }
+      },
+      "verified_rows_per_output_delta_percent": -4.901960784313719
+    },
+    {
+      "workload": "json",
+      "c": 8,
+      "before": {
+        "steps": 198,
+        "completion_tokens": 686,
+        "accepted_drafts": 488,
+        "completion_tokens_per_verify": 3.4646464646464645,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.7317784256559767,
+        "accepted_drafts_histogram": {
+          "0": 59,
+          "1": 17,
+          "2": 20,
+          "3": 23,
+          "4": 33,
+          "5": 46
+        },
+        "verify_cap_histogram": {
+          "6": 198
+        }
+      },
+      "after": {
+        "steps": 224,
+        "completion_tokens": 678,
+        "accepted_drafts": 453,
+        "completion_tokens_per_verify": 3.0267857142857144,
+        "verified_rows_per_step": 3.767857142857143,
+        "verified_rows_per_output_token": 1.2448377581120944,
+        "accepted_drafts_histogram": {
+          "0": 63,
+          "1": 34,
+          "2": 32,
+          "3": 47,
+          "4": 26,
+          "5": 22
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 23,
+          "2": 32,
+          "3": 40,
+          "4": 54,
+          "5": 29,
+          "6": 46
+        }
+      },
+      "verified_rows_per_output_delta_percent": -28.117954371641684
+    },
+    {
+      "workload": "narrative",
+      "c": 8,
+      "before": {
+        "steps": 576,
+        "completion_tokens": 1168,
+        "accepted_drafts": 590,
+        "completion_tokens_per_verify": 2.0277777777777777,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 2.958904109589041,
+        "accepted_drafts_histogram": {
+          "0": 248,
+          "1": 161,
+          "2": 96,
+          "3": 54,
+          "4": 10,
+          "5": 7
+        },
+        "verify_cap_histogram": {
+          "6": 576
+        }
+      },
+      "after": {
+        "steps": 708,
+        "completion_tokens": 1117,
+        "accepted_drafts": 408,
+        "completion_tokens_per_verify": 1.5776836158192091,
+        "verified_rows_per_step": 2.1059322033898304,
+        "verified_rows_per_output_token": 1.334825425246195,
+        "accepted_drafts_histogram": {
+          "0": 397,
+          "1": 224,
+          "2": 77,
+          "3": 10
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 193,
+          "2": 328,
+          "3": 145,
+          "4": 22,
+          "5": 1,
+          "6": 19
+        }
+      },
+      "verified_rows_per_output_delta_percent": -54.88784442454988
+    },
+    {
+      "workload": "prose",
+      "c": 8,
+      "before": {
+        "steps": 453,
+        "completion_tokens": 966,
+        "accepted_drafts": 512,
+        "completion_tokens_per_verify": 2.1324503311258276,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 2.813664596273292,
+        "accepted_drafts_histogram": {
+          "0": 168,
+          "1": 144,
+          "2": 88,
+          "3": 28,
+          "4": 17,
+          "5": 8
+        },
+        "verify_cap_histogram": {
+          "6": 453
+        }
+      },
+      "after": {
+        "steps": 502,
+        "completion_tokens": 973,
+        "accepted_drafts": 470,
+        "completion_tokens_per_verify": 1.9382470119521913,
+        "verified_rows_per_step": 2.6693227091633465,
+        "verified_rows_per_output_token": 1.3771839671120247,
+        "accepted_drafts_histogram": {
+          "0": 181,
+          "1": 201,
+          "2": 95,
+          "3": 21,
+          "4": 4
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 49,
+          "2": 213,
+          "3": 146,
+          "4": 63,
+          "5": 11,
+          "6": 20
+        }
+      },
+      "verified_rows_per_output_delta_percent": -51.05372655517969
+    },
+    {
+      "workload": "math",
+      "c": 8,
+      "before": {
+        "steps": 341,
+        "completion_tokens": 1595,
+        "accepted_drafts": 1265,
+        "completion_tokens_per_verify": 4.67741935483871,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.282758620689655,
+        "accepted_drafts_histogram": {
+          "0": 31,
+          "1": 21,
+          "2": 27,
+          "3": 37,
+          "4": 46,
+          "5": 179
+        },
+        "verify_cap_histogram": {
+          "6": 341
+        }
+      },
+      "after": {
+        "steps": 371,
+        "completion_tokens": 1600,
+        "accepted_drafts": 1234,
+        "completion_tokens_per_verify": 4.3126684636118595,
+        "verified_rows_per_step": 4.776280323450135,
+        "verified_rows_per_output_token": 1.1075,
+        "accepted_drafts_histogram": {
+          "0": 36,
+          "1": 37,
+          "2": 47,
+          "3": 49,
+          "4": 54,
+          "5": 148
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 10,
+          "2": 26,
+          "3": 41,
+          "4": 53,
+          "5": 71,
+          "6": 170
+        }
+      },
+      "verified_rows_per_output_delta_percent": -13.662634408602148
+    },
+    {
+      "workload": "reasoning",
+      "c": 8,
+      "before": {
+        "steps": 424,
+        "completion_tokens": 1600,
+        "accepted_drafts": 1178,
+        "completion_tokens_per_verify": 3.7735849056603774,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.59,
+        "accepted_drafts_histogram": {
+          "0": 64,
+          "1": 64,
+          "2": 77,
+          "3": 43,
+          "4": 49,
+          "5": 127
+        },
+        "verify_cap_histogram": {
+          "6": 424
+        }
+      },
+      "after": {
+        "steps": 469,
+        "completion_tokens": 1600,
+        "accepted_drafts": 1134,
+        "completion_tokens_per_verify": 3.411513859275053,
+        "verified_rows_per_step": 4.217484008528785,
+        "verified_rows_per_output_token": 1.23625,
+        "accepted_drafts_histogram": {
+          "0": 72,
+          "1": 93,
+          "2": 100,
+          "3": 64,
+          "4": 51,
+          "5": 89
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 4,
+          "2": 55,
+          "3": 106,
+          "4": 101,
+          "5": 76,
+          "6": 127
+        }
+      },
+      "verified_rows_per_output_delta_percent": -22.248427672955973
+    },
+    {
+      "workload": "summary",
+      "c": 8,
+      "before": {
+        "steps": 367,
+        "completion_tokens": 924,
+        "accepted_drafts": 557,
+        "completion_tokens_per_verify": 2.517711171662125,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 2.383116883116883,
+        "accepted_drafts_histogram": {
+          "0": 104,
+          "1": 106,
+          "2": 76,
+          "3": 43,
+          "4": 20,
+          "5": 18
+        },
+        "verify_cap_histogram": {
+          "6": 367
+        }
+      },
+      "after": {
+        "steps": 405,
+        "completion_tokens": 892,
+        "accepted_drafts": 485,
+        "completion_tokens_per_verify": 2.202469135802469,
+        "verified_rows_per_step": 3.1654320987654323,
+        "verified_rows_per_output_token": 1.437219730941704,
+        "accepted_drafts_histogram": {
+          "0": 131,
+          "1": 131,
+          "2": 94,
+          "3": 33,
+          "4": 13,
+          "5": 3
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 42,
+          "2": 101,
+          "3": 123,
+          "4": 66,
+          "5": 33,
+          "6": 40
+        }
+      },
+      "verified_rows_per_output_delta_percent": -39.69159712124729
+    },
+    {
+      "workload": "format",
+      "c": 8,
+      "before": {
+        "steps": 154,
+        "completion_tokens": 822,
+        "accepted_drafts": 668,
+        "completion_tokens_per_verify": 5.337662337662338,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.1240875912408759,
+        "accepted_drafts_histogram": {
+          "0": 6,
+          "1": 4,
+          "2": 12,
+          "3": 7,
+          "4": 6,
+          "5": 119
+        },
+        "verify_cap_histogram": {
+          "6": 154
+        }
+      },
+      "after": {
+        "steps": 156,
+        "completion_tokens": 822,
+        "accepted_drafts": 666,
+        "completion_tokens_per_verify": 5.269230769230769,
+        "verified_rows_per_step": 5.846153846153846,
+        "verified_rows_per_output_token": 1.1094890510948905,
+        "accepted_drafts_histogram": {
+          "0": 3,
+          "1": 5,
+          "2": 17,
+          "3": 11,
+          "4": 6,
+          "5": 114
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 2,
+          "4": 4,
+          "5": 6,
+          "6": 143
+        }
+      },
+      "verified_rows_per_output_delta_percent": -1.2987012987012991
+    },
+    {
+      "workload": "sparkdash_prose",
+      "c": 8,
+      "before": {
+        "steps": 640,
+        "completion_tokens": 2048,
+        "accepted_drafts": 1416,
+        "completion_tokens_per_verify": 3.2,
+        "verified_rows_per_step": 6.0,
+        "verified_rows_per_output_token": 1.875,
+        "accepted_drafts_histogram": {
+          "0": 156,
+          "1": 100,
+          "2": 126,
+          "3": 82,
+          "4": 62,
+          "5": 114
+        },
+        "verify_cap_histogram": {
+          "6": 640
+        }
+      },
+      "after": {
+        "steps": 764,
+        "completion_tokens": 2048,
+        "accepted_drafts": 1286,
+        "completion_tokens_per_verify": 2.680628272251309,
+        "verified_rows_per_step": 3.712041884816754,
+        "verified_rows_per_output_token": 1.384765625,
+        "accepted_drafts_histogram": {
+          "0": 224,
+          "1": 138,
+          "2": 176,
+          "3": 138,
+          "4": 58,
+          "5": 30
+        },
+        "verify_cap_histogram": {
+          "0": 0,
+          "1": 32,
+          "2": 106,
+          "3": 160,
+          "4": 280,
+          "5": 124,
+          "6": 62
+        }
+      },
+      "verified_rows_per_output_delta_percent": -26.145833333333336
+    }
+  ]
+}

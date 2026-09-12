@@ -1,0 +1,127 @@
+{
+  "method": "Leave one interior (bs,M) trial-median cell out, refit additive cost model, interpolate across omitted M if needed. Exclude endpoints and cells whose removal disconnects the design. This checks calibration interpolation; final workload benchmarks are still required.",
+  "median_abs_relative_error": 0.014643132344446586,
+  "max_abs_relative_error": 0.13932255534661708,
+  "excluded": [
+    {
+      "bs": 1,
+      "M": 1,
+      "reason": "endpoint would require extrapolation"
+    },
+    {
+      "bs": 1,
+      "M": 4,
+      "reason": "removing this overlap disconnects the additive design"
+    },
+    {
+      "bs": 4,
+      "M": 4,
+      "reason": "removing this overlap disconnects the additive design"
+    },
+    {
+      "bs": 8,
+      "M": 48,
+      "reason": "endpoint would require extrapolation"
+    }
+  ],
+  "cells": [
+    {
+      "bs": 1,
+      "M": 2,
+      "observed_ms": 45.089225,
+      "predicted_ms": 44.127325000000205,
+      "relative_error": -0.021333256448736737
+    },
+    {
+      "bs": 1,
+      "M": 3,
+      "observed_ms": 48.90840000000001,
+      "predicted_ms": 49.04243750000017,
+      "relative_error": 0.002740582394847646
+    },
+    {
+      "bs": 1,
+      "M": 5,
+      "observed_ms": 57.25130000000001,
+      "predicted_ms": 56.734249999999946,
+      "relative_error": -0.009031235971935336
+    },
+    {
+      "bs": 1,
+      "M": 6,
+      "observed_ms": 60.47285,
+      "predicted_ms": 61.02924444444443,
+      "relative_error": 0.009200731310735843
+    },
+    {
+      "bs": 4,
+      "M": 8,
+      "observed_ms": 70.45675000000001,
+      "predicted_ms": 61.356650000000116,
+      "relative_error": -0.12915866826102385
+    },
+    {
+      "bs": 4,
+      "M": 12,
+      "observed_ms": 81.11679999999998,
+      "predicted_ms": 77.58114583333328,
+      "relative_error": -0.04358719977448211
+    },
+    {
+      "bs": 4,
+      "M": 16,
+      "observed_ms": 87.650475,
+      "predicted_ms": 87.91577499999993,
+      "relative_error": 0.0030267947777797843
+    },
+    {
+      "bs": 4,
+      "M": 20,
+      "observed_ms": 97.31172500000001,
+      "predicted_ms": 97.39185833333325,
+      "relative_error": 0.0008234704844995999
+    },
+    {
+      "bs": 4,
+      "M": 24,
+      "observed_ms": 104.09987500000001,
+      "predicted_ms": 112.93467500000001,
+      "relative_error": 0.0848684976807128
+    },
+    {
+      "bs": 8,
+      "M": 8,
+      "observed_ms": 65.31677499999999,
+      "predicted_ms": 74.41687500000002,
+      "relative_error": 0.13932255534661708
+    },
+    {
+      "bs": 8,
+      "M": 16,
+      "observed_ms": 88.75410000000001,
+      "predicted_ms": 88.48880000000004,
+      "relative_error": -0.0029891576839826683
+    },
+    {
+      "bs": 8,
+      "M": 24,
+      "observed_ms": 110.9165,
+      "predicted_ms": 102.08170000000003,
+      "relative_error": -0.07965271172458543
+    },
+    {
+      "bs": 8,
+      "M": 32,
+      "observed_ms": 118.8347,
+      "predicted_ms": 121.2215583333333,
+      "relative_error": 0.020085533378157328
+    },
+    {
+      "bs": 8,
+      "M": 40,
+      "observed_ms": 134.47155,
+      "predicted_ms": 134.724875,
+      "relative_error": 0.00188385573007821
+    }
+  ]
+}

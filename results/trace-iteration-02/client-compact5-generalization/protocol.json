@@ -1,0 +1,97 @@
+{
+  "cases": [
+    {
+      "id": "scene",
+      "at": 0.0,
+      "budget": 320,
+      "prompt": "Write a quiet scene in which a night-shift train dispatcher finds a handwritten note inside an old timetable. Reveal the significance through action and dialogue. Avoid a twist ending."
+    },
+    {
+      "id": "interval_code",
+      "at": 0.0,
+      "budget": 320,
+      "prompt": "Implement a Python function merge_intervals(intervals) that merges overlapping closed integer intervals. Return a sorted list, accept empty input, and do not mutate the input. Explain the invariant and give three edge cases."
+    },
+    {
+      "id": "arithmetic",
+      "at": 0.0,
+      "budget": 64,
+      "prompt": "Return only a JSON object with keys product, square_sum, and gcd. product is 37 times 29; square_sum is the sum of the squares of the integers 1 through 12 inclusive; gcd is the greatest common divisor of 84 and 126.",
+      "expected": {
+        "product": 1073,
+        "square_sum": 650,
+        "gcd": 42
+      }
+    },
+    {
+      "id": "incident_summary",
+      "at": 0.5,
+      "budget": 256,
+      "prompt": "Summarize these incident notes for the next on-call engineer in six concise bullets. Distinguish observations from hypotheses. At 09:12 the West region checkout error rate rose from 0.3% to 4.8%. Read-only pages stayed healthy. At 09:18 the team disabled the new address-validation rule, but errors persisted. At 09:24 database connection wait time was 2.1 seconds, while query execution remained under 40 milliseconds. At 09:31 a worker retry limit was reduced from ten attempts to two. Error rate returned to 0.5% by 09:39. No data loss has been found. The team suspects retry amplification but has not established the initial trigger. The next engineer should inspect connection-pool limits, retain request traces, and compare the affected region with East."
+    },
+    {
+      "id": "sort_json",
+      "at": 1.0,
+      "budget": 64,
+      "prompt": "Return only JSON with key ordered, whose value is these words sorted alphabetically: walnut, ash, birch, elm, cedar.",
+      "expected": {
+        "ordered": [
+          "ash",
+          "birch",
+          "cedar",
+          "elm",
+          "walnut"
+        ]
+      }
+    },
+    {
+      "id": "translation",
+      "at": 1.6,
+      "budget": 160,
+      "prompt": "Translate this note into natural French, preserving its polite but direct tone: We can deliver the first part on Thursday. The remaining items need one more inspection, so please keep Friday morning available. If that causes a problem, let us know today and we will arrange another time."
+    },
+    {
+      "id": "concurrency_explanation",
+      "at": 2.2,
+      "budget": 320,
+      "prompt": "Explain a lost-update race using two workers incrementing the same counter. Show a short interleaving, then explain how a mutex and an atomic increment each prevent the error. Include one limitation of each approach."
+    },
+    {
+      "id": "requirements",
+      "at": 2.8,
+      "budget": 256,
+      "prompt": "Turn this request into a concise implementation checklist with acceptance criteria: A library needs a reservation system. Members may reserve up to three books, but reference books cannot be reserved. A returned reserved book is held for 48 hours. The first eligible member in the queue gets notified, and a missed pickup moves the book to the next member. Staff can override a hold, but every override needs a reason and an audit record. Avoid inventing extra features."
+    },
+    {
+      "id": "extract_facts",
+      "at": 3.7,
+      "budget": 96,
+      "prompt": "Extract only the final approved values as JSON with keys owner, date, rooms. Notes: On Monday, Priya proposed 12 rooms for 14 October. On Tuesday, Omar suggested 10 rooms for 16 October. The final review assigned ownership to Lina, approved 11 rooms, and set the date to 18 October. The earlier proposals were withdrawn.",
+      "expected": {
+        "owner": "Lina",
+        "date": "18 October",
+        "rooms": 11
+      }
+    },
+    {
+      "id": "technical_design",
+      "at": 4.5,
+      "budget": 384,
+      "prompt": "Design a small service that sends appointment reminders. Explain how it handles retries, duplicate delivery, time zones, cancellation, and a worker crash after sending but before recording success. State the delivery guarantee you can honestly provide and describe a practical test for the crash case."
+    },
+    {
+      "id": "edit_note",
+      "at": 5.4,
+      "budget": 160,
+      "prompt": "Rewrite this message to be clear and calm, keeping every commitment and avoiding blame: Apparently the export thing did not finish and nobody told us, so now we have a pile of half-done files. I will check the logs by 2 pm and send a list of affected files. We should not retry anything until that list is ready because there might already be completed exports mixed in."
+    },
+    {
+      "id": "csv_parse_code",
+      "at": 6.4,
+      "budget": 320,
+      "prompt": "In Python, read CSV text with columns name and score, ignore rows with an empty score, reject invalid nonempty scores with the row number, and return the three highest-scoring names with alphabetical tie-breaking. Use the standard library and explain how quoted commas are handled."
+    }
+  ],
+  "script_sha256": "a0106cf0654d6cbb14c080f4f3205713d66d24b0c6eb1ac8dd0e5d9085057709",
+  "method": "Twelve unseen heterogeneous requests, fixed staggered arrivals, three identical trials. First trial is cold for these prompts; later trials reuse prefixes. Native streaming reports exact completion and verification counters. Report end-to-end latency and cohort throughput; do not substitute these numbers for the original OpenAI benchmark. Every request and trial is retained."
+}

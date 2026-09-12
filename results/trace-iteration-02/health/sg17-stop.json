@@ -1,0 +1,312 @@
+{
+  "status": "STOPPED_PRESERVED",
+  "observed": "2026-09-12T16:38:58.264607+00:00",
+  "before": [
+    {
+      "rank": 0,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 381642,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:17.943050241Z",
+        "FinishedAt": "2026-09-12T15:14:09.343178548Z"
+      },
+      "available_gib": 11.161609649658203,
+      "gpu_containers": [
+        "sglang8-sg17-rocenante-r0"
+      ]
+    },
+    {
+      "rank": 1,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1275608,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:11.94487019Z",
+        "FinishedAt": "2026-09-12T15:14:18.66366179Z"
+      },
+      "available_gib": 12.384757995605469,
+      "gpu_containers": [
+        "sglang8-sg17-rocenante-r1"
+      ]
+    },
+    {
+      "rank": 2,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1197682,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:12.897134778Z",
+        "FinishedAt": "2026-09-12T15:14:17.271891329Z"
+      },
+      "available_gib": 12.516170501708984,
+      "gpu_containers": [
+        "sglang8-sg17-rocenante-r2"
+      ]
+    },
+    {
+      "rank": 3,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1199428,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:13.839480819Z",
+        "FinishedAt": "2026-09-12T15:14:19.711764324Z"
+      },
+      "available_gib": 12.081764221191406,
+      "gpu_containers": [
+        "sglang8-sg17-rocenante-r3"
+      ]
+    },
+    {
+      "rank": 4,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 2893962,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:14.859478014Z",
+        "FinishedAt": "2026-09-12T15:14:17.470218395Z"
+      },
+      "available_gib": 12.451709747314453,
+      "gpu_containers": [
+        "sglang8-sg17-rocenante-r4"
+      ]
+    },
+    {
+      "rank": 5,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 2893681,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:15.45511949Z",
+        "FinishedAt": "2026-09-12T15:14:21.27290393Z"
+      },
+      "available_gib": 12.785476684570312,
+      "gpu_containers": [
+        "sglang8-sg17-rocenante-r5"
+      ]
+    },
+    {
+      "rank": 6,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1116737,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:16.443701889Z",
+        "FinishedAt": "2026-09-12T15:14:16.727167268Z"
+      },
+      "available_gib": 12.120719909667969,
+      "gpu_containers": [
+        "sglang8-sg17-rocenante-r6"
+      ]
+    },
+    {
+      "rank": 7,
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 1023102,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:17.363243511Z",
+        "FinishedAt": "2026-09-12T15:14:18.072823393Z"
+      },
+      "available_gib": 12.61807632446289,
+      "gpu_containers": [
+        "sglang8-sg17-rocenante-r7"
+      ]
+    }
+  ],
+  "after": [
+    {
+      "rank": 0,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:17.943050241Z",
+        "FinishedAt": "2026-09-12T16:38:41.6637929Z"
+      },
+      "available_gib": 116.90827560424805,
+      "gpu_containers": []
+    },
+    {
+      "rank": 1,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 3,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:11.94487019Z",
+        "FinishedAt": "2026-09-12T16:38:50.959311207Z"
+      },
+      "available_gib": 117.15739822387695,
+      "gpu_containers": []
+    },
+    {
+      "rank": 2,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 3,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:12.897134778Z",
+        "FinishedAt": "2026-09-12T16:38:50.533853942Z"
+      },
+      "available_gib": 117.30641555786133,
+      "gpu_containers": []
+    },
+    {
+      "rank": 3,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 3,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:13.839480819Z",
+        "FinishedAt": "2026-09-12T16:38:50.407934555Z"
+      },
+      "available_gib": 116.8497085571289,
+      "gpu_containers": []
+    },
+    {
+      "rank": 4,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 3,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:14.859478014Z",
+        "FinishedAt": "2026-09-12T16:38:51.062466687Z"
+      },
+      "available_gib": 117.05755233764648,
+      "gpu_containers": []
+    },
+    {
+      "rank": 5,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 3,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:15.45511949Z",
+        "FinishedAt": "2026-09-12T16:38:50.67967135Z"
+      },
+      "available_gib": 117.21232604980469,
+      "gpu_containers": []
+    },
+    {
+      "rank": 6,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 3,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:16.443701889Z",
+        "FinishedAt": "2026-09-12T16:38:52.624589154Z"
+      },
+      "available_gib": 116.87952041625977,
+      "gpu_containers": []
+    },
+    {
+      "rank": 7,
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 3,
+        "Error": "",
+        "StartedAt": "2026-09-12T16:07:17.363243511Z",
+        "FinishedAt": "2026-09-12T16:38:54.457533206Z"
+      },
+      "available_gib": 117.31775283813477,
+      "gpu_containers": []
+    }
+  ]
+}

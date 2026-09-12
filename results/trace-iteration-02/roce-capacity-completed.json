@@ -1,0 +1,197 @@
+{
+  "method": "All eight C8 rank0 target graphs, identified by GPU correlation IDs and 80 expert GEMMs. Kernel durations include peer waiting and may overlap; streaming benchmark measurements determine throughput. The first two source traces are published with iteration 1.",
+  "rows": [
+    {
+      "label": "k5-512k",
+      "trace": "trace-iteration-01/traces-baseline/rank0/baseline-b-coding-c8/baseline-b-coding-c8-TP-0-EP-0.trace.json.gz",
+      "trace_sha256": "b9ce142183119b7595bdcfe7e9ad2e7416f8885b67985fe41507dee1570dde33",
+      "max_hidden_allreduce_bytes": 491520,
+      "roce_capacity_bytes": 524288,
+      "target_graphs": [
+        {
+          "nccl_allreduce_count": 2,
+          "nccl_allreduce_ms": 0.484514,
+          "roce_kernel_count": 81,
+          "roce_ms": 15.903768000000001
+        },
+        {
+          "nccl_allreduce_count": 2,
+          "nccl_allreduce_ms": 0.47744200000000003,
+          "roce_kernel_count": 81,
+          "roce_ms": 16.113411000000003
+        },
+        {
+          "nccl_allreduce_count": 2,
+          "nccl_allreduce_ms": 0.24125,
+          "roce_kernel_count": 81,
+          "roce_ms": 16.895131999999997
+        },
+        {
+          "nccl_allreduce_count": 2,
+          "nccl_allreduce_ms": 2.258024,
+          "roce_kernel_count": 81,
+          "roce_ms": 17.141497000000005
+        },
+        {
+          "nccl_allreduce_count": 2,
+          "nccl_allreduce_ms": 0.240801,
+          "roce_kernel_count": 81,
+          "roce_ms": 17.617540999999996
+        },
+        {
+          "nccl_allreduce_count": 2,
+          "nccl_allreduce_ms": 0.244801,
+          "roce_kernel_count": 81,
+          "roce_ms": 17.853826999999995
+        },
+        {
+          "nccl_allreduce_count": 2,
+          "nccl_allreduce_ms": 0.24352100000000002,
+          "roce_kernel_count": 81,
+          "roce_ms": 17.598468999999994
+        },
+        {
+          "nccl_allreduce_count": 2,
+          "nccl_allreduce_ms": 1.156388,
+          "roce_kernel_count": 81,
+          "roce_ms": 18.64378
+        }
+      ],
+      "means": {
+        "nccl_allreduce_count": 2,
+        "nccl_allreduce_ms": 0.668342625,
+        "roce_kernel_count": 81,
+        "roce_ms": 17.220928125
+      },
+      "original_trace_sha256": "8a7acd4a0599a362b40e1667c6b209849d1e2c94292e61e733a2925fd3d1d141"
+    },
+    {
+      "label": "k7-512k",
+      "trace": "trace-iteration-01/traces-k7/rank0/k7-b-coding-c8/k7-b-coding-c8-TP-0-EP-0.trace.json.gz",
+      "trace_sha256": "0d0928236375bf88748d8274f63d2614930e002c17928f822e2e50093d378e65",
+      "max_hidden_allreduce_bytes": 655360,
+      "roce_capacity_bytes": 524288,
+      "target_graphs": [
+        {
+          "nccl_allreduce_count": 83,
+          "nccl_allreduce_ms": 21.673529000000002,
+          "roce_kernel_count": 0,
+          "roce_ms": 0.0
+        },
+        {
+          "nccl_allreduce_count": 83,
+          "nccl_allreduce_ms": 22.520728999999996,
+          "roce_kernel_count": 0,
+          "roce_ms": 0.0
+        },
+        {
+          "nccl_allreduce_count": 83,
+          "nccl_allreduce_ms": 23.383571,
+          "roce_kernel_count": 0,
+          "roce_ms": 0.0
+        },
+        {
+          "nccl_allreduce_count": 83,
+          "nccl_allreduce_ms": 24.686012000000005,
+          "roce_kernel_count": 0,
+          "roce_ms": 0.0
+        },
+        {
+          "nccl_allreduce_count": 83,
+          "nccl_allreduce_ms": 22.891443999999996,
+          "roce_kernel_count": 0,
+          "roce_ms": 0.0
+        },
+        {
+          "nccl_allreduce_count": 83,
+          "nccl_allreduce_ms": 21.772090999999996,
+          "roce_kernel_count": 0,
+          "roce_ms": 0.0
+        },
+        {
+          "nccl_allreduce_count": 83,
+          "nccl_allreduce_ms": 22.379739,
+          "roce_kernel_count": 0,
+          "roce_ms": 0.0
+        },
+        {
+          "nccl_allreduce_count": 83,
+          "nccl_allreduce_ms": 20.502714,
+          "roce_kernel_count": 0,
+          "roce_ms": 0.0
+        }
+      ],
+      "means": {
+        "nccl_allreduce_count": 83,
+        "nccl_allreduce_ms": 22.476228625,
+        "roce_kernel_count": 0,
+        "roce_ms": 0.0
+      },
+      "original_trace_sha256": "317945f94117618f96cb634eaf576c972a2da9e7e2d604beb7c512c6ac3745ed"
+    },
+    {
+      "label": "k7-1m",
+      "trace": "trace-iteration-02/traces-k7roce1m/rank0/k7roce1m-coding-c8/k7roce1m-coding-c8-TP-0-EP-0.trace.json.gz",
+      "trace_sha256": "6abbcccb8af85d949ccd1494073539b7bb129a66a1aba9775e6101d045dc12d2",
+      "max_hidden_allreduce_bytes": 655360,
+      "roce_capacity_bytes": 1048576,
+      "target_graphs": [
+        {
+          "nccl_allreduce_count": 0,
+          "nccl_allreduce_ms": 0.0,
+          "roce_kernel_count": 83,
+          "roce_ms": 20.249975000000006
+        },
+        {
+          "nccl_allreduce_count": 0,
+          "nccl_allreduce_ms": 0.0,
+          "roce_kernel_count": 83,
+          "roce_ms": 20.878787999999993
+        },
+        {
+          "nccl_allreduce_count": 0,
+          "nccl_allreduce_ms": 0.0,
+          "roce_kernel_count": 83,
+          "roce_ms": 21.792474000000002
+        },
+        {
+          "nccl_allreduce_count": 0,
+          "nccl_allreduce_ms": 0.0,
+          "roce_kernel_count": 83,
+          "roce_ms": 23.190040999999997
+        },
+        {
+          "nccl_allreduce_count": 0,
+          "nccl_allreduce_ms": 0.0,
+          "roce_kernel_count": 83,
+          "roce_ms": 23.283457
+        },
+        {
+          "nccl_allreduce_count": 0,
+          "nccl_allreduce_ms": 0.0,
+          "roce_kernel_count": 83,
+          "roce_ms": 21.508528999999996
+        },
+        {
+          "nccl_allreduce_count": 0,
+          "nccl_allreduce_ms": 0.0,
+          "roce_kernel_count": 83,
+          "roce_ms": 19.964146000000003
+        },
+        {
+          "nccl_allreduce_count": 0,
+          "nccl_allreduce_ms": 0.0,
+          "roce_kernel_count": 83,
+          "roce_ms": 19.474923
+        }
+      ],
+      "means": {
+        "nccl_allreduce_count": 0,
+        "nccl_allreduce_ms": 0.0,
+        "roce_kernel_count": 83,
+        "roce_ms": 21.292791625
+      },
+      "original_trace_sha256": "d942b958b3e9e789b3b255699b167758abd8e133617fe69b7d6c8005ccedff4f"
+    }
+  ]
+}

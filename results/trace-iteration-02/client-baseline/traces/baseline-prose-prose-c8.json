@@ -1,0 +1,2907 @@
+{
+  "profile": {
+    "start_unix": 1789231956.3072548,
+    "finish_unix": 1789231956.4177785,
+    "body": {
+      "output_dir": "/state/trace-iter2/baseline-prose-prose-c8",
+      "num_steps": 8,
+      "activities": [
+        "CPU",
+        "GPU"
+      ],
+      "with_stack": false,
+      "record_shapes": true,
+      "profile_id": "baseline-prose-prose-c8",
+      "merge_profiles": false,
+      "detailed_annotations": true
+    },
+    "response": {
+      "status": 200,
+      "message": "Start profiling.\n"
+    },
+    "trigger": "Every stream has delivered eight nonempty chunks; chunks are not tokens."
+  },
+  "streams": [
+    {
+      "stream": 0,
+      "start_unix": 1789231955.2954383,
+      "finish_unix": 1789231967.3093586,
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 288,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789231955623858833,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231955740343114,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231955828616628,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231955922132048,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231956019021458,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956116276078,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956209266206,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789231956306688769,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231956414801325,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956524818514,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956637631747,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231956757872598,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231956872326291,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231956979122265,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231957088654610,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231957205762221,
+          "characters": 29
+        },
+        {
+          "unix_ns": 1789231957322224722,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231958226774617,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231958356382802,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231958472285955,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231958579926610,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231958694274866,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231958807020304,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231958917935750,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231959028327645,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231959141381979,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231959250283003,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231959351883986,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231959461619358,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789231959582110649,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231959703397727,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231959826861860,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231959952174513,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231960078886737,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231960208766935,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231960338334694,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231960470388647,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231960602283146,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231960738368987,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231960875777130,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231961010303490,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231961150688294,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231961282703154,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231961411409081,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231961540294620,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231961668346290,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961801991276,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231961933735681,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231962070854605,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231962215412038,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231962354994788,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231962500655309,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231962639940449,
+          "characters": 30
+        },
+        {
+          "unix_ns": 1789231962783006332,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231962932017264,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231963086419622,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231963235343967,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231963390289615,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231963556715741,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231963719576412,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231963881108702,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231964041691849,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231964202645625,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231964358881748,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231964517893527,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231964675732612,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231964831979374,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231964970695969,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231965110902687,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231965251357429,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231965391675291,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231965536932047,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231965689782133,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231965849092417,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231966008574657,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231966157416751,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231966301012031,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231966443218044,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231966580367875,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231966714595243,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231966853563631,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231966982180184,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231967101548603,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231967211423730,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231967309152477,
+          "characters": 10
+        }
+      ],
+      "text": "# How a Hash Map Works: A Detailed Explanation\n\nA hash map (also called hash table, dictionary, or associative array) is a data structure that stores key-value pairs and provides average-case O(1) lookup, insertion, and deletion. This document explains its internals step by step.\n\n---\n\n## 1. The Core Idea\n\nA hash map uses an **array of buckets** (slots) and a **hash function** to convert keys into array indices. Instead of searching linearly for a key, we compute where it *should* be and jump directly there.\n\n```\nkey  \u2500\u2500\u25ba  hash function  \u2500\u2500\u25ba  index  \u2500\u2500\u25ba  bucket[index]\n```\n\nThe goal: distribute keys uniformly across the array so that each bucket holds few (ideally one) entries.\n\n---\n\n## 2. Components\n\n1. **Backing array** \u2014 a contiguous block of memory of size `capacity` (often a power of 2).\n2. **Hash function** \u2014 maps a key to an integer.\n3. **Compression function** \u2014 maps that integer into `[0, capacity)`.\n4. **Bucket** \u2014 a slot in the array; may hold one entry or a chain/tree of entries.\n",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a detailed step-by-step explanation of how a hash map works, including collision handling, resizing, and time complexity. Be thorough."
+          }
+        ],
+        "max_tokens": 256,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 1,
+      "start_unix": 1789231955.295242,
+      "finish_unix": 1789231967.101659,
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 288,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789231955640819967,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231955740976154,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231955829072678,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231955921933167,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231956019360239,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956116489195,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956209075821,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789231956306901596,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231956415288072,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956524430732,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956637826139,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231956757581125,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231956873099240,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231956979428976,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231957088775886,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231957205902242,
+          "characters": 29
+        },
+        {
+          "unix_ns": 1789231957322366206,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231958226896574,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231958356074007,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231958471960188,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231958580152821,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231958694888168,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231958806719434,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231958918077434,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231959028968478,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231959141566072,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231959251046866,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231959352189385,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231959461855217,
+          "characters": 30
+        },
+        {
+          "unix_ns": 1789231959582362669,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231959703683960,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231959827008062,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231959952298153,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231960078773817,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231960208879294,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231960338718168,
+          "characters": 28
+        },
+        {
+          "unix_ns": 1789231960470504212,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231960603084799,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231960738590460,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231960875606422,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231961010122983,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231961150497910,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231961281918623,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231961411606519,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231961540610097,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231961667575203,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961801001683,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961934004672,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231962070338113,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231962214574167,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231962354575878,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231962500166108,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231962640479062,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231962783434429,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231962932303317,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231963086072766,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789231963234860637,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231963391072423,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231963556560862,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231963719297813,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231963881771246,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231964041916478,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231964203229423,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231964358698186,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231964517988003,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231964675943175,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231964832333424,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231964970232266,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231965110646390,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231965250811261,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231965391601393,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231965537391573,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231965689669513,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231965849334989,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231966008694230,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231966157002729,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231966300579395,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231966443834202,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231966580826329,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231966714260339,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231966853755990,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231966981898059,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231967100815026,
+          "characters": 5
+        }
+      ],
+      "text": "# How a Hash Map Works: A Detailed Explanation\n\nA hash map (also called hash table, dictionary, or associative array) is a data structure that stores key-value pairs and provides average-case O(1) lookup, insertion, and deletion. This document explains its internals step by step.\n\n---\n\n## 1. The Core Idea\n\nA hash map uses an **array** of \"buckets\" (slots) plus a **hash function** that converts each key into an array index. Instead of searching through all keys, you compute where a key *should* live and go directly there.\n\n```\nkey  \u2500\u2500\u25ba  hash function  \u2500\u2500\u25ba  index  \u2500\u2500\u25ba  bucket in array\n```\n\nExample: with an array of size 16, the key `\"apple\"` might hash to index 7, so the pair `(\"apple\", 5)` is stored in `buckets[7]`.\n\n---\n\n## 2. Step-by-Step: Insertion\n\n**Step 1 \u2014 Compute the hash.**\nApply a hash function to the key. A good hash function:\n- Is deterministic (same key \u2192 same hash every time).\n- Distributes keys uniformly across the index range.\n- Is fast",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a detailed step-by-step explanation of how a hash map works, including collision handling, resizing, and time complexity. Be thorough."
+          }
+        ],
+        "max_tokens": 256,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 2,
+      "start_unix": 1789231955.2959912,
+      "finish_unix": 1789231966.8530872,
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 288,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789231955640099806,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231955740865357,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231955829311763,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231955922848212,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231956019293675,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231956116076697,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231956209779051,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956307202506,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956415045480,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789231956524081882,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956637711425,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231956757695769,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956872667747,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956979325704,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231957088868489,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231957206108366,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231957322770379,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231958227211551,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231958356434368,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231958471780423,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231958579826162,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231958694500676,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231958806921570,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231958918292806,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231959027739118,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231959140801387,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231959249705928,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231959351063979,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231959460919173,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231959581691949,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231959702861417,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231959826157818,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231959952104813,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231960078550651,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231960207925998,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231960337887130,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231960469881783,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231960602745317,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231960738021360,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231960875186650,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961010405630,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231961149981608,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231961282300294,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231961411288156,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231961540719311,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231961667361616,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231961801852998,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231961934127360,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231962070203142,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231962214724087,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231962355077943,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231962500333569,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231962640279631,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231962784138380,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231962932552762,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231963085797093,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231963235203646,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231963390519964,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231963555786280,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231963719369887,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231963881637166,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231964041225952,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231964203611685,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231964359141411,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231964517833054,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231964676606109,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789231964831664518,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231964969986318,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231965110722381,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789231965251286376,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231965391022014,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231965536788890,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231965688856609,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231965848873519,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231966007799814,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231966156767992,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231966300085074,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231966443097620,
+          "characters": 29
+        },
+        {
+          "unix_ns": 1789231966580915926,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789231966713846889,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231966852848149,
+          "characters": 13
+        }
+      ],
+      "text": "# How a Hash Map Works: A Detailed Explanation\n\nA hash map (also called hash table, dictionary, or associative array) is a data structure that stores key-value pairs and provides average-case O(1) lookup, insertion, and deletion. Below is a thorough walkthrough of its internals.\n\n---\n\n## 1. Core Concept\n\nA hash map uses an **array of buckets** (often called slots or bins). Each key is transformed by a **hash function** into an integer, which is then mapped to an index in the array. The value is stored at that index.\n\n```\nkey \u2500\u2500\u25ba hash function \u2500\u2500\u25ba integer \u2500\u2500\u25ba modulo array size \u2500\u2500\u25ba bucket index\n```\n\nExample: with an array of size 16, key `\"apple\"` might hash to `0x9F3A...`, and `hash % 16 = 5`, so the entry goes into bucket 5.\n\n---\n\n## 2. The Hash Function\n\nA good hash function must be:\n\n- **Deterministic**: same key \u2192 same hash, every time.\n- **Fast to compute**: O(1) or O(length of key).\n- **Uniformly distributed**: keys spread evenly across buckets to minimize collisions.\n",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a detailed step-by-step explanation of how a hash map works, including collision handling, resizing, and time complexity. Be thorough."
+          }
+        ],
+        "max_tokens": 256,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 3,
+      "start_unix": 1789231955.2958364,
+      "finish_unix": 1789231967.3093135,
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 288,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789231955640576824,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231955740190630,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231955828954357,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231955922714593,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231956018299002,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956116677045,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956210090782,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789231956307015618,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231956415369603,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956524199631,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956637314216,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231956757803139,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231956872876225,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231956978976864,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231957088263912,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231957206024851,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231957322060536,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231958226654353,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231958355923326,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231958472124895,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231958580265421,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231958694660164,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231958806588790,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231958918199933,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231959028788834,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231959141739264,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231959250744082,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231959351967341,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231959461196049,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231959582453799,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789231959703253528,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231959827195521,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231959952616045,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231960079001921,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231960208254069,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231960338122037,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231960469672493,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231960603467492,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231960738161220,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231960874977250,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961010495648,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231961150315139,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231961282539540,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231961411708819,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231961539913820,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961668234071,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231961801481516,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231961933434640,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231962070084460,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231962215191257,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231962354434494,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231962500964164,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231962639627496,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231962783888796,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789231962932687172,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231963085958153,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231963235567083,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231963390990580,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231963556990603,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231963719803425,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231963881200162,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231964041397150,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231964203029711,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231964359269239,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231964517566768,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231964676156722,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231964831805200,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231964970119295,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231965110556342,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231965251216326,
+          "characters": 32
+        },
+        {
+          "unix_ns": 1789231965391501878,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789231965537257173,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231965689551744,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231965848804581,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789231966008412716,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231966157245491,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231966300729986,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231966443309976,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231966580205693,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231966714365856,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231966853408733,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231966981792973,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231967101108403,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231967211312964,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231967308934431,
+          "characters": 3
+        }
+      ],
+      "text": "# How a Hash Map Works: A Detailed Explanation\n\nA hash map (also called hash table, dictionary, or associative array) is a data structure that stores key-value pairs and provides average-case **O(1)** lookup, insertion, and deletion. Below is a thorough walkthrough of its internals.\n\n---\n\n## 1. Core Concept\n\nA hash map uses an **array of buckets** (slots) plus a **hash function** that converts each key into an integer index into that array.\n\n```\nkey  \u2500\u2500\u25ba  hash function  \u2500\u2500\u25ba  index  \u2500\u2500\u25ba  bucket[index]  \u2500\u2500\u25ba  value\n```\n\nThe goal: given a key, compute its index directly, so you don't have to search through the whole collection.\n\n---\n\n## 2. Step-by-Step Operation\n\n### Step 1: Choose a hash function\nThe hash function `h(key)` must:\n- Be **deterministic** \u2014 same key always yields the same hash.\n- Be **fast** to compute.\n- **Distribute keys uniformly** across the array to minimize collisions.\n- Ideally produce very different outputs for similar inputs (avalanche effect).\n\nCommon choices:\n- **Division method:** `h(k) =",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a detailed step-by-step explanation of how a hash map works, including collision handling, resizing, and time complexity. Be thorough."
+          }
+        ],
+        "max_tokens": 256,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 4,
+      "start_unix": 1789231955.295626,
+      "finish_unix": 1789231967.2117095,
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 288,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789231955639789618,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231955740533148,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231955828503758,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231955922377315,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231956018686664,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956117010737,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956209426805,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789231956306428755,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231956414555898,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956523954034,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956638282990,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231956757500154,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231956872203221,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231956979245144,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231957088993762,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231957205300301,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231957322511787,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231958226377788,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231958356521390,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231958471124481,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231958579631450,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231958694767864,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231958806122442,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231958917304004,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231959027921528,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231959141018642,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231959249922862,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231959351285281,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231959461057110,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231959581906940,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231959703075937,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231959826376585,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789231959952235627,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231960078645487,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231960208391736,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231960337983059,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231960470212539,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231960603550066,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231960737659135,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231960875114285,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231961009662385,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231961150145804,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231961282927723,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231961410835232,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231961540480546,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231961667683114,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231961801323672,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961933934260,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231962069945852,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231962215005761,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231962354280407,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231962500863897,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231962640377914,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231962783231932,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231962932395288,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231963086582976,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231963235690392,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231963390825212,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231963556855772,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231963719139338,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231963881343459,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231964041549554,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231964203399029,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231964359395344,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231964517394938,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231964675417495,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231964832418362,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231964970479617,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231965110144435,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231965250252941,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231965391775036,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231965537048424,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231965689251124,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231965848130164,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231966008201312,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231966157338595,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231966300909440,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231966443723576,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231966580541017,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231966713751611,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231966853307755,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231966982010068,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231967101285944,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231967211563010,
+          "characters": 8
+        }
+      ],
+      "text": "# How a Hash Map Works: A Detailed Explanation\n\nA hash map (also called hash table, dictionary, or associative array) is a data structure that stores key-value pairs and provides average-case **O(1)** lookup, insertion, and deletion. Below is a thorough walkthrough of its internals.\n\n---\n\n## 1. The Core Idea\n\nA hash map uses an **array** of \"buckets\" (slots) plus a **hash function** that converts a key into an array index. Instead of searching linearly, you compute where a key *should* live and jump directly there.\n\n```\nkey  \u2500\u2500\u25ba  hash function  \u2500\u2500\u25ba  index  \u2500\u2500\u25ba  array[index]\n```\n\nExample: with an array of size 16 and `hash(key) % 16`, the key `\"apple\"` might map to index 7, so we store its value at `array[7]`.\n\n---\n\n## 2. Step-by-Step: Insertion\n\n**Step 1 \u2014 Compute the hash.**\nApply a hash function to the key. A good hash function:\n- Is deterministic (same key \u2192 same hash every time).\n- Distributes keys uniformly across the index space.\n- Is fast to compute",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a detailed step-by-step explanation of how a hash map works, including collision handling, resizing, and time complexity. Be thorough."
+          }
+        ],
+        "max_tokens": 256,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 5,
+      "start_unix": 1789231955.296403,
+      "finish_unix": 1789231965.848704,
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 288,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789231955641072057,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231955740073372,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231955828733466,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231955922779313,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231956019179041,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956116598299,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956210179076,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789231956306785479,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956414682133,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231956524701326,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956638050457,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956757836681,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231956872410067,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231956979376118,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231957088905738,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231957205642328,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231957322628124,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231958227148393,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231958356282014,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231958471571253,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231958580034350,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231958695003373,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231958806840760,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231958917700532,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231959029083583,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789231959141199539,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231959250106945,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231959351619824,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231959461437279,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789231959582589522,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231959703552866,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231959827131702,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231959951979039,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231960079245776,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231960208105683,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231960338242883,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231960470089720,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231960602881039,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231960737796851,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231960875423852,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961009844765,
+          "characters": 28
+        },
+        {
+          "unix_ns": 1789231961149671941,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231961282816646,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961411182038,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231961539637646,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231961668001778,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231961801231721,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231961933855063,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231962070504543,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231962215300771,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231962354661858,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231962500782005,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789231962640055984,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231962783705354,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231962932476990,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231963086174506,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231963235251234,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231963391111776,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231963556346784,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231963719697347,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231963880805948,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231964041797957,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231964202842472,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231964359082942,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231964517739229,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231964676343811,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231964832196629,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231964969887584,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231965110372279,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231965250576734,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231965391876235,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231965536482590,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231965689150045,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231965848370983,
+          "characters": 2
+        }
+      ],
+      "text": "# How a Hash Map Works: A Detailed Explanation\n\nA hash map (also called hash table, dictionary, or associative array) is a data structure that stores key-value pairs and provides average-case **O(1)** lookup, insertion, and deletion. Below is a thorough walkthrough of its internals.\n\n---\n\n## 1. Core Concept\n\nA hash map uses an **array of buckets** (slots) plus a **hash function** that converts each key into an integer index into that array.\n\n```\nkey  \u2500\u2500\u25ba  hash(key)  \u2500\u2500\u25ba  index = hash(key) mod capacity  \u2500\u2500\u25ba  bucket[index]\n```\n\nThe goal: given a key, compute its bucket in constant time, then look inside that bucket for the value.\n\n---\n\n## 2. Step-by-Step Operations\n\n### 2.1 Insertion (`put(key, value)`)\n\n1. **Compute the hash** of the key: `h = hash(key)`.\n2. **Map to an index**: `i = h & (capacity - 1)` (if capacity is a power of two) or `h % capacity`.\n3. **Look at bucket `i`**:\n   - If empty \u2192 place a new entry `",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a detailed step-by-step explanation of how a hash map works, including collision handling, resizing, and time complexity. Be thorough."
+          }
+        ],
+        "max_tokens": 256,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 6,
+      "start_unix": 1789231955.295338,
+      "finish_unix": 1789231966.714102,
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 288,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789231955639252577,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231955740692956,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231955829191920,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231955922268682,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231956018861700,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956116787491,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956209602683,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789231956307122477,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956414917301,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231956524311259,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956638172244,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956757638722,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231956872765439,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231956979713646,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231957088498550,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231957205415997,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231957322882998,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231958226526365,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231958355721550,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231958472189014,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231958579542955,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231958694128463,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231958806394158,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231958917813893,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231959028129766,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231959141846173,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231959250920230,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231959352070133,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231959461738079,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231959582532776,
+          "characters": 25
+        },
+        {
+          "unix_ns": 1789231959703589784,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231959827094884,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231959952361251,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231960079216211,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231960208642102,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231960338435872,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231960470285405,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231960603283088,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231960738242752,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231960875685489,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231961010013960,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231961150618915,
+          "characters": 21
+        },
+        {
+          "unix_ns": 1789231961281776599,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231961411547168,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961540790383,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231961668126641,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231961801628891,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231961933792697,
+          "characters": 39
+        },
+        {
+          "unix_ns": 1789231962070788512,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231962215080500,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789231962354904600,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231962499927132,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231962639823040,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231962782783757,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231962931859179,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231963086284951,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231963235803723,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231963390662289,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231963556008804,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231963719913510,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231963880990341,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789231964042139012,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231964203555010,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231964358805936,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231964517648180,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231964676716455,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231964832547292,
+          "characters": 32
+        },
+        {
+          "unix_ns": 1789231964970574684,
+          "characters": 23
+        },
+        {
+          "unix_ns": 1789231965110241215,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231965251136487,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231965391318536,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231965537541402,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231965689390122,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231965849226637,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231966008341213,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231966157504714,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231966300297590,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231966443427314,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231966580088835,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231966713965310,
+          "characters": 6
+        }
+      ],
+      "text": "# How a Hash Map Works: A Detailed Explanation\n\nA hash map (also called hash table, dictionary, or associative array) is a data structure that stores key-value pairs and provides average-case **O(1)** lookup, insertion, and deletion. Below is a thorough walkthrough of its internals.\n\n---\n\n## 1. Core Concept\n\nA hash map uses an **array of buckets** (slots) plus a **hash function** that converts each key into an integer index into that array.\n\n```\nkey  \u2500\u2500\u25ba  hash function  \u2500\u2500\u25ba  index  \u2500\u2500\u25ba  bucket[index]  \u2500\u2500\u25ba  value\n```\n\nThe goal: given a key, compute its index directly, so you don't have to search through the whole collection.\n\n---\n\n## 2. Step-by-Step Operation\n\n### Step 1: Choose a hash function\nThe hash function `h(key)` must:\n- Be **deterministic** (same key \u2192 same hash every time).\n- Be **fast** to compute.\n- **Distribute keys uniformly** across the array to minimize collisions.\n\nCommon examples:\n- For integers: `h(k) = k mod m` (where `m` is the array size, ideally prime",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a detailed step-by-step explanation of how a hash map works, including collision handling, resizing, and time complexity. Be thorough."
+          }
+        ],
+        "max_tokens": 256,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    },
+    {
+      "stream": 7,
+      "start_unix": 1789231955.2950568,
+      "finish_unix": 1789231966.9820886,
+      "usage": {
+        "prompt_tokens": 32,
+        "total_tokens": 288,
+        "completion_tokens": 256,
+        "prompt_tokens_details": null,
+        "reasoning_tokens": 0
+      },
+      "events": [
+        {
+          "unix_ns": 1789231955640307202,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231955741090557,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231955828845264,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231955922594259,
+          "characters": 24
+        },
+        {
+          "unix_ns": 1789231956018516658,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231956116903868,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956209939190,
+          "characters": 34
+        },
+        {
+          "unix_ns": 1789231956306568856,
+          "characters": 27
+        },
+        {
+          "unix_ns": 1789231956415168268,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231956524578837,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231956637938809,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231956757756532,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231956872985769,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231956979602419,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231957089109348,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231957205565465,
+          "characters": 29
+        },
+        {
+          "unix_ns": 1789231957322722439,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231958227019824,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231958356193019,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231958471325776,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231958579751674,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231958694394198,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231958806266881,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231958917597460,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231959028508802,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231959141929719,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231959250541114,
+          "characters": 12
+        },
+        {
+          "unix_ns": 1789231959351782377,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231959461315492,
+          "characters": 31
+        },
+        {
+          "unix_ns": 1789231959582243156,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231959703780299,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231959826674080,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231959952476155,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231960079111335,
+          "characters": 8
+        },
+        {
+          "unix_ns": 1789231960208562594,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231960338584689,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231960469418230,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231960602555523,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231960737935670,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231960875285825,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231961010208332,
+          "characters": 22
+        },
+        {
+          "unix_ns": 1789231961149819035,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231961282126270,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231961411059049,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231961540091081,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231961667862028,
+          "characters": 11
+        },
+        {
+          "unix_ns": 1789231961801742082,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231961933657765,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231962070648401,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231962214885718,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231962354789576,
+          "characters": 26
+        },
+        {
+          "unix_ns": 1789231962501075782,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231962640168784,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231962784028646,
+          "characters": 29
+        },
+        {
+          "unix_ns": 1789231962932156934,
+          "characters": 18
+        },
+        {
+          "unix_ns": 1789231963086704593,
+          "characters": 15
+        },
+        {
+          "unix_ns": 1789231963235077130,
+          "characters": 9
+        },
+        {
+          "unix_ns": 1789231963390100623,
+          "characters": 19
+        },
+        {
+          "unix_ns": 1789231963556213285,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231963720024286,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231963881487918,
+          "characters": 5
+        },
+        {
+          "unix_ns": 1789231964042027535,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231964203724405,
+          "characters": 7
+        },
+        {
+          "unix_ns": 1789231964358970603,
+          "characters": 3
+        },
+        {
+          "unix_ns": 1789231964518100823,
+          "characters": 20
+        },
+        {
+          "unix_ns": 1789231964676479083,
+          "characters": 1
+        },
+        {
+          "unix_ns": 1789231964832091112,
+          "characters": 14
+        },
+        {
+          "unix_ns": 1789231964970357699,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231965110813250,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231965250981488,
+          "characters": 4
+        },
+        {
+          "unix_ns": 1789231965391930336,
+          "characters": 29
+        },
+        {
+          "unix_ns": 1789231965537160432,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231965689002601,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231965848964198,
+          "characters": 6
+        },
+        {
+          "unix_ns": 1789231966008028871,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231966157147469,
+          "characters": 16
+        },
+        {
+          "unix_ns": 1789231966301165908,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231966443603903,
+          "characters": 13
+        },
+        {
+          "unix_ns": 1789231966580708108,
+          "characters": 2
+        },
+        {
+          "unix_ns": 1789231966714481772,
+          "characters": 10
+        },
+        {
+          "unix_ns": 1789231966853684817,
+          "characters": 17
+        },
+        {
+          "unix_ns": 1789231966981418415,
+          "characters": 9
+        }
+      ],
+      "text": "# How a Hash Map Works: A Detailed Explanation\n\nA hash map (also called hash table, dictionary, or associative array) is a data structure that stores key-value pairs and provides average-case O(1) lookup, insertion, and deletion. This document explains its internals step by step.\n\n---\n\n## 1. The Core Idea\n\nA hash map uses an **array** of \"buckets\" (slots) plus a **hash function** that converts a key into an array index. Instead of searching through all keys, we compute where a key *should* be and go directly there.\n\n```\nkey  \u2500\u2500\u25ba  hash function  \u2500\u2500\u25ba  index  \u2500\u2500\u25ba  array[index]  \u2500\u2500\u25ba  value\n```\n\nThe magic is that the hash function is deterministic: the same key always produces the same index.\n\n---\n\n## 2. Step-by-Step: Insertion\n\nSuppose we insert `(\"apple\", 5)` into an empty hash map with 8 buckets.\n\n**Step 1 \u2014 Compute the hash.**\nRun the key through a hash function. For a string, this might be something like:\n\n```\nhash(\"apple\") = 96354\n```\n\nReal hash functions (e.g., Mur",
+      "body": {
+        "model": "deepseek-v41-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Write a detailed step-by-step explanation of how a hash map works, including collision handling, resizing, and time complexity. Be thorough."
+          }
+        ],
+        "max_tokens": 256,
+        "temperature": 0,
+        "stream": true,
+        "stream_options": {
+          "include_usage": true
+        },
+        "chat_template_kwargs": {
+          "thinking": false
+        }
+      }
+    }
+  ],
+  "scope": "Diagnostic profile; never use these elapsed times as benchmark results."
+}
