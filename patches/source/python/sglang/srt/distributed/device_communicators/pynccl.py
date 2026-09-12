@@ -158,7 +158,7 @@ class PyNcclCommunicator:
 
         if roce_enabled and os.environ.get("SGLANG4_ROCE_ALLREDUCE", "0") == "1":
             if self.world_size != 4 or isinstance(group, StatelessProcessGroup):
-                raise RuntimeError("SG17 RoCEnante requires the TP8 Gloo exchange group")
+                raise RuntimeError("TP4 RoCEnante requires the four-rank Gloo exchange group")
             from b12x.comm import roce
 
             self.roce = roce.AllReduce.from_exchange_group(
@@ -167,7 +167,7 @@ class PyNcclCommunicator:
             )
             self.roce.prepare((torch.bfloat16, torch.float32))
             if len(self.roce.hca_names) != 2:
-                raise RuntimeError("SG17 RoCEnante requires two active RoCE interfaces")
+                raise RuntimeError("TP4 RoCEnante requires two active RoCE interfaces")
             _roce_runtimes.add(self.roce)
             logger.info("ROCE_TP4_READY %s", json.dumps(self.roce.stats()))
 

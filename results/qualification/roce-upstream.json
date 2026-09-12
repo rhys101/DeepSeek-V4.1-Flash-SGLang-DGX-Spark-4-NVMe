@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "ranks": [
+    {
+      "rank": 0,
+      "passed": 74,
+      "skipped": 1,
+      "skipped_case": "test_all_gather_matches_torch[shape5-1-dtype2]",
+      "skip_reason": "shard exceeds the runtime's all-gather capacity"
+    },
+    {
+      "rank": 1,
+      "passed": 74,
+      "skipped": 1,
+      "skipped_case": "test_all_gather_matches_torch[shape5-1-dtype2]",
+      "skip_reason": "shard exceeds the runtime's all-gather capacity"
+    },
+    {
+      "rank": 2,
+      "passed": 74,
+      "skipped": 1,
+      "skipped_case": "test_all_gather_matches_torch[shape5-1-dtype2]",
+      "skip_reason": "shard exceeds the runtime's all-gather capacity"
+    },
+    {
+      "rank": 3,
+      "passed": 74,
+      "skipped": 1,
+      "skipped_case": "test_all_gather_matches_torch[shape5-1-dtype2]",
+      "skip_reason": "shard exceeds the runtime's all-gather capacity"
+    }
+  ],
+  "collector_note": "Initial wrapper rejected a numeric pytest parameter label after all tests completed. Original XML was rechecked; the GPU suite was not rerun."
+}

@@ -131,8 +131,8 @@ def install(module):
         if not self._store:
             raise RuntimeError(f'Could not open Engram backing shard: {filename}')
         _lib.row_store_range(self._store, self.row_start, end)
-        # A repacked local shard, when present, makes every miss a single local
-        # read; without it we fall back to the checkpoint (NFS on a worker).
+        # This profile requires the repacked local shard and fails on attach
+        # errors, so lookup cannot silently fall back to the checkpoint files.
         packed_dir = os.environ.get('DSV41_PACKED_DIR', '')
         if not packed_dir:
             raise RuntimeError('TP4 NVMe serving requires a local packed Engram directory')

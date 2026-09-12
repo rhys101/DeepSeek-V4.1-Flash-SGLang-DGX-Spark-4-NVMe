@@ -1,0 +1,193 @@
+{
+  "status": "PASS",
+  "ranks": [
+    {
+      "rank": 0,
+      "result": {
+        "status": "PASS",
+        "rank": 0,
+        "tp": 4,
+        "checkpoint_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+        "checkpoint_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+        "layers": [
+          {
+            "layer": 1,
+            "rank": 0,
+            "tp": 4,
+            "row_start": 0,
+            "row_end": 96001542,
+            "total_rows": 384006168,
+            "packed_file": "engram-l1-r0of4.bin",
+            "bytes": 25344411184,
+            "sha256": "d82ab3abce473ba70b56b8a578ea0c1adc2fc82a29e8e903212b86b3a4fef4b4",
+            "sampled_rows": 1037,
+            "sample_seed": 1000,
+            "sampled_rows_exact": true,
+            "source_shard": "model-00047-of-00048.safetensors",
+            "source_weight_offset": 664,
+            "source_scale_offset": 98305579672
+          },
+          {
+            "layer": 14,
+            "rank": 0,
+            "tp": 4,
+            "row_start": 0,
+            "row_end": 96004170,
+            "total_rows": 384016682,
+            "packed_file": "engram-l14-r0of4.bin",
+            "bytes": 25345104976,
+            "sha256": "e3d99ddaaf3f9b13c04a9e3907f0d6d58d9b5160c5569601c7728d6379da60f7",
+            "sampled_rows": 1037,
+            "sample_seed": 14000,
+            "sampled_rows_exact": true,
+            "source_shard": "model-00048-of-00048.safetensors",
+            "source_weight_offset": 672,
+            "source_scale_offset": 98308271264
+          }
+        ],
+        "method": "Exact source packing; full output SHA-256 and deterministic random/boundary sample comparison against original weight and scale bytes. No tensor requantization."
+      }
+    },
+    {
+      "rank": 1,
+      "result": {
+        "status": "PASS",
+        "rank": 1,
+        "tp": 4,
+        "checkpoint_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+        "checkpoint_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+        "layers": [
+          {
+            "layer": 1,
+            "rank": 1,
+            "tp": 4,
+            "row_start": 96001542,
+            "row_end": 192003084,
+            "total_rows": 384006168,
+            "packed_file": "engram-l1-r1of4.bin",
+            "bytes": 25344411184,
+            "sha256": "cdf9750ff06527f4f8815e7fef0c49b2d9c3b18d44943d978e8e85b9c6aad82e",
+            "sampled_rows": 1037,
+            "sample_seed": 1001,
+            "sampled_rows_exact": true,
+            "source_shard": "model-00047-of-00048.safetensors",
+            "source_weight_offset": 664,
+            "source_scale_offset": 98305579672
+          },
+          {
+            "layer": 14,
+            "rank": 1,
+            "tp": 4,
+            "row_start": 96004170,
+            "row_end": 192008341,
+            "total_rows": 384016682,
+            "packed_file": "engram-l14-r1of4.bin",
+            "bytes": 25345105240,
+            "sha256": "f4035319de74f1b74d23089a22454af2607b9a57a5efef1f51040ddf4e35b10e",
+            "sampled_rows": 1037,
+            "sample_seed": 14001,
+            "sampled_rows_exact": true,
+            "source_shard": "model-00048-of-00048.safetensors",
+            "source_weight_offset": 672,
+            "source_scale_offset": 98308271264
+          }
+        ],
+        "method": "Exact source packing; full output SHA-256 and deterministic random/boundary sample comparison against original weight and scale bytes. No tensor requantization."
+      }
+    },
+    {
+      "rank": 2,
+      "result": {
+        "status": "PASS",
+        "rank": 2,
+        "tp": 4,
+        "checkpoint_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+        "checkpoint_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+        "layers": [
+          {
+            "layer": 1,
+            "rank": 2,
+            "tp": 4,
+            "row_start": 192003084,
+            "row_end": 288004626,
+            "total_rows": 384006168,
+            "packed_file": "engram-l1-r2of4.bin",
+            "bytes": 25344411184,
+            "sha256": "a9aba54c7e9a4165b761d7a79779a3bed8c7a43e31b39a30394b30b5376089eb",
+            "sampled_rows": 1037,
+            "sample_seed": 1002,
+            "sampled_rows_exact": true,
+            "source_shard": "model-00047-of-00048.safetensors",
+            "source_weight_offset": 664,
+            "source_scale_offset": 98305579672
+          },
+          {
+            "layer": 14,
+            "rank": 2,
+            "tp": 4,
+            "row_start": 192008341,
+            "row_end": 288012511,
+            "total_rows": 384016682,
+            "packed_file": "engram-l14-r2of4.bin",
+            "bytes": 25345104976,
+            "sha256": "fe79ad35b70ef80ce37c654bbb3dd01dfb9a4f65a255697f0bd069db72281a8a",
+            "sampled_rows": 1037,
+            "sample_seed": 14002,
+            "sampled_rows_exact": true,
+            "source_shard": "model-00048-of-00048.safetensors",
+            "source_weight_offset": 672,
+            "source_scale_offset": 98308271264
+          }
+        ],
+        "method": "Exact source packing; full output SHA-256 and deterministic random/boundary sample comparison against original weight and scale bytes. No tensor requantization."
+      }
+    },
+    {
+      "rank": 3,
+      "result": {
+        "status": "PASS",
+        "rank": 3,
+        "tp": 4,
+        "checkpoint_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+        "checkpoint_index_sha256": "74b0686a3d2891980d5e303251b075a3bccae2c2ff650747db2620a649b98fa8",
+        "layers": [
+          {
+            "layer": 1,
+            "rank": 3,
+            "tp": 4,
+            "row_start": 288004626,
+            "row_end": 384006168,
+            "total_rows": 384006168,
+            "packed_file": "engram-l1-r3of4.bin",
+            "bytes": 25344411184,
+            "sha256": "952583ab3e6d786c65ed22a7ef532ac3baec9bb368ac080054ae5c0311dd4490",
+            "sampled_rows": 1037,
+            "sample_seed": 1003,
+            "sampled_rows_exact": true,
+            "source_shard": "model-00047-of-00048.safetensors",
+            "source_weight_offset": 664,
+            "source_scale_offset": 98305579672
+          },
+          {
+            "layer": 14,
+            "rank": 3,
+            "tp": 4,
+            "row_start": 288012511,
+            "row_end": 384016682,
+            "total_rows": 384016682,
+            "packed_file": "engram-l14-r3of4.bin",
+            "bytes": 25345105240,
+            "sha256": "2ccaf7098a8fbaee2767131518fcccdaf6ad67b31ec66ad4d7fefada4f9cbb21",
+            "sampled_rows": 1037,
+            "sample_seed": 14003,
+            "sampled_rows_exact": true,
+            "source_shard": "model-00048-of-00048.safetensors",
+            "source_weight_offset": 672,
+            "source_scale_offset": 98308271264
+          }
+        ],
+        "method": "Exact source packing; full output SHA-256 and deterministic random/boundary sample comparison against original weight and scale bytes. No tensor requantization."
+      }
+    }
+  ]
+}

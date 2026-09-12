@@ -21,6 +21,11 @@ if a.render:
     raise SystemExit(0)
 root = Path('/opt/sglang4')
 lock = json.loads((root / 'versions.lock.json').read_text())
+if hashlib.sha256((root / 'runtime/configuration.py').read_bytes()).hexdigest() != lock['runtime_configuration_sha256']:
+    raise RuntimeError('Runtime configuration source differs from the pin')
+build = json.loads((root / 'row-store-build.json').read_text())
+if hashlib.sha256((root / 'adapter/librow_store.so').read_bytes()).hexdigest() != build['row_store_library_sha256']:
+    raise RuntimeError('Compiled row-store identity differs from the staged build')
 model_config = Path('/models') / c['model_subpath'] / 'config.json'
 if hashlib.sha256(model_config.read_bytes()).hexdigest() != lock['model_config_sha256']:
     raise RuntimeError('Checkpoint config differs from the pinned reference')

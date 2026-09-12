@@ -1,0 +1,670 @@
+{
+  "status": "PASS",
+  "suite": "nvme",
+  "results": [
+    {
+      "rank": 0,
+      "result": {
+        "status": "PASS",
+        "rank": 0,
+        "world_size": 4,
+        "eager": [
+          {
+            "layer": 1,
+            "count": 1,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 24,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 144,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 576,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 1152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 49152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 1,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 24,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 144,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 576,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 1152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 49152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          }
+        ],
+        "graphs": [
+          {
+            "layer": 1,
+            "count": 144,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 1,
+            "count": 576,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 1,
+            "count": 1152,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 0
+          },
+          {
+            "layer": 14,
+            "count": 144,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 14,
+            "count": 576,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 14,
+            "count": 1152,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 0
+          }
+        ],
+        "storage": [
+          {
+            "layer": 1,
+            "hits": 0,
+            "misses": 31582,
+            "reads": 31582,
+            "cache_bytes": 0,
+            "slots": 0,
+            "scale_bytes": 0,
+            "ways": 4,
+            "threads": 96,
+            "packed": true
+          },
+          {
+            "layer": 14,
+            "hits": 0,
+            "misses": 31713,
+            "reads": 31713,
+            "cache_bytes": 0,
+            "slots": 0,
+            "scale_bytes": 0,
+            "ways": 4,
+            "threads": 96,
+            "packed": true
+          }
+        ],
+        "checkpoint_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+        "method": "Real checkpoint bytes, original FP8/E8M0 dequantization, actual NVMe callback and EngramEmbedding.forward with an isolated TP4 GroupCoordinator; no complete model weights resident."
+      }
+    },
+    {
+      "rank": 1,
+      "result": {
+        "status": "PASS",
+        "rank": 1,
+        "world_size": 4,
+        "eager": [
+          {
+            "layer": 1,
+            "count": 1,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 24,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 144,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 576,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 1152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 49152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 1,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 24,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 144,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 576,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 1152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 49152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          }
+        ],
+        "graphs": [
+          {
+            "layer": 1,
+            "count": 144,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 1,
+            "count": 576,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 1,
+            "count": 1152,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 0
+          },
+          {
+            "layer": 14,
+            "count": 144,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 14,
+            "count": 576,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 14,
+            "count": 1152,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 0
+          }
+        ],
+        "storage": [
+          {
+            "layer": 1,
+            "hits": 0,
+            "misses": 31357,
+            "reads": 31357,
+            "cache_bytes": 0,
+            "slots": 0,
+            "scale_bytes": 0,
+            "ways": 4,
+            "threads": 96,
+            "packed": true
+          },
+          {
+            "layer": 14,
+            "hits": 0,
+            "misses": 31671,
+            "reads": 31671,
+            "cache_bytes": 0,
+            "slots": 0,
+            "scale_bytes": 0,
+            "ways": 4,
+            "threads": 96,
+            "packed": true
+          }
+        ],
+        "checkpoint_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+        "method": "Real checkpoint bytes, original FP8/E8M0 dequantization, actual NVMe callback and EngramEmbedding.forward with an isolated TP4 GroupCoordinator; no complete model weights resident."
+      }
+    },
+    {
+      "rank": 2,
+      "result": {
+        "status": "PASS",
+        "rank": 2,
+        "world_size": 4,
+        "eager": [
+          {
+            "layer": 1,
+            "count": 1,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 24,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 144,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 576,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 1152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 49152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 1,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 24,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 144,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 576,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 1152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 49152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          }
+        ],
+        "graphs": [
+          {
+            "layer": 1,
+            "count": 144,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 1,
+            "count": 576,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 1,
+            "count": 1152,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 0
+          },
+          {
+            "layer": 14,
+            "count": 144,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 14,
+            "count": 576,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 14,
+            "count": 1152,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 0
+          }
+        ],
+        "storage": [
+          {
+            "layer": 1,
+            "hits": 0,
+            "misses": 31302,
+            "reads": 31302,
+            "cache_bytes": 0,
+            "slots": 0,
+            "scale_bytes": 0,
+            "ways": 4,
+            "threads": 96,
+            "packed": true
+          },
+          {
+            "layer": 14,
+            "hits": 0,
+            "misses": 31401,
+            "reads": 31401,
+            "cache_bytes": 0,
+            "slots": 0,
+            "scale_bytes": 0,
+            "ways": 4,
+            "threads": 96,
+            "packed": true
+          }
+        ],
+        "checkpoint_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+        "method": "Real checkpoint bytes, original FP8/E8M0 dequantization, actual NVMe callback and EngramEmbedding.forward with an isolated TP4 GroupCoordinator; no complete model weights resident."
+      }
+    },
+    {
+      "rank": 3,
+      "result": {
+        "status": "PASS",
+        "rank": 3,
+        "world_size": 4,
+        "eager": [
+          {
+            "layer": 1,
+            "count": 1,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 24,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 144,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 576,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 1152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 1,
+            "count": 49152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 1,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 24,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 144,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 576,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 1152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          },
+          {
+            "layer": 14,
+            "count": 49152,
+            "owned_bit_exact": true,
+            "tp_assembled_bit_exact": true
+          }
+        ],
+        "graphs": [
+          {
+            "layer": 1,
+            "count": 144,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 1,
+            "count": 576,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 1,
+            "count": 1152,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 0
+          },
+          {
+            "layer": 14,
+            "count": 144,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 14,
+            "count": 576,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 1
+          },
+          {
+            "layer": 14,
+            "count": 1152,
+            "changing_replays": 12,
+            "bit_exact": true,
+            "pointers_stable": true,
+            "allocated_bytes_stable": true,
+            "roce_operations_per_replay": 0
+          }
+        ],
+        "storage": [
+          {
+            "layer": 1,
+            "hits": 0,
+            "misses": 32193,
+            "reads": 32193,
+            "cache_bytes": 0,
+            "slots": 0,
+            "scale_bytes": 0,
+            "ways": 4,
+            "threads": 96,
+            "packed": true
+          },
+          {
+            "layer": 14,
+            "hits": 0,
+            "misses": 31649,
+            "reads": 31649,
+            "cache_bytes": 0,
+            "slots": 0,
+            "scale_bytes": 0,
+            "ways": 4,
+            "threads": 96,
+            "packed": true
+          }
+        ],
+        "checkpoint_config_sha256": "8be45ce0476004a3f529fd896115a4a2e800a129ad2d3ec05b16050f52e21879",
+        "method": "Real checkpoint bytes, original FP8/E8M0 dequantization, actual NVMe callback and EngramEmbedding.forward with an isolated TP4 GroupCoordinator; no complete model weights resident."
+      }
+    }
+  ]
+}

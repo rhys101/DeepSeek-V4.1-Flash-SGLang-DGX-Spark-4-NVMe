@@ -116,6 +116,8 @@ def stage(c):
                  '/opt/sglang4/adapter/row_store.cpp', '-o', '/opt/sglang4/adapter/librow_store.so']
         call(c, node, shlex.join(build), timeout=120)
         library_hash = read(c, node, ['sha256sum', remote + '/kit/adapter/librow_store.so']).split()[0]
+        record = json.dumps(dict(row_store_library_sha256=library_hash, image=c['expected_image_id']))
+        call(c, node, 'python3 -', input=f"from pathlib import Path\nPath({(remote + '/kit/row-store-build.json')!r}).write_text({record!r}+'\\n')\n", text=True, timeout=30)
         return dict(rank=node['rank'], image=c['expected_image_id'], source_files=len(files), row_store_library_sha256=library_hash)
     rows = mapped(c, one)
     if len({row['row_store_library_sha256'] for row in rows}) != 1:
@@ -180,7 +182,8 @@ def stop(c):
 
 
 def layout(c, node):
-    result = call(c, node, shlex.join(['docker', 'logs', name(c, node['rank'])]), capture_output=True, text=True, timeout=45)
+    started = read(c, node, ['docker', 'inspect', '--format', '{{.State.StartedAt}}', name(c, node['rank'])]).strip()
+    result = call(c, node, shlex.join(['docker', 'logs', '--since', started, name(c, node['rank'])]), capture_output=True, text=True, timeout=45)
     text = result.stdout + '\n' + result.stderr
     records = [json.loads(line.split('DSPARK_MOE_LAYOUT ', 1)[1]) for line in text.splitlines() if 'DSPARK_MOE_LAYOUT ' in line]
     if not records:
